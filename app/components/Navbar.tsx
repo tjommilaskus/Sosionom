@@ -34,7 +34,7 @@ export function Navbar() {
               Konsulenter
             </a>
             <a
-              href="/"
+              href="#kontaktoss"
               className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
             >
               Kontakt oss
