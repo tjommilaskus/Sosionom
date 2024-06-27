@@ -3,7 +3,7 @@ import Logo from "../../public/Logo.svg";
 
 export function Navbar() {
   return (
-    <nav className="bg-[#ffd15a]">
+    <nav className="bg-[#ffd15a] p-3">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"></div>
       <div className="flex justify-between items-center h-16">
         <div className="flex items-center">
