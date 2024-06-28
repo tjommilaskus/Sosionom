@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Vei from "../../public/Vei.png";
 import TPS from "../../public/TPS.png";
-import KursFag from "../../public/KursFag.png";
+import KursFagU from "../../public/KursFagU.png";
 import OA from "../../public/OA.png";
 
 export function Vitilby() {
@@ -10,7 +10,7 @@ export function Vitilby() {
       <div className="grid grid-cols-2 gap-4 p-4">
         <a>
           <Image
-            src={KursFag}
+            src={KursFagU}
             alt="Kurs og Fagdager"
             width={350}
             height={350}
