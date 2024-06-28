@@ -1,8 +1,16 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import Logo from "../../public/Logo.svg";
 import Link from "next/link";
 
 export function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="bg-[#ffd15a] p-3 fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,6 +54,7 @@ export function Navbar() {
             <button
               type="button"
               className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
+              onClick={toggleMenu}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +62,7 @@ export function Navbar() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-6"
+                className="w-6 h-6"
               >
                 <path
                   strokeLinecap="round"
@@ -65,6 +74,36 @@ export function Navbar() {
           </div>
         </div>
       </div>
+      {isOpen && (
+        <div className="md:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <Link
+              href="/Tjenester"
+              className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+            >
+              Tjenester
+            </Link>
+            <a
+              href="/Priser"
+              className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+            >
+              Priser
+            </a>
+            <a
+              href="/Konsulenter"
+              className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+            >
+              Konsulenter
+            </a>
+            <a
+              href="#kontaktoss"
+              className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+            >
+              Kontakt oss
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
