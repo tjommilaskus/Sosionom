@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Vitilbyr from "../../public/Vitilbyr.jpg";
+import { Vitilby } from "./Vitilby";
 
 export function Hero() {
   return (
-    <section className="grid lg:grid-cols-2 sm:grid-rows-2">
-      <div className="">
-        <div className="flex flex-col justify-center items-start">
+    <section className="grid lg:grid-cols-2 p-0 m-0">
+      <div className="p-0 m-0">
+        <div className="flex flex-col justify-center items-start p-0 m-0">
           <h1 className="pt-8 pl-4 lg:text-xl text-xl">
             Vi tilbyr assistanse dersom du kjenner deg igjen i noen av disse
             problemstillingene:
@@ -84,10 +84,8 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="">
-        <div className="lg:flex justify-center items-center">
-          <Image src={Vitilbyr} alt="Vitilbyr" width={500} height={500} />
-        </div>
+      <div className="p-0 m-0 flex justify-center items-center">
+        <Vitilby />
       </div>
     </section>
   );
