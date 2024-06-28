@@ -22,7 +22,7 @@ export function Hansi() {
       <p className="text-sm">Godkjent faglig veileder gjennom FO</p>
 
       <p className="pt-5">Erfaring:</p>
-      <p className="text-sm p-2">
+      <p className="text-sm p-3">
         Hans Petter Algerøy har erfaring innenfor faglig veiledning og
         undervisning. Han har tidligere arbeidet i stillinger som miljøterapeut
         og faglig veileder hos organisasjoner som Abri Dialogue og Haraldsplass
