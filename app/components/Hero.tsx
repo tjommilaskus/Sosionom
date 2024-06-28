@@ -6,7 +6,7 @@ export function Hero() {
     <section className="grid lg:grid-cols-2 p-0 m-0">
       <div className="p-0 m-0">
         <div className="flex flex-col justify-center items-start p-0 m-0">
-          <h1 className="pt-8 pl-4 lg:text-xl text-xl">
+          <h1 className="pt-8 pl-4 lg:text-xl text-xl text-gray-700">
             Vi tilbyr assistanse dersom du kjenner deg igjen i noen av disse
             problemstillingene:
           </h1>
@@ -23,7 +23,7 @@ export function Hero() {
                 clipRule="evenodd"
               />
             </svg>
-            <p className="ml-2 text-base lg:text-lg">
+            <p className="ml-2 text-base lg:text-lg text-gray-700">
               Dersom din organisasjon er i søkefasen etter kurs eller fagdager
             </p>
           </div>
@@ -40,7 +40,7 @@ export function Hero() {
                 clipRule="evenodd"
               />
             </svg>
-            <p className="ml-2 text-base lg:text-lg">
+            <p className="ml-2 text-base lg:text-lg text-gray-700">
               Er en student, en organisasjon eller et fosterhjem som trenger
               faglig veiledning, enten for personlig utvikling eller for å
               styrke kompetansen til de ansatte
@@ -59,7 +59,7 @@ export function Hero() {
                 clipRule="evenodd"
               />
             </svg>
-            <p className="ml-2 text-base lg:text-lg">
+            <p className="ml-2 text-base lg:text-lg text-gray-700">
               Hvis du eller din familie opplever relasjonelle vanskeligheter,
               enten det er innad i familien eller i parforholdet
             </p>
@@ -77,7 +77,7 @@ export function Hero() {
                 clipRule="evenodd"
               />
             </svg>
-            <p className="ml-2 text-base lg:text-lg">
+            <p className="ml-2 text-base lg:text-lg text-gray-700">
               Har behov for støtte til barn med særlige utfordringer, enten det
               gjelder oppfølging eller avlastning
             </p>
