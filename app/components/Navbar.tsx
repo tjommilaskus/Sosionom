@@ -23,13 +23,13 @@ export function Navbar() {
                 Tjenester
               </Link>
               <a
-                href="/"
+                href="/Priser"
                 className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
               >
                 Priser
               </a>
               <a
-                href="/"
+                href="/Konsulenter"
                 className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
               >
                 Konsulenter
