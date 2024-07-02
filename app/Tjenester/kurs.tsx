@@ -29,7 +29,7 @@ export default function Kurs() {
     {
       id: 3,
       name: "Metaveiledning",
-      href: "#4",
+      href: "#",
       price: "Fra 600kr",
       imageSrc: "/Metaveiledning.jpg",
       imageAlt:
@@ -38,7 +38,7 @@ export default function Kurs() {
     {
       id: 4,
       name: "Gruppeveiledning",
-      href: "#4",
+      href: "#",
       price: "Fra 600kr",
       imageSrc: "/Gruppeveiledning.jpg",
       imageAlt:
@@ -47,7 +47,7 @@ export default function Kurs() {
     {
       id: 5,
       name: "Leirbål veiledning",
-      href: "#4",
+      href: "#",
       price: "Fra 1 149kr",
       imageSrc: "/Leirbål-veiledning.jpg",
       imageAlt:
@@ -56,7 +56,7 @@ export default function Kurs() {
     {
       id: 6,
       name: "Terapeutiske Samtaler",
-      href: "#4",
+      href: "#",
       price: "Fra 1500kr",
       imageSrc: "/TerapeutiskeS.jpg",
       imageAlt:
@@ -65,7 +65,7 @@ export default function Kurs() {
     {
       id: 5,
       name: "Leirbål veiledning",
-      href: "#4",
+      href: "#",
       price: "Fra 1 149kr",
       imageSrc: "/Leirbål-veiledning.jpg",
       imageAlt:
@@ -74,7 +74,7 @@ export default function Kurs() {
     {
       id: 5,
       name: "Leirbål veiledning",
-      href: "#4",
+      href: "#",
       price: "Fra 1 149kr",
       imageSrc: "/Leirbål-veiledning.jpg",
       imageAlt:
@@ -83,7 +83,7 @@ export default function Kurs() {
     {
       id: 5,
       name: "Leirbål veiledning",
-      href: "#4",
+      href: "#",
       price: "Fra 1 149kr",
       imageSrc: "/Leirbål-veiledning.jpg",
       imageAlt:
@@ -92,7 +92,7 @@ export default function Kurs() {
     {
       id: 5,
       name: "Leirbål veiledning",
-      href: "#4",
+      href: "#",
       price: "Fra 1 149kr",
       imageSrc: "/Leirbål-veiledning.jpg",
       imageAlt:
@@ -101,7 +101,7 @@ export default function Kurs() {
   ];
 
   return (
-    <div className="mt-28">
+    <div className="mt-16">
       <div className="bg-white">
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
           <h2 className="sr-only">Products</h2>

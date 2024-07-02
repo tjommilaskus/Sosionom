@@ -1,32 +1,31 @@
 import React from "react";
 import Image from "next/image";
-import petter from "../../public/hansi.png";
+import mary from "../../public/Mary.jpg";
 
-export function Hansi() {
+export function Mary() {
   return (
     <div className="relative flex flex-col items-center pb-16 pt-[128px] mb-5 bg-gray-50">
       <Image
         className=" h-auto max-w-lg rounded-lg shadow-lg"
-        src={petter}
+        src={mary}
         alt="Hansi"
         width={250}
         height={250}
       ></Image>
 
       <h1 className="mb-1 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl pt-4">
-        Hans-Petter{" "}
+        Mary-Christine{" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
-          Algerøy
+          Matovu
         </span>
       </h1>
       <p className="tracking-widest text-gray-600 md:text-lg">
-        Faglig veileder og kursholder
+        Familieterapeut og veileder
       </p>
       <ul className="pt-5 max-w-md space-y-1 text-gray-600 list-disc list-insid">
-        <li>Bachelorgrad i Sosialt arbeid</li>
-        <li>Videreutdanning i rus og psykiske lidelser</li>
-        <li>Mastergrad i Psykisk Helse og rusarbeid</li>
-        <li>Godkjent faglig veileder gjennom FO</li>
+        <li>Bachelorgrad i barnevernspedagogikk</li>
+        <li>Videreutdanning i familieterapi</li>
+        <li>Videreutdanning i ledelse</li>
       </ul>
 
       <div className="inline-flex items-center justify-center w-full mt-10">
