@@ -24,8 +24,8 @@ export function Martin() {
       </p>
       <ul className="pt-5 max-w-md space-y-1 text-gray-600 list-disc list-insid">
         <li>Bachelorgrad i Sykepleie</li>
-        <li>Erfaring innen barne og ungdomspykiatri</li>
-        <li>Erfaring innen voksenpykiatri</li>
+        <li></li>
+        <li></li>
       </ul>
 
       <div className="inline-flex items-center justify-center w-full mt-10">
