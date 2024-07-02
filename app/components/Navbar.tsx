@@ -75,7 +75,7 @@ export function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden">
+        <div className="md:hidden absolute top-16 right-0 bg-[#ffd15a] shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-right">
             <Link
               href="/Tjenester"
