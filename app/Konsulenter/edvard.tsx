@@ -1,29 +1,29 @@
 import React from "react";
 import Image from "next/image";
-import martinbilde from "../../public/martinbilde.jpg";
+import hansibilde from "../../public/hansi.png";
 
-export function Martin() {
+export function Edvard() {
   return (
     <div className="relative flex flex-col items-center pb-16 pt-[128px] mb-5 bg-gray-50">
       <Image
         className=" h-auto max-w-lg rounded-lg shadow-lg"
-        src={martinbilde}
+        src={hansibilde}
         alt="Hansi"
         width={250}
         height={250}
       ></Image>
 
       <h1 className="mb-1 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl pt-4">
-        Martin{" "}
+        Edvard{" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
-          Palm
+          Dyrelie
         </span>
       </h1>
       <p className="tracking-widest text-gray-600 md:text-lg">
-        Sykepleier og veileder
+        Sosionom og Miljøterapeut
       </p>
       <ul className="pt-5 max-w-md space-y-1 text-gray-600 list-disc list-insid">
-        <li>Bachelorgrad i Sykepleie</li>
+        <li>Bachelorgrad i sosialt arbeid</li>
         <li></li>
         <li></li>
       </ul>

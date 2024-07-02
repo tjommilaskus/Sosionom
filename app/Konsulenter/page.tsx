@@ -4,7 +4,8 @@ import { Hansi } from "./hansi";
 
 import React from "react";
 import { Mary } from "./mary";
-import { Martin } from "./martin";
+
+import { Edvard } from "./edvard";
 
 export default function Konsulenter() {
   return (
@@ -12,7 +13,8 @@ export default function Konsulenter() {
       <Navbar />
       <Hansi />
       <Mary />
-      <Martin />
+      <Edvard />
+
       <Kontaktinfo />
     </div>
   );
