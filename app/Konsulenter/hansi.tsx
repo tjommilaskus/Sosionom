@@ -45,7 +45,7 @@ export function Hansi() {
       </div>
 
       <p className="mt-10 tracking-widest text-gray-500 md:text-lg">Erfaring</p>
-      <div className="flex">
+      <div className="flex p-2">
         <p className="text-sm p-3 text-gray-500">
           Hans Petter Algerøy har erfaring innenfor faglig veiledning og
           undervisning. Han har tidligere arbeidet i stillinger som
