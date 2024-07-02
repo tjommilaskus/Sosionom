@@ -4,7 +4,7 @@ import petter from "../../public/hansi.png";
 
 export function Hansi() {
   return (
-    <div className="relative flex flex-col items-center pt-[128px] mb-5">
+    <div className="relative flex flex-col items-center pb-16 pt-[128px] mb-5 bg-gray-50">
       <Image
         className=" h-auto max-w-lg rounded-lg shadow-lg"
         src={petter}
@@ -19,10 +19,10 @@ export function Hansi() {
           Algerøy
         </span>
       </h1>
-      <p className="tracking-widest text-gray-500 md:text-lg">
+      <p className="tracking-widest text-gray-600 md:text-lg">
         Faglig veileder og kursholder
       </p>
-      <ul className="pt-5 max-w-md space-y-1 text-gray-500 list-disc list-insid">
+      <ul className="pt-5 max-w-md space-y-1 text-gray-600 list-disc list-insid">
         <li>Bachelorgrad i Sosialt arbeid</li>
         <li>Videreutdanning i rus og psykiske lidelser</li>
         <li>Mastergrad i Psykisk Helse og rusarbeid</li>
@@ -30,10 +30,10 @@ export function Hansi() {
       </ul>
 
       <div className="inline-flex items-center justify-center w-full mt-10">
-        <hr className="w-64 h-1 my-8 bg-gray-200 border-0 rounded" />
-        <div className="absolute px-4 -translate-x-1/2 bg-white left-1/2">
+        <hr className="w-64 h-1 my-8 bg-gray-300 border-0 rounded" />
+        <div className="absolute px-4 -translate-x-1/2 bg-gray-100 left-1/2">
           <svg
-            className="w-4 h-4 text-gray-700 dark:text-gray-300"
+            className="w-4 h-4 text-gray-700"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -44,22 +44,22 @@ export function Hansi() {
         </div>
       </div>
 
-      <p className="mt-10 tracking-widest text-gray-500 md:text-lg">Erfaring</p>
+      <p className="mt-10 tracking-widest text-gray-600 md:text-lg">Erfaring</p>
       <div className="lg:flex p-2">
-        <p className="text-sm p-3 text-gray-500">
+        <p className="text-sm p-3 text-gray-600">
           Hans Petter Algerøy har erfaring innenfor faglig veiledning og
           undervisning. Han har tidligere arbeidet i stillinger som
           miljøterapeut og faglig veileder hos organisasjoner som Abri Dialogue
           og Haraldsplass Serio Ung.
         </p>
-        <p className="text-sm p-3 text-gray-500">
+        <p className="text-sm p-3 text-gray-600">
           Han har hatt ansvar for veiledning til foreldre, fosterforeldre og
           kollegaer, individuelt og i gruppe. Han har også vært involvert i
           undervisning og har god erfaring med å samarbeide med barnehager og
           skoler for å sikre at alle involverte parter er godt rustet rundt
           barnets behov.
         </p>
-        <p className="text-sm p-3 text-gray-500">
+        <p className="text-sm p-3 text-gray-600">
           I tillegg til tidligere stillinger, har han praktisk erfaring fra
           Bergen Kommune sin avdeling for Fosterhjemsveiledning og tilsyn, hvor
           han har bistått i å veilede fosterforeldre og gjennomføre undervisning

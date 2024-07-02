@@ -6,9 +6,14 @@ import Link from "next/link";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Add state for dropdown menu
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (
@@ -24,12 +29,44 @@ export function Navbar() {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-6">
-              <Link
-                href="/Tjenester"
-                className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
-              >
-                Tjenester
-              </Link>
+              <div className="relative">
+                <button
+                  onClick={toggleDropdown}
+                  className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Tjenester▼
+                </button>
+                {isDropdownOpen && (
+                  <div className="absolute top-10 right-0 bg-[#ffd15a] shadow-lg">
+                    <div className="px-4 py-2">
+                      <Link
+                        href="/Tjenester"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Kurs & Fagdag
+                      </Link>
+                      <Link
+                        href="/Tjenester"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Fagelig Veiledning
+                      </Link>
+                      <Link
+                        href="/Tjenester"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Terapautiske Samtaler
+                      </Link>
+                      <Link
+                        href="/Tjenester"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Oppfølging & Avlastning
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </div>
               <a
                 href="/Priser"
                 className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
@@ -77,12 +114,18 @@ export function Navbar() {
       {isOpen && (
         <div className="md:hidden absolute top-16 right-0 bg-[#ffd15a] shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-right">
-            <Link
+            <a
               href="/Tjenester"
-              className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+              className="block text-gray-900
+              hover:text-gray-500 rounded-lg p-2"
             >
-              Tjenester
-            </Link>
+              <button
+                onClick={toggleDropdown}
+                className="text-gray-900 hover:text-gray-500 rounded-lg p-0"
+              >
+                Tjenester▼
+              </button>
+            </a>
             <a
               href="/Priser"
               className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"

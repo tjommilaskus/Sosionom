@@ -5,11 +5,11 @@ import { Kontaktinfo } from "./components/Kontaktinfo";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-gray-50">
       <Navbar />
       <Bakgrunnsbilde />
       <Hero />
       <Kontaktinfo />
-    </>
+    </div>
   );
 }
