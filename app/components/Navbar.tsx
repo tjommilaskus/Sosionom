@@ -115,7 +115,7 @@ export function Navbar() {
         <div className="md:hidden absolute top-16 right-0 bg-[#ffd15a] shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-right">
             <a
-              href="/Tjenester"
+              href="#4"
               className="block text-gray-900
               hover:text-gray-500 rounded-lg p-2"
             >

@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Tjenester() {
   return (
-    <div>
+    <div className="bg-gray-50">
       <Navbar />
       <Kurs />
       <Kontaktinfo />

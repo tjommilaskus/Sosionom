@@ -11,45 +11,93 @@ export default function Kurs() {
   }[] = [
     {
       id: 1,
-      name: "Earthen Bottle",
+      name: "Kurs og Fagdager",
       href: "#",
-      price: "$48",
-      imageSrc:
-        "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg",
+      price: "Fra 4 900kr",
+      imageSrc: "/Kursfagdager.jpg",
       imageAlt:
-        "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
+        "picture of a stick figure and students the main figure is at a blackbord.",
     },
     {
       id: 2,
-      name: "Nomad Tumbler",
+      name: "Faglig veiledning",
       href: "#",
-      price: "$35",
-      imageSrc:
-        "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg",
-      imageAlt:
-        "Olive drab green insulated bottle with flared screw lid and flat top.",
+      price: "Fra 600kr",
+      imageSrc: "/Fagligveiledning.jpg",
+      imageAlt: "Two persons at a table talking",
     },
     {
       id: 3,
-      name: "Focus Paper Refill",
-      href: "#",
-      price: "$89",
-      imageSrc:
-        "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg",
-      imageAlt:
-        "Person using a pen to cross a task off a productivity paper card.",
-    },
-    {
-      id: 4,
-      name: "Machined Mechanical Pencil",
-      href: "#",
-      price: "$35",
-      imageSrc:
-        "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg",
+      name: "Metaveiledning",
+      href: "#4",
+      price: "Fra 600kr",
+      imageSrc: "/Metaveiledning.jpg",
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
     },
-    // More products...
+    {
+      id: 4,
+      name: "Gruppeveiledning",
+      href: "#4",
+      price: "Fra 600kr",
+      imageSrc: "/Gruppeveiledning.jpg",
+      imageAlt:
+        "Hand holding black machined steel mechanical pencil with brass tip and top.",
+    },
+    {
+      id: 5,
+      name: "Leirbål veiledning",
+      href: "#4",
+      price: "Fra 1 149kr",
+      imageSrc: "/Leirbål-veiledning.jpg",
+      imageAlt:
+        "Hand holding black machined steel mechanical pencil with brass tip and top.",
+    },
+    {
+      id: 6,
+      name: "Terapeutiske Samtaler",
+      href: "#4",
+      price: "Fra 1500kr",
+      imageSrc: "/TerapeutiskeS.jpg",
+      imageAlt:
+        "Hand holding black machined steel mechanical pencil with brass tip and top.",
+    },
+    {
+      id: 5,
+      name: "Leirbål veiledning",
+      href: "#4",
+      price: "Fra 1 149kr",
+      imageSrc: "/Leirbål-veiledning.jpg",
+      imageAlt:
+        "Hand holding black machined steel mechanical pencil with brass tip and top.",
+    },
+    {
+      id: 5,
+      name: "Leirbål veiledning",
+      href: "#4",
+      price: "Fra 1 149kr",
+      imageSrc: "/Leirbål-veiledning.jpg",
+      imageAlt:
+        "Hand holding black machined steel mechanical pencil with brass tip and top.",
+    },
+    {
+      id: 5,
+      name: "Leirbål veiledning",
+      href: "#4",
+      price: "Fra 1 149kr",
+      imageSrc: "/Leirbål-veiledning.jpg",
+      imageAlt:
+        "Hand holding black machined steel mechanical pencil with brass tip and top.",
+    },
+    {
+      id: 5,
+      name: "Leirbål veiledning",
+      href: "#4",
+      price: "Fra 1 149kr",
+      imageSrc: "/Leirbål-veiledning.jpg",
+      imageAlt:
+        "Hand holding black machined steel mechanical pencil with brass tip and top.",
+    },
   ];
 
   return (
