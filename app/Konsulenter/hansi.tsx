@@ -4,7 +4,7 @@ import petter from "../../public/hansi.png";
 
 export function Hansi() {
   return (
-    <div className="relative flex flex-col items-center pt-[128px]">
+    <div className="relative flex flex-col items-center pt-[128px] mb-5">
       <Image
         className=" h-auto max-w-lg rounded-lg shadow-lg"
         src={petter}
@@ -45,25 +45,27 @@ export function Hansi() {
       </div>
 
       <p className="mt-10 tracking-widest text-gray-500 md:text-lg">Erfaring</p>
-      <p className="text-sm p-3 text-gray-500">
-        Hans Petter Algerøy har erfaring innenfor faglig veiledning og
-        undervisning. Han har tidligere arbeidet i stillinger som miljøterapeut
-        og faglig veileder hos organisasjoner som Abri Dialogue og Haraldsplass
-        Serio Ung.
-      </p>
-      <p className="text-sm p-3 text-gray-500">
-        Han har hatt ansvar for veiledning til foreldre, fosterforeldre og
-        kollegaer, individuelt og i gruppe. Han har også vært involvert i
-        undervisning og har god erfaring med å samarbeide med barnehager og
-        skoler for å sikre at alle involverte parter er godt rustet rundt
-        barnets behov.
-      </p>
-      <p className="text-sm p-3 text-gray-500">
-        I tillegg til tidligere stillinger, har han praktisk erfaring fra Bergen
-        Kommune sin avdeling for Fosterhjemsveiledning og tilsyn, hvor han har
-        bistått i å veilede fosterforeldre og gjennomføre undervisning innenfor
-        traumebevisst omsorg
-      </p>
+      <div className="flex">
+        <p className="text-sm p-3 text-gray-500">
+          Hans Petter Algerøy har erfaring innenfor faglig veiledning og
+          undervisning. Han har tidligere arbeidet i stillinger som
+          miljøterapeut og faglig veileder hos organisasjoner som Abri Dialogue
+          og Haraldsplass Serio Ung.
+        </p>
+        <p className="text-sm p-3 text-gray-500">
+          Han har hatt ansvar for veiledning til foreldre, fosterforeldre og
+          kollegaer, individuelt og i gruppe. Han har også vært involvert i
+          undervisning og har god erfaring med å samarbeide med barnehager og
+          skoler for å sikre at alle involverte parter er godt rustet rundt
+          barnets behov.
+        </p>
+        <p className="text-sm p-3 text-gray-500">
+          I tillegg til tidligere stillinger, har han praktisk erfaring fra
+          Bergen Kommune sin avdeling for Fosterhjemsveiledning og tilsyn, hvor
+          han har bistått i å veilede fosterforeldre og gjennomføre undervisning
+          innenfor traumebevisst omsorg
+        </p>
+      </div>
     </div>
   );
 }
