@@ -27,14 +27,14 @@ export function Navbar() {
               </a>
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:block font-semibold">
             <div className="ml-10 flex items-baseline space-x-6">
               <div className="relative">
                 <button
                   onClick={toggleDropdown}
                   className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
                 >
-                  Tjenester▼
+                  Tjenester
                 </button>
                 {isDropdownOpen && (
                   <div className="absolute top-10 right-0 bg-[#ffd15a] shadow-lg">
@@ -123,7 +123,7 @@ export function Navbar() {
                 onClick={toggleDropdown}
                 className="text-gray-900 hover:text-gray-500 rounded-lg p-0"
               >
-                Tjenester▼
+                Tjenester
               </button>
             </a>
             <a

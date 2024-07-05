@@ -1,3 +1,4 @@
+import { info } from "console";
 import React from "react";
 
 export default function Kurs() {
@@ -8,6 +9,7 @@ export default function Kurs() {
     price: string;
     imageSrc: string;
     imageAlt: string;
+    info: string;
   }[] = [
     {
       id: 1,
@@ -17,6 +19,7 @@ export default function Kurs() {
       imageSrc: "/Kursfagdager.jpg",
       imageAlt:
         "picture of a stick figure and students the main figure is at a blackbord.",
+      info: "kngen kbneognerogj iuvngoienroin oeojnerln fuirhfiwhfw gingonergoiern oignerognerg oineronero oingoeinf ognoering oeigner rg eg e g er ger ger ge rge g erg erg eg e ger e rg erg er g ",
     },
     {
       id: 2,
@@ -25,6 +28,7 @@ export default function Kurs() {
       price: "Fra 600kr",
       imageSrc: "/Fagligveiledning.jpg",
       imageAlt: "Two persons at a table talking",
+      info: "Vi tilby test test",
     },
     {
       id: 3,
@@ -34,6 +38,7 @@ export default function Kurs() {
       imageSrc: "/Metaveiledning.jpg",
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
+      info: "Vi tilby test test",
     },
     {
       id: 4,
@@ -43,6 +48,7 @@ export default function Kurs() {
       imageSrc: "/Gruppeveiledning.jpg",
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
+      info: "Vi tilby test test",
     },
     {
       id: 5,
@@ -52,6 +58,7 @@ export default function Kurs() {
       imageSrc: "/Leirbål-veiledning.jpg",
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
+      info: "Vi tilby test test",
     },
     {
       id: 6,
@@ -61,6 +68,7 @@ export default function Kurs() {
       imageSrc: "/TerapeutiskeS.jpg",
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
+      info: "Vi tilby test test",
     },
     {
       id: 5,
@@ -70,6 +78,7 @@ export default function Kurs() {
       imageSrc: "/Leirbål-veiledning.jpg",
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
+      info: "Vi tilby test test",
     },
     {
       id: 5,
@@ -79,6 +88,7 @@ export default function Kurs() {
       imageSrc: "/Leirbål-veiledning.jpg",
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
+      info: "Vi tilby test test",
     },
     {
       id: 5,
@@ -88,6 +98,7 @@ export default function Kurs() {
       imageSrc: "/Leirbål-veiledning.jpg",
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
+      info: "Vi tilby test test",
     },
     {
       id: 5,
@@ -97,6 +108,7 @@ export default function Kurs() {
       imageSrc: "/Leirbål-veiledning.jpg",
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
+      info: "Vi tilby test test",
     },
   ];
 
@@ -117,6 +129,7 @@ export default function Kurs() {
                   />
                 </div>
                 <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
+                <h4 className="mt-1 text-sm text-gray-700">{product.info}</h4>
                 <p className="mt-1 text-lg font-medium text-gray-900">
                   {product.price}
                 </p>
