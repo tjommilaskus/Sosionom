@@ -5,6 +5,8 @@ import React from "react";
 
 import KursogFag from "./KursogFag";
 import Veiledning from "./Veiledning";
+import Samtaler from "./Samtaler";
+import Oppfølging from "./Oppføgning";
 
 export default function Tjenester() {
   return (
@@ -12,6 +14,8 @@ export default function Tjenester() {
       <Navbar />
       <KursogFag />
       <Veiledning />
+      <Samtaler />
+      <Oppfølging />
       <Kontaktinfo />
     </div>
   );
