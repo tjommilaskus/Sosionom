@@ -5,9 +5,9 @@ export default function KursogFag() {
     <section className="p-4 mt-24">
       <a href="https://www.material-tailwind.com/magic-ai" target="_blank"></a>
       <div className="relative bg-clip-border  text-gray-700 flex h-full min-h-[314px] w-full flex-col items-center justify-center rounded-xl !bg-gray-50 px-8">
-        <img src="/kursfagdager.jpg" alt="" className="rounded-xl pt-8" />
+        <img src="/Kursfagdager.jpg" alt="" className="rounded-xl pt-8" />
         <div className="container mx-auto text-center">
-          <h2 className="block antialiased tracking-normal font-sans text-xl leading-[1.3] text-gray-700 mb-4 opacity-80">
+          <div className="block antialiased tracking-normal font-sans text-xl leading-[1.3] text-gray-700 mb-4 opacity-80">
             <h3 className="mt-2 font-semibold">Kursene inkluderer</h3>
             <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
               Kursdiplom
@@ -21,7 +21,7 @@ export default function KursogFag() {
             <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
               Avslutningsprøve
             </li>
-          </h2>
+          </div>
           <p className="lock antialiased font-sans text-base font-normal leading-relaxed text-gray-700 mb-14 opacity-70">
             Våre kurs og fagdager kan variere basert på organisasjonen som
             mottar den, målgruppen, samt spesifikke behov hos deltakerne. Våre
