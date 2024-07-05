@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Veiledning() {
   return (
-    <section class="p-4 mt-24">
+    <section className="p-4 mt-24">
       <a href="https://www.material-tailwind.com/magic-ai" target="_blank"></a>
-      <div class="relative bg-clip-border  text-gray-700 flex h-full min-h-[314px] w-full flex-col items-center justify-center rounded-xl !bg-gray-50 px-8">
+      <div className="relative bg-clip-border  text-gray-700 flex h-full min-h-[314px] w-full flex-col items-center justify-center rounded-xl !bg-gray-50 px-8">
         <img src="/VeiledningFag2.jpg" alt="" className="rounded-xl pt-8" />
-        <div class="container mx-auto text-center">
-          <h2 class="block antialiased tracking-normal font-sans text-xl leading-[1.3] text-gray-700 mb-4 opacity-80">
+        <div className="container mx-auto text-center">
+          <h2 className="block antialiased tracking-normal font-sans text-xl leading-[1.3] text-gray-700 mb-4 opacity-80">
             <h3 className="mt-2 font-semibold">Veiledningen baserer seg på</h3>
             <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
               Empirisk fundament
@@ -19,7 +19,7 @@ export default function Veiledning() {
               Kontinuerlig vekst
             </li>
           </h2>
-          <p class="lock antialiased font-sans text-base font-normal leading-relaxed text-gray-700 mb-14 opacity-70">
+          <p className="lock antialiased font-sans text-base font-normal leading-relaxed text-gray-700 mb-14 opacity-70">
             Vår veiledningstjeneste er dedikert til de som opererer i hjertet av
             samfunnet, helse- og omsorgsyrkene. Målet vårt er ikke bare å styrke
             dine faglige kunnskaper, men også å koble dem med den medfølelsen og
@@ -30,11 +30,11 @@ export default function Veiledning() {
           </p>
         </div>
       </div>
-      <div class="px-10 pt-8 pb-16 mt-0 lg:px-30 xl:px-40">
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md lg:h-max lg:scale-105 z-10 translate-y-0">
-            <div class="p-6 text-center">
-              <h5 class="antialiased  uppercase tracking-normal font-sans text-2xl font font-semibold leading-snug text-gray-700 flex justify-center mt-2 mb-2">
+      <div className="px-10 pt-8 pb-16 mt-0 lg:px-30 xl:px-40">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md lg:h-max lg:scale-105 z-10 translate-y-0">
+            <div className="p-6 text-center">
+              <h5 className="antialiased  uppercase tracking-normal font-sans text-2xl font font-semibold leading-snug text-gray-700 flex justify-center mt-2 mb-2">
                 Kurs 1
               </h5>
               <img
@@ -44,7 +44,7 @@ export default function Veiledning() {
               />
 
               <button
-                class="mt-8 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-full flex items-center justify-center gap-4"
+                className="mt-8 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-full flex items-center justify-center gap-4"
                 type="button"
               >
                 Les mer{" "}
@@ -55,7 +55,7 @@ export default function Veiledning() {
                   stroke-width="2"
                   stroke="currentColor"
                   aria-hidden="true"
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                 >
                   <path
                     stroke-linecap="round"
@@ -66,9 +66,9 @@ export default function Veiledning() {
               </button>
             </div>
           </div>
-          <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md lg:h-max lg:scale-105 z-10 translate-y-0">
-            <div class="p-6 text-center">
-              <h5 class="antialiased  uppercase tracking-normal font-sans text-2xl font font-semibold leading-snug text-gray-700 flex justify-center mt-2 mb-2">
+          <div className="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md lg:h-max lg:scale-105 z-10 translate-y-0">
+            <div className="p-6 text-center">
+              <h5 className="antialiased  uppercase tracking-normal font-sans text-2xl font font-semibold leading-snug text-gray-700 flex justify-center mt-2 mb-2">
                 Kurs 2
               </h5>
               <img
@@ -78,7 +78,7 @@ export default function Veiledning() {
               />
 
               <button
-                class="mt-8 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-full flex items-center justify-center gap-4"
+                className="mt-8 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-full flex items-center justify-center gap-4"
                 type="button"
               >
                 Les mer{" "}
@@ -89,7 +89,7 @@ export default function Veiledning() {
                   stroke-width="2"
                   stroke="currentColor"
                   aria-hidden="true"
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                 >
                   <path
                     stroke-linecap="round"
@@ -100,9 +100,9 @@ export default function Veiledning() {
               </button>
             </div>
           </div>
-          <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md lg:h-max lg:scale-105 z-10 translate-y-0">
-            <div class="p-6 text-center">
-              <h5 class="antialiased  uppercase tracking-normal font-sans text-2xl font font-semibold leading-snug text-gray-700 flex justify-center mt-2 mb-2">
+          <div className="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md lg:h-max lg:scale-105 z-10 translate-y-0">
+            <div className="p-6 text-center">
+              <h5 className="antialiased  uppercase tracking-normal font-sans text-2xl font font-semibold leading-snug text-gray-700 flex justify-center mt-2 mb-2">
                 Kurs 3
               </h5>
               <img
@@ -112,7 +112,7 @@ export default function Veiledning() {
               />
 
               <button
-                class="mt-8 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-full flex items-center justify-center gap-4"
+                className="mt-8 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-full flex items-center justify-center gap-4"
                 type="button"
               >
                 Les mer{" "}
@@ -123,7 +123,7 @@ export default function Veiledning() {
                   stroke-width="2"
                   stroke="currentColor"
                   aria-hidden="true"
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                 >
                   <path
                     stroke-linecap="round"
@@ -134,9 +134,9 @@ export default function Veiledning() {
               </button>
             </div>
           </div>
-          <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md lg:h-max lg:scale-105 z-10 translate-y-0">
-            <div class="p-6 text-center">
-              <h5 class="antialiased  uppercase tracking-normal font-sans text-2xl font font-semibold leading-snug text-gray-700 flex justify-center mt-2 mb-2">
+          <div className="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md lg:h-max lg:scale-105 z-10 translate-y-0">
+            <div className="p-6 text-center">
+              <h5 className="antialiased  uppercase tracking-normal font-sans text-2xl font font-semibold leading-snug text-gray-700 flex justify-center mt-2 mb-2">
                 Kurs 4
               </h5>
               <img
@@ -146,7 +146,7 @@ export default function Veiledning() {
               />
 
               <button
-                class="mt-8 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-full flex items-center justify-center gap-4"
+                className="mt-8 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-full flex items-center justify-center gap-4"
                 type="button"
               >
                 Les mer{" "}
@@ -157,7 +157,7 @@ export default function Veiledning() {
                   stroke-width="2"
                   stroke="currentColor"
                   aria-hidden="true"
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                 >
                   <path
                     stroke-linecap="round"
@@ -168,9 +168,9 @@ export default function Veiledning() {
               </button>
             </div>
           </div>
-          <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md lg:h-max lg:scale-105 z-10 translate-y-0">
-            <div class="p-6 text-center">
-              <h5 class="antialiased  uppercase tracking-normal font-sans text-2xl font font-semibold leading-snug text-gray-700 flex justify-center mt-2 mb-2">
+          <div className="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md lg:h-max lg:scale-105 z-10 translate-y-0">
+            <div className="p-6 text-center">
+              <h5 className="antialiased  uppercase tracking-normal font-sans text-2xl font font-semibold leading-snug text-gray-700 flex justify-center mt-2 mb-2">
                 Kurs 5
               </h5>
               <img
@@ -180,7 +180,7 @@ export default function Veiledning() {
               />
 
               <button
-                class="mt-8 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-full flex items-center justify-center gap-4"
+                className="mt-8 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-full flex items-center justify-center gap-4"
                 type="button"
               >
                 Les mer{" "}
@@ -191,7 +191,7 @@ export default function Veiledning() {
                   stroke-width="2"
                   stroke="currentColor"
                   aria-hidden="true"
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                 >
                   <path
                     stroke-linecap="round"
