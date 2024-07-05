@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import hansibilde from "../../public/hansi.png";
+import edvardbilde from "../../public/EdvardBilde.jpg";
 
 export function Edvard() {
   return (
     <div className="relative flex flex-col items-center pb-16 pt-[128px] mb-5 bg-gray-50">
       <Image
         className=" h-auto max-w-lg rounded-lg shadow-lg"
-        src={hansibilde}
+        src={edvardbilde}
         alt="Hansi"
         width={250}
         height={250}
@@ -24,8 +24,6 @@ export function Edvard() {
       </p>
       <ul className="pt-5 max-w-md space-y-1 text-gray-600 list-disc list-insid">
         <li>Bachelorgrad i sosialt arbeid</li>
-        <li></li>
-        <li></li>
       </ul>
 
       <div className="inline-flex items-center justify-center w-full mt-10">
