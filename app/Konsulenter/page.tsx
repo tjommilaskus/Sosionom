@@ -14,8 +14,8 @@ export default function Konsulenter() {
       <Navbar />
       <Hansi />
       <Mary />
-      <Edvard />
       <Eirik />
+      <Edvard />
       <Kontaktinfo />
     </div>
   );
