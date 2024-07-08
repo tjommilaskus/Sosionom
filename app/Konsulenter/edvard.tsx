@@ -14,10 +14,7 @@ export function Edvard() {
       ></Image>
 
       <h1 className="mb-1 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl pt-4">
-        Edvard{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
-          Dyrelie
-        </span>
+        Edvard Eide <span className="text-[#ffd15a]">Dyrlie</span>
       </h1>
       <p className="tracking-widest text-gray-600 md:text-lg">
         Sosionom og Miljøterapeut

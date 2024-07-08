@@ -14,10 +14,7 @@ export function Hansi() {
       ></Image>
 
       <h1 className="mb-1 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl pt-4">
-        Hans-Petter{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
-          Algerøy
-        </span>
+        Hans-Petter <span className="text-[#ffd15a]">Algerøy</span>
       </h1>
       <p className="tracking-widest text-gray-600 md:text-lg">
         Faglig veileder og kursholder
