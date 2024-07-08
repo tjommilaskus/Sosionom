@@ -34,7 +34,7 @@ export default function KursogFag() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md lg:h-max lg:scale-105 z-10 translate-y-0">
             <div className="p-6 text-center">
-              <a href="/Tjenesteinformasjon" target="_blank">
+              <a href="/Tjenesteinformasjon">
                 <h5 className="antialiased  uppercase tracking-normal font-sans text-2xl font font-semibold leading-snug text-gray-700 flex justify-center mt-2 mb-2">
                   Kurs 1
                 </h5>

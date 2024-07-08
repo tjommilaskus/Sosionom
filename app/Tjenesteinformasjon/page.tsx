@@ -5,10 +5,10 @@ import { Kontaktinfo } from "../components/Kontaktinfo";
 
 export default function Informasjonside() {
   return (
-    <div>
+    <>
       <Navbar />
       <KursInfo />
       <Kontaktinfo />
-    </div>
+    </>
   );
 }
