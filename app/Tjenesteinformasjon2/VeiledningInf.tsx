@@ -70,12 +70,11 @@ export default function VeiledningInf() {
           </div>
         </div>
         <p className="font-semibold mt-8 text-gray-700">
-          Kursinnholdet kan variere, men noen viktige komponenter som du ofte
-          kan forvente å lære om inkluderer:
+          Det kan forventes at kurset dekker følgende hovedområder:
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
-            Grunnleggende forståelse av traumer.
+            Stressmestring og forebygging av utbrenthet
           </p>
           <li>
             Hva traumer er og forskjellige typer traumer (enkeltstående,
