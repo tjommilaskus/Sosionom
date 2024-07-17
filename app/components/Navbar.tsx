@@ -17,11 +17,11 @@ export function Navbar() {
   };
 
   return (
-    <nav className="bg-[#ffd15a] p-0 fixed w-full top-0 z-50">
+    <nav className="bg-[#ffd15a] p-0 fixed w-full top-0 z-30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0 p-5">
+            <div className="flex-shrink-0 p-0">
               <a href="/" className="text-gray-900">
                 <Image src={Logo} alt="logo" width={500} height={500} />
               </a>
