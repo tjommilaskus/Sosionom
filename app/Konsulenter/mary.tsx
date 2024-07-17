@@ -43,23 +43,31 @@ export function Mary() {
       <p className="mt-10 tracking-widest text-gray-600 md:text-lg">Erfaring</p>
       <div className="lg:flex p-2">
         <p className="text-sm p-3 text-gray-600">
-          Hans Petter Algerøy har erfaring innenfor faglig veiledning og
-          undervisning. Han har tidligere arbeidet i stillinger som
-          miljøterapeut og faglig veileder hos organisasjoner som Abri Dialogue
-          og Haraldsplass Serio Ung.
+          Mary-Christine har bred erfaring som miljøterapeut og avdelingsleder i
+          Bergen, Oslo og Sogndal kommune. Hun har spesialisering innenfor
+          psykisk og fysisk utviklingshemming siden 2011. Hun har jobbet på
+          ulike bofellesskap, som har betjent voksne med ulike psykiske lidelser
+          og rusproblematikk. Mary-Christine har prioritert trygg omsorg,
+          aggresjons- og voldsforebygging, og har implementert strukturerte
+          programmer for dette.
         </p>
         <p className="text-sm p-3 text-gray-600">
-          Han har hatt ansvar for veiledning til foreldre, fosterforeldre og
-          kollegaer, individuelt og i gruppe. Han har også vært involvert i
-          undervisning og har god erfaring med å samarbeide med barnehager og
-          skoler for å sikre at alle involverte parter er godt rustet rundt
-          barnets behov.
+          Hun har også erfaring som teamleder, og har bidratt til å
+          kvalitetssikre tjenestene. En av hennes prestasjoner er utviklingen av
+          et system for å håndtere atferdsproblemer, som resulterte i at
+          Fantoftåsen bofellesskap fikk utmerkelse som et utviklingsfyrtårn. Som
+          primærkontakt i Oslo har Mary-Christine også hatt det overordnede
+          ansvaret for tjenestemottakere og administrative oppgaver.
         </p>
         <p className="text-sm p-3 text-gray-600">
-          I tillegg til tidligere stillinger, har han praktisk erfaring fra
-          Bergen Kommune sin avdeling for Fosterhjemsveiledning og tilsyn, hvor
-          han har bistått i å veilede fosterforeldre og gjennomføre undervisning
-          innenfor traumebevisst omsorg
+          I tillegg til sin rolle som miljøterapeut, har Mary-Christine erfaring
+          fra det terapeutiske rom. Hun har hjulpet flere mennesker med å se
+          løsninger på sine utfordringer og tenke nyansert om egen psykiske
+          helse. Hennes evne til å tilrettelegge for personlig vekst og
+          hverdagsmotivasjon har vært avgjørende for flere av de menneskene hun
+          har møtt på sin vei til faglig utvikling. Mary-Christine er kjent for
+          sin initiativrike og løsningsorienterte tilnærming, og er alltid på
+          jakt etter ny kunnskap og forbedringer.
         </p>
       </div>
     </div>

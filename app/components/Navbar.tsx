@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import Logo from "../../public/Logo.svg";
+import Logo from "../../public/HansogHennes.png";
 import Link from "next/link";
 
 export function Navbar() {
@@ -23,7 +23,7 @@ export function Navbar() {
           <div className="flex items-center">
             <div className="flex-shrink-0 p-5">
               <a href="/" className="text-gray-900">
-                <Image src={Logo} alt="logo" width={100} height={100} />
+                <Image src={Logo} alt="logo" width={500} height={500} />
               </a>
             </div>
           </div>
