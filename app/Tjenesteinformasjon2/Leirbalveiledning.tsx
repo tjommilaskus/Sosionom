@@ -9,7 +9,7 @@ const includedFeatures = [
   "20t Organisasjoner (18 000,-)",
 ];
 
-export default function Leirbålveiledning() {
+export default function Leirbalveiledning() {
   return (
     <div
       id="Leirbålveiledning"

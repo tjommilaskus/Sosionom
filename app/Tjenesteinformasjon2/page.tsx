@@ -5,7 +5,7 @@ import { Navbar } from "../components/Navbar";
 import { Kontaktinfo } from "../components/Kontaktinfo";
 import Metaveiledning from "./Metaveiledning";
 import Gruppeveiledning from "./Gruppeveiledning";
-import Leirbålveiledning from "./Leirbålveiledning";
+import Leirbalveiledning from "./Leirbalveiledning";
 import VeiledningOnline from "./VeiledningOnline";
 
 export default function VeiledningsInfo() {
@@ -15,7 +15,7 @@ export default function VeiledningsInfo() {
       <VeiledningInf />
       <Metaveiledning />
       <Gruppeveiledning />
-      <Leirbålveiledning />
+      <Leirbalveiledning />
       <VeiledningOnline />
       <Kontaktinfo />
     </>
