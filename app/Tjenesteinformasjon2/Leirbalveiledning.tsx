@@ -5,7 +5,7 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 const includedFeatures = [
   "1t Organisasjoner (1150,-)",
   "2t Organisasjoner (1950,-)",
-  "10t Organisasjoner 9950,-)",
+  "10t Organisasjoner (9950,-)",
   "20t Organisasjoner (18 000,-)",
 ];
 
@@ -15,7 +15,7 @@ export default function Leirbalveiledning() {
       id="Leirbålveiledning"
       className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
     >
-      <div className="p-8 rounded shadow-sm sm:p-16 ">
+      <div className="p-8 rounded shadow-sm sm:p-16">
         <div className="flex flex-col lg:flex-row">
           <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
             <h1 className="uppercase text-xl text-center font-semibold">
@@ -41,7 +41,7 @@ export default function Leirbalveiledning() {
           </div>
         </div>
         <p className="font-semibold mt-8 text-gray-700">
-          Fordeler med “leirbål” veiledning:
+          Fordeler med &ldquo;leirbål&rdquo; veiledning:
         </p>
         <ul className="text-base text-gray-700 list-disc ml-5">
           <li className="font-semibold mt-6">
@@ -69,7 +69,7 @@ export default function Leirbalveiledning() {
             </ul>
           </li>
           <li className="font-semibold mt-6">
-            Leirbål-metodens tre hovedprinsipper:
+            &ldquo;Leirbål&rdquo;-metodens tre hovedprinsipper:
             <ul>
               <li>
                 Trygghet: Leirbålet skal være et trygt sted hvor veisøker kan
@@ -77,9 +77,9 @@ export default function Leirbalveiledning() {
                 fordømmelse eller kritikk.
               </li>
               <li>
-                Varme: Gi emosjonell støtte og omsorg, som "varmen" fra
-                leirbålet, for å hjelpe veisøker med å håndtere arbeidsrelatert
-                stress og belastninger.
+                Varme: Gi emosjonell støtte og omsorg, som &ldquo;varmen&rdquo;
+                fra leirbålet, for å hjelpe veisøker med å håndtere
+                arbeidsrelatert stress og belastninger.
               </li>
               <li>
                 Fellesskap: Fremme en følelse av fellesskap og kameratskap, hvor
@@ -96,19 +96,19 @@ export default function Leirbalveiledning() {
                 Tilleggsinformasjon
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Leirbål-metoden legger vekt på det kollektive og inkluderende
-                aspektet ved veiledning, og oppfordrer deltakerne til å dele og
-                lytte på en åpen og støttende måte. Inspirert av ideen om et
-                leirbål, kan det være mindre struktur og mer vekt på spontan og
-                ærlig dialog og historiefortelling. Akkurat som et leirbål
-                skapes det en følelse av varme, slik at deltakerne kan være
-                trygge for å uttrykke seg og utforske sensitive emner.
+                &ldquo;Leirbål&rdquo;-metoden legger vekt på det kollektive og
+                inkluderende aspektet ved veiledning, og oppfordrer deltakerne
+                til å dele og lytte på en åpen og støttende måte. Inspirert av
+                ideen om et leirbål, kan det være mindre struktur og mer vekt på
+                spontan og ærlig dialog og historiefortelling. Akkurat som et
+                leirbål skapes det en følelse av varme, slik at deltakerne kan
+                være trygge for å uttrykke seg og utforske sensitive emner.
                 Deltakerne kan bli oppmuntret til å bruke fortellinger og
                 personlige historier for å illustrere utfordringer og suksesser,
                 hvilket kan hjelpe andre i gruppen å lære og vokse profesjonelt.
-                En "Leirbål"-veiledningsgruppe kan fungere som en støttegruppe
-                der alle medlemmene bidrar til hverandres velvære gjennom empati
-                og forståelse.
+                En &ldquo;Leirbål&rdquo;-veiledningsgruppe kan fungere som en
+                støttegruppe der alle medlemmene bidrar til hverandres velvære
+                gjennom empati og forståelse.
               </p>
             </div>
             <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
