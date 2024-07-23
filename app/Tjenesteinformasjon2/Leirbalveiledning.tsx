@@ -43,43 +43,51 @@ export default function Leirbalveiledning() {
         <p className="font-semibold mt-8 text-gray-700">
           Fordeler med “leirbål” veiledning:
         </p>
-        <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Økt følelse av samhold</p>
-          <li>Skaper en sterk følelse av fellesskap og støtte.</li>
-        </p>
-        <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Styrket profesjonell kompetanse</p>
-          <li>
-            Bidrar til profesjonell utvikling gjennom deling av erfaringer og
-            kollektiv refleksjon.
+        <ul className="text-base text-gray-700 list-disc ml-5">
+          <li className="font-semibold mt-6">
+            Økt følelse av samhold
+            <ul>
+              <li>Skaper en sterk følelse av fellesskap og støtte.</li>
+            </ul>
           </li>
-        </p>
-        <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Bedret kvalitet i arbeidet</p>
-          <li>
-            Øker bevisstheten om egen praksis og fører til forbedringer i
-            arbeidsmetoder og pasientomsorg.
+          <li className="font-semibold mt-6">
+            Styrket profesjonell kompetanse
+            <ul>
+              <li>
+                Bidrar til profesjonell utvikling gjennom deling av erfaringer
+                og kollektiv refleksjon.
+              </li>
+            </ul>
           </li>
-        </p>
-        <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">
+          <li className="font-semibold mt-6">
+            Bedret kvalitet i arbeidet
+            <ul>
+              <li>
+                Øker bevisstheten om egen praksis og fører til forbedringer i
+                arbeidsmetoder og pasientomsorg.
+              </li>
+            </ul>
+          </li>
+          <li className="font-semibold mt-6">
             “Leirbål”-metodens tre hovedprinsipper:
-          </p>
-          <li>
-            Trygghet: Leirbålet skal være et trygt sted hvor veisøker kan føle
-            seg fri til å dele tanker og følelser uten frykt for fordømmelse
-            eller kritikk.
+            <ul>
+              <li>
+                Trygghet: Leirbålet skal være et trygt sted hvor veisøker kan
+                føle seg fri til å dele tanker og følelser uten frykt for
+                fordømmelse eller kritikk.
+              </li>
+              <li>
+                Varme: Gi emosjonell støtte og omsorg, som "varmen" fra
+                leirbålet, for å hjelpe veisøker med å håndtere arbeidsrelatert
+                stress og belastninger.
+              </li>
+              <li>
+                Fellesskap: Fremme en følelse av fellesskap og kameratskap, hvor
+                veisøker føler seg som en del av et støttende nettverk.
+              </li>
+            </ul>
           </li>
-          <li>
-            Varme: Gi emosjonell støtte og omsorg, som "varmen" fra leirbålet,
-            for å hjelpe veisøker med å håndtere arbeidsrelatert stress og
-            belastninger.
-          </li>
-          <li>
-            Fellesskap: Fremme en følelse av fellesskap og kameratskap, hvor
-            veisøker føler seg som en del av et støttende nettverk.
-          </li>
-        </p>
+        </ul>
 
         <div className="bg-white py-2 sm:py-2">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -90,7 +98,7 @@ export default function Leirbalveiledning() {
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 "Leirbål"-metoden legger vekt på det kollektive og inkluderende
                 aspektet ved veiledning, og oppfordrer deltakerne til å dele og
-                lytte på en åpen og støttende måte.Inspirert av ideen om et
+                lytte på en åpen og støttende måte. Inspirert av ideen om et
                 leirbål, kan det være mindre struktur og mer vekt på spontan og
                 ærlig dialog og historiefortelling. Akkurat som et leirbål
                 skapes det en følelse av varme, slik at deltakerne kan være
