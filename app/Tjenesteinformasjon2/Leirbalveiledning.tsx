@@ -69,7 +69,7 @@ export default function Leirbalveiledning() {
             </ul>
           </li>
           <li className="font-semibold mt-6">
-            “Leirbål”-metodens tre hovedprinsipper:
+            Leirbål-metodens tre hovedprinsipper:
             <ul>
               <li>
                 Trygghet: Leirbålet skal være et trygt sted hvor veisøker kan
@@ -96,7 +96,7 @@ export default function Leirbalveiledning() {
                 Tilleggsinformasjon
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                "Leirbål"-metoden legger vekt på det kollektive og inkluderende
+                Leirbål-metoden legger vekt på det kollektive og inkluderende
                 aspektet ved veiledning, og oppfordrer deltakerne til å dele og
                 lytte på en åpen og støttende måte. Inspirert av ideen om et
                 leirbål, kan det være mindre struktur og mer vekt på spontan og
