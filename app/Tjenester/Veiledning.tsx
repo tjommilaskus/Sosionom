@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Veiledning() {
   return (
-    <section className="p-4 mt-24">
+    <section id="Veiledning" className="p-4 mt-24">
       <a href="https://www.material-tailwind.com/magic-ai" target="_blank"></a>
       <div className="relative bg-clip-border  text-gray-700 flex h-full min-h-[314px] w-full flex-col items-center justify-center rounded-xl !bg-gray-50 px-8">
         <img src="/VeiledningFag2.jpg" alt="" className="rounded-xl pt-8" />

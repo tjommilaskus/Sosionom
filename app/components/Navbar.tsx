@@ -43,25 +43,25 @@ export function Navbar() {
                   <div className="absolute top-10 right-0 bg-[#ffd15a] shadow-lg">
                     <div className="px-4 py-2">
                       <Link
-                        href="/Tjenester"
+                        href="/Tjenester#KursogFag"
                         className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
                       >
                         Kurs & Fagdag
                       </Link>
                       <Link
-                        href="/Tjenester"
+                        href="/Tjenester#Veiledning"
                         className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
                       >
                         Fagelig Veiledning
                       </Link>
                       <Link
-                        href="/Tjenester"
+                        href="/Tjenester#Samtaler"
                         className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
                       >
                         Terapautiske Samtaler
                       </Link>
                       <Link
-                        href="/Tjenester"
+                        href="/Tjenester#Oppfolging"
                         className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
                       >
                         Oppfølging & Avlastning
