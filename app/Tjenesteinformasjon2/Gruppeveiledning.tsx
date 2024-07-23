@@ -9,44 +9,20 @@ const includedFeatures = [
   "20t Student (10 500,-), Privatpersoner (12 000,-), Organisasjoner (18 000,-)",
 ];
 
-export default function VeiledningInf() {
+export default function Gruppeveiledning() {
   return (
     <div
-      id="FageligVeiledning"
+      id="Gruppeveiledning"
       className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
     >
-      <div className="p-8 rounded shadow-sm sm:p-16">
-        <div className="flex flex-col lg:flex-row">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5">
-            <Image
-              src="/VeiledningFag2.jpg"
-              alt="KursInfo"
-              width={500}
-              height={500}
-              className="rounded-xl"
-            />
-          </div>
-          <div className="lg:w-2/3">
-            <p className="mb-4 text-base text-gray-700 mt-2">
-              <p className="font-semibold">Veiledning/Faglig støtte </p>
-              Veiledning/Faglig støtte Veiledning i helse- og omsorgssektoren
-              kan være verdifull for en rekke personer i ulike stillinger og
-              roller innen sektoren. Veiledningen tjener som et støtte- og
-              utviklingsverktøy som kan hjelpe individer med å reflektere over
-              og forbedre deres praksis, håndtere arbeidsrelaterte utfordringer
-              og fremme personlig og profesjonell vekst.
-            </p>
-          </div>
-        </div>
-      </div>
       <div className="p-8 rounded shadow-sm sm:p-16 ">
         <div className="flex flex-col lg:flex-row">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5">
+          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
             <h1 className="uppercase text-xl text-center font-semibold">
-              Veiledning 1
+              Gruppeveiledning
             </h1>
             <Image
-              src="/Fagligveiledning.jpg"
+              src="/Gruppeveiledning.jpg"
               alt="KursInfo"
               width={250}
               height={250}
@@ -55,14 +31,11 @@ export default function VeiledningInf() {
           </div>
           <div className="lg:w-2/3">
             <p className="mb-4 text-xl text-gray-700 lg:mt-16">
-              Faglig veiledning er en strukturell og systematisk prosess som har
-              som mål å støtte og utvikle yrkesutøvere, spesielt innen
-              profesjonelle fagområder som helse og omsorg, undervisning,
-              sosialt arbeid og andre relasjonsbaserte yrker. Formålet med
-              faglig veiledning er å fremme profesjonell utvikling, sikre
-              kvalitetsstandarder i yrkesutøvelse, og bidra til personlig vekst
-              og refleksjon.
-              <br />
+              Gruppeveiledning i helse- og omsorgsyrkene kan være til nytte for
+              en rekke profesjonelle på ulike nivåer innenfor helse- og
+              omsorgsfeltet. Felles for deltakerne er ønsket om å reflektere
+              over eget arbeid, utveksle erfaringer og lære av hverandre i en
+              strukturert setting.
             </p>
           </div>
         </div>
@@ -70,54 +43,28 @@ export default function VeiledningInf() {
           Noen av de som kan nyttiggjøre seg av faglig veiledning inkluderer:
         </p>
         <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Sykepleiere og helsefagarbeidere</p>
-          <li>
-            Disse utgjør en betydelig del av arbeidsstokken i helse- og
-            omsorgssektoren og kan møte mange stressende situasjoner i sitt
-            daglige arbeid.
-          </li>
-        </p>
-        <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Leger og spesialister</p>
-          <li>
-            Selv om de har omfattende medisinsk trening, kan leger og
-            spesialister ha stor nytte av veiledning når det gjelder
-            pasientomsorg, etiske dilemmaer og arbeidsbelastning.
-          </li>
-        </p>
-        <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Sosialarbeidere</p>
-          <li>
-            De jobber ofte med komplekse brukergrupper og kan ha bruk for støtte
-            til å håndtere den emosjonelle belastningen som ofte følger med
-            arbeidet.
-          </li>
-        </p>
-        <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
-            Psykiatriske sykepleiere og psykologer
+            Sykepleiere og spesialsykepleiere
           </p>
           <li>
-            Disse profesjonelle jobber med mentalt helsearbeid og kan dra nytte
-            av veiledning i sitt terapeutiske arbeid og i møte med vanskelige
-            kliniske beslutninger.
+            Disse fagpersonene kan bruke gruppeveiledning for å diskutere
+            kliniske erfaringer, etiske dilemmaer, og pasientrelaterte saker.
           </li>
         </p>
         <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">
-            Fysioterapeuter og ergoterapeuter
-          </p>
+          <p className="font-semibold mt-6">Leger og medisinske spesialister</p>
           <li>
-            Disse fagpersonene kan benytte faglig veiledning for å diskutere
-            klinisk praksis, pasienthåndtering og interdisiplinært samarbeid.
+            Gruppeveiledning kan være en plattform for fagfolkene til å
+            reflektere over behandlingsbeslutninger og interkollegial
+            samhandling.
           </li>
         </p>
         <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Ledere og administrasjon</p>
+          <p className="font-semibold mt-6">Sosionomer og psykologer</p>
           <li>
-            De som har ledelsesroller kan bruke veiledning for å forbedre
-            ledelsesferdigheter, håndtere organisatoriske utfordringer og støtte
-            sine ansatte.
+            Disse profesjonene håndterer ofte komplekse klientkasus, og
+            gruppeveiledning kan gi en mulighet for å behandle saker på en
+            dypere og mer kollektiv måte.
           </li>
         </p>
         <p className="text-base text-gray-700">
@@ -125,9 +72,16 @@ export default function VeiledningInf() {
             Omsorgsarbeidere og hjelpepleiere
           </p>
           <li>
-            De som arbeider direkte med daglig omsorg og støtte for pasienter og
-            klienter kan bruke veiledning for å diskutere arbeidsmåter,
-            klientrelasjoner og egenomsorg.
+            De kan utveksle erfaringer fra direkte pasientarbeid og diskutere
+            grensesetting, kommunikasjon og emosjonell støtte.
+          </li>
+        </p>
+        <p className="text-base text-gray-700">
+          <p className="font-semibold mt-6">Fysio- og ergoterapeuter</p>
+          <li>
+            Refleksjon over behandlingsmetoder, tverrfaglig samarbeid og
+            klientoppfølging er typiske temaer som kan utforskes i
+            gruppeveiledning.
           </li>
         </p>
         <p className="text-base text-gray-700">
@@ -135,27 +89,34 @@ export default function VeiledningInf() {
             Paramedisinere og ambulansepersonell
           </p>
           <li>
-            Disse kan stå overfor svært stressende og traumatiske situasjoner
-            som kan ha psykologisk påvirkning, og veiledning kan bidra med
-            strategier for å håndtere disse opplevelsene.
+            De kan bruke gruppeveiledning til å bearbeide kritiske hendelser,
+            stressehåndtering og teamarbeid.
           </li>
         </p>
         <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Studenter og nyutdannede</p>
+          <p className="font-semibold mt-6">Mental Helse- og rusarbeidere</p>
           <li>
-            Nyutdannede og studenter som er i praksis eller i starten av sin
-            karriere kan dra stor nytte av veiledning som hjelp til å utvikle
-            god praksis og profesjonell identitet.
+            Dette inkluderer terapeuter som arbeider innenfor rusomsorg og
+            psykisk helsevern, der gruppeveiledning kan bidra til å takle
+            utfordringer og dilemmaer i arbeidet.
+          </li>
+        </p>
+        <p className="text-base text-gray-700">
+          <p className="font-semibold mt-6">Studenter og turnuskandidater</p>
+          <li>
+            For de som er i starten av sin karriere eller fortsatt i sine
+            utdanningsløp, kan gruppeveiledning tilby en lærerik situasjon for å
+            utvikle profesjonelle ferdigheter og identiteter.
           </li>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
-            Freelance, selvstendige behandlere og terapeuter{" "}
+            Ledere i helse- og omsorgssektoren
           </p>
           <li>
-            Disse fagpersonene kan ofte føle seg isolerte i sitt arbeid og kan
-            dra nytte av veiledning for å reflektere over klinisk praksis og
-            profesjonell utvikling.
+            Ledere kan anvende gruppeveiledning til å utvikle lederskap,
+            håndtere personellutfordringer og fremme en kultur av refleksjon og
+            kontinuerlig læringsprosess.
           </li>
         </p>
 
@@ -163,18 +124,22 @@ export default function VeiledningInf() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl sm:text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-4">
-                Pris på fagelig veiledning
+                Tilleggsinformasjon
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Prisen på faglig veiledning varierer avhengig av antall
-                deltakere og varighet av veiledningen. Vi tilbyr en rekke
-                veiledningspakker som kan tilpasses dine behov og budsjett.
+                Gruppeveiledning kan gi en unik mulighet for deltakerne til å
+                lære fra forskjellige perspektiver, støtte hverandre i
+                vanskelige situasjoner og utfordre hverandres antakelser på en
+                konstruktiv måte. Sikkerheten og tilliten i gruppen åpner opp
+                for ærlige samtaler som kan bidra til både personlig og
+                profesjonell vekst. Gruppeveiledning kan også redusere følelser
+                av isolasjon ved å vise at andre kan ha lignende utfordringer.
               </p>
             </div>
             <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
               <div className="p-8 sm:p-10 lg:flex-auto">
                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">
-                  Prisoversikt: Fagelig veiledning
+                  Prisoversikt: Gruppeveiledning
                 </h3>
 
                 <div className="mt-1 flex items-center gap-x-4">
@@ -216,7 +181,7 @@ export default function VeiledningInf() {
                       href="#"
                       className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
-                      Book fagelig veiledning
+                      Bestill time her
                     </a>
                   </div>
                   <p className="mt-6 text-xs leading-5 text-gray-600"></p>

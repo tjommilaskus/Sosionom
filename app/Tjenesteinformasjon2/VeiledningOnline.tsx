@@ -9,20 +9,20 @@ const includedFeatures = [
   "20t Student (10 500,-), Privatpersoner (12 000,-), Organisasjoner (18 000,-)",
 ];
 
-export default function Metaveiledning() {
+export default function VeiledningOnline() {
   return (
     <div
-      id="Metaveiledning"
+      id="VeiledningOnline"
       className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
     >
       <div className="p-8 rounded shadow-sm sm:p-16 ">
         <div className="flex flex-col lg:flex-row">
           <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
             <h1 className="uppercase text-xl text-center font-semibold">
-              Metaveiledning
+              Veiledning Online
             </h1>
             <Image
-              src="/Metaveiledning.jpg"
+              src="/VeiledningOnline.png"
               alt="KursInfo"
               width={250}
               height={250}
@@ -31,93 +31,62 @@ export default function Metaveiledning() {
           </div>
           <div className="lg:w-2/3">
             <p className="mb-4 text-xl text-gray-700 lg:mt-16">
-              Metaveiledning er en form for veiledning som vanligvis rettes mot
-              veiledere og fagfolk som tilbyr veiledning eller supervisjon til
-              andre. I metaveiledning reflekterer veisøkeren over sin egen
-              veiledningspraksis, utfordringer, erfaringer og metoder. Dette
-              bidrar til dybde, perspektiv og økt kvalitet i veiledningsarbeidet
-              deres.
+              Våre veiledningstjenester kan også tilbys online. I en travel
+              hverdag kan veiledning via internett være fordelaktig for flere av
+              de menneskene vi møter. Vi møtes på den digitale plattformen som
+              passer best for våre veisøkere.
             </p>
           </div>
         </div>
         <p className="font-semibold mt-8 text-gray-700">
-          Følgende grupper kan nyttiggjøre seg av metaveiledning:
+          Det er flere fordeler ved å motta veiledning online:
         </p>
         <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Veiledere og supervisorer</p>
+          <p className="font-semibold mt-6">Tilgjengelighet</p>
           <li>
-            Disse kan inkludere kliniske veiledere, lærere i veiledning og de
-            som tilbyr profesjonell veiledning eller supervisjon i en rekke
-            fagfelt.
+            Online veiledning gir større tilgjengelighet for både veisøkeren og
+            veilederen. Det er ikke nødvendig å møtes fysisk på et bestemt sted,
+            og veisøkeren kan motta veiledning uavhengig av geografisk
+            beliggenhet. Dette gjør at flere personer kan nyttiggjøre seg av
+            veiledningstjenester uten å være begrenset av avstand eller
+            reisetid.
           </li>
         </p>
         <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Leger og spesialister</p>
+          <p className="font-semibold mt-6">Fleksibilitet: </p>
           <li>
-            Selv om de har omfattende medisinsk trening, kan leger og
-            spesialister ha stor nytte av veiledning når det gjelder
-            pasientomsorg, etiske dilemmaer og arbeidsbelastning.
+            Online veiledning gir større fleksibilitet i forhold til tidspunkt
+            for veiledningssesjoner. Veisøkeren kan lettere tilpasse
+            veiledningstidspunktene etter sine behov og daglige rutiner. Det er
+            også enklere å avtale endringer og justeringer i timeplanen.
           </li>
         </p>
         <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Ledere og mellomledere</p>
+          <p className="font-semibold mt-6">Komfort</p>
           <li>
-            De som har ansvar for å støtte og utvikle sine ansatte, enten i
-            helse- og omsorgssektoren eller i andre yrker, og som ønsker å
-            forbedre sine ledelses- og veiledningsferdigheter.
+            Mottak av veiledning online foregår i en komfortabel og kjent
+            setting for veisøkeren, for eksempel hjemme eller på kontoret. Dette
+            kan bidra til en avslappet atmosfære og økt åpenhet under
+            veiledningssesjonene.
           </li>
         </p>
         <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">
-            Psykiatriske sykepleiere og psykologer
-          </p>
+          <p className="font-semibold mt-6">Anonymitet</p>
           <li>
-            Disse profesjonelle jobber med mentalt helsearbeid og kan dra nytte
-            av veiledning i sitt terapeutiske arbeid og i møte med vanskelige
-            kliniske beslutninger.
+            Online veiledning gir muligheten til å opprettholde en viss grad av
+            anonymitet. Noen personer kan være mer komfortable med å dele
+            personlige erfaringer og utfordringer når de ikke er fysisk til
+            stede. Dette kan bidra til økt åpenhet og et trygt rom for
+            selvutforskning.
           </li>
         </p>
         <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Erfarne terapeuter og rådgivere</p>
+          <p className="font-semibold mt-6">Teknologiske ressurser</p>
           <li>
-            De som tilbyr terapi eller rådgivning og også veileder kolleger,
-            spesialister eller studenter i deres praksis.
-          </li>
-        </p>
-        <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">
-            Utdannings- og vurderingsansvarlige
-          </p>
-          <li>
-            De som jobber med evaluering og kvalitetssikring av
-            utdanningsprogrammer for praktiserende veiledere og deres
-            veiledningstilbud.
-          </li>
-        </p>
-        <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">
-            Organisasjonsutviklere og konsulenter
-          </p>
-          <li>
-            Individer som arbeider med å utvikle og gjennomføre
-            veiledningsprogrammer i organisasjoner, og som leder prosesser som
-            krer refleksjon og forståelse av menneskelig dynamikk.
-          </li>
-        </p>
-        <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Lærere og akademiske fagfolk</p>
-          <li>
-            Disse profesjonelle kan ha roller der de veileder studenters
-            praksisplasser eller forskningsprosjekter og ønsker å utvikle sin
-            veiledningskompetanse.
-          </li>
-        </p>
-        <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Studenter</p>
-          <li>
-            For å kunne søke om godkjenning som faglig veileder, er det
-            nødvendig å ha gjennomført minimum ti timer med metaveiledning,
-            dersom du selv har en ambisjon om å oppnå faglig godkjenning.
+            Bruk av digitale plattformer og teknologiske verktøy gir muligheten
+            til å dele dokumenter, bilder, videoer og annet materiale under
+            veiledningssesjonene. Dette kan styrke prosessen med å reflektere
+            over og utforske spesifikke temaer.
           </li>
         </p>
 
@@ -128,19 +97,18 @@ export default function Metaveiledning() {
                 Tilleggsinformasjon
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Metaveiledning er en prosess som kan hjelpe veiledere å
-                finjustere sin tilnærming, utvikle nye veiledningsmodeller, bli
-                mer effektive i å identifisere og møte de veiledes behov, og å
-                utvikle en større bevissthet omkring egen praksis. Det er en
-                form for faglig utvikling som sikter mot kontinuerlig
-                forbedring, enten det er i en klinisk, akademisk, organisatorisk
-                eller profesjonell sammenheng.
+                Selv om det er fordeler ved å motta veiledning online, er det
+                også viktig å erkjenne at det er situasjoner og temaer hvor
+                fysisk nærhet og interaksjon kan være mer hensiktsmessig. Det
+                kan være lurt å vurdere behovene og preferansene til hver enkelt
+                veisøker før man bestemmer om online veiledning er det riktige
+                valget.
               </p>
             </div>
             <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
               <div className="p-8 sm:p-10 lg:flex-auto">
                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">
-                  Prisoversikt: Metaveiledning
+                  Prisoversikt: Online Veiledning
                 </h3>
 
                 <div className="mt-1 flex items-center gap-x-4">
