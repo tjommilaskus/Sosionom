@@ -9,41 +9,17 @@ const includedFeatures = [
   "20t Student (10 500,-), Privatpersoner (12 000,-), Organisasjoner (18 000,-)",
 ];
 
-export default function VeiledningInf() {
+export default function Metaveiledning() {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="p-8 rounded shadow-sm sm:p-16">
-        <div className="flex flex-col lg:flex-row">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5">
-            <Image
-              src="/VeiledningFag2.jpg"
-              alt="KursInfo"
-              width={500}
-              height={500}
-              className="rounded-xl"
-            />
-          </div>
-          <div className="lg:w-2/3">
-            <p className="mb-4 text-base text-gray-700 mt-2">
-              <p className="font-semibold">Veiledning/Faglig støtte </p>
-              Veiledning/Faglig støtte Veiledning i helse- og omsorgssektoren
-              kan være verdifull for en rekke personer i ulike stillinger og
-              roller innen sektoren. Veiledningen tjener som et støtte- og
-              utviklingsverktøy som kan hjelpe individer med å reflektere over
-              og forbedre deres praksis, håndtere arbeidsrelaterte utfordringer
-              og fremme personlig og profesjonell vekst.
-            </p>
-          </div>
-        </div>
-      </div>
       <div className="p-8 rounded shadow-sm sm:p-16 ">
         <div className="flex flex-col lg:flex-row">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5">
+          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex">
             <h1 className="uppercase text-xl text-center font-semibold">
               Veiledning 1
             </h1>
             <Image
-              src="/Fagligveiledning.jpg"
+              src="/Metaveiledning.jpg"
               alt="KursInfo"
               width={250}
               height={250}

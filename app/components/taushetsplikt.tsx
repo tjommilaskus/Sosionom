@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Taushetsplikt() {
   return (
-    <div className="flex justify-center items-center mb-8">
+    <div className="flex justify-center items-center mb-8 ">
       <div className="mt-40">
         <div className="flex justify-center">
           <img

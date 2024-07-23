@@ -79,16 +79,15 @@ export default function KursInfo() {
           Kursinnholdet kan variere, men noen viktige komponenter som du ofte
           kan forvente å lære om inkluderer:
         </p>
-        <p className="text-base text-gray-700">
-          <p className="font-semibold mt-6">
-            Grunnleggende forståelse av traumer.
-          </p>
-          <li>
-            Hva traumer er og forskjellige typer traumer (enkeltstående,
-            komplekse utviklingstraumer).
-          </li>
-          <li>Hvordan traumer påvirker hjernen og utviklingen.</li>
+        <p className="text-base text-gray-700 font-semibold mt-6">
+          Grunnleggende forståelse av traumer.
         </p>
+        <li>
+          Hva traumer er og forskjellige typer traumer (enkeltstående, komplekse
+          utviklingstraumer).
+        </li>
+        <li>Hvordan traumer påvirker hjernen og utviklingen.</li>
+
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Symptomer og atferd</p>
           <li>Vanlige symptomer på traumer hos barn og ungdom.</li>

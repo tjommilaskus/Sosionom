@@ -10,8 +10,8 @@ export default function Home() {
       <Navbar />
       <Bakgrunnsbilde />
       <Hero />
-      <Taushetsplikt />
       <Kontaktinfo />
+      <Taushetsplikt />
     </div>
   );
 }
