@@ -3,10 +3,10 @@ import Image from "next/image";
 import { CheckIcon } from "@heroicons/react/20/solid";
 
 const includedFeatures = [
-  "1t Student (600,-), Privatpersoner (700,-), Organisasjoner (1150,-)",
-  "2t Student (1100,-), Privatpersoner (1250,-), Organisasjoner (1950,-)",
-  "10t Student (5500,-), Privatpersoner (6500,-), Organisasjoner 9950,-)",
-  "20t Student (10 500,-), Privatpersoner (12 000,-), Organisasjoner (18 000,-)",
+  "1t Student (600,-), 1t Privatpersoner (700,-), 1t Organisasjoner (1150,-)",
+  "2t Student (1100,-), 2t Privatpersoner (1250,-), 2t Organisasjoner (1950,-)",
+  "10t Student (5500,-), 10t Privatpersoner (6500,-), 10t Organisasjoner 9950,-)",
+  "20t Student (10 500,-), 20t Privatpersoner (12 000,-), 20t Organisasjoner (18 000,-)",
 ];
 
 export default function VeiledningInf() {
@@ -27,15 +27,17 @@ export default function VeiledningInf() {
             />
           </div>
           <div className="lg:w-2/3">
-            <p className="mb-4 text-base text-gray-700 mt-2">
+            <div className="mb-4 text-base text-gray-700 mt-2">
               <p className="font-semibold">Veiledning/Faglig støtte </p>
-              Veiledning/Faglig støtte Veiledning i helse- og omsorgssektoren
-              kan være verdifull for en rekke personer i ulike stillinger og
-              roller innen sektoren. Veiledningen tjener som et støtte- og
-              utviklingsverktøy som kan hjelpe individer med å reflektere over
-              og forbedre deres praksis, håndtere arbeidsrelaterte utfordringer
-              og fremme personlig og profesjonell vekst.
-            </p>
+              <p>
+                Veiledning i helse- og omsorgssektoren kan være verdifull for en
+                rekke personer i ulike stillinger og roller innen sektoren.
+                Veiledningen tjener som et støtte- og utviklingsverktøy som kan
+                hjelpe individer med å reflektere over og forbedre deres
+                praksis, håndtere arbeidsrelaterte utfordringer og fremme
+                personlig og profesjonell vekst.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -53,8 +55,11 @@ export default function VeiledningInf() {
               className="rounded-xl"
             />
           </div>
-          <div className="lg:w-2/3">
-            <p className="mb-4 text-xl text-gray-700 lg:mt-16">
+          <div className="lg:w-2/3 mt-10">
+            <h1 className="text-xl font-semibold text-gray-700">
+              Faglig veiledning
+            </h1>
+            <p className="mb-4 text-xl text-gray-700">
               Faglig veiledning er en strukturell og systematisk prosess som har
               som mål å støtte og utvikle yrkesutøvere, spesielt innen
               profesjonelle fagområder som helse og omsorg, undervisning,
@@ -71,110 +76,103 @@ export default function VeiledningInf() {
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Sykepleiere og helsefagarbeidere</p>
-          <li>
+          <p>
             Disse utgjør en betydelig del av arbeidsstokken i helse- og
             omsorgssektoren og kan møte mange stressende situasjoner i sitt
             daglige arbeid.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Leger og spesialister</p>
-          <li>
+          <p>
             Selv om de har omfattende medisinsk trening, kan leger og
             spesialister ha stor nytte av veiledning når det gjelder
             pasientomsorg, etiske dilemmaer og arbeidsbelastning.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Sosialarbeidere</p>
-          <li>
+          <p>
             De jobber ofte med komplekse brukergrupper og kan ha bruk for støtte
             til å håndtere den emosjonelle belastningen som ofte følger med
             arbeidet.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
             Psykiatriske sykepleiere og psykologer
           </p>
-          <li>
+          <p>
             Disse profesjonelle jobber med mentalt helsearbeid og kan dra nytte
             av veiledning i sitt terapeutiske arbeid og i møte med vanskelige
             kliniske beslutninger.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
             Fysioterapeuter og ergoterapeuter
           </p>
-          <li>
+          <p>
             Disse fagpersonene kan benytte faglig veiledning for å diskutere
             klinisk praksis, pasienthåndtering og interdisiplinært samarbeid.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Ledere og administrasjon</p>
-          <li>
+          <p>
             De som har ledelsesroller kan bruke veiledning for å forbedre
             ledelsesferdigheter, håndtere organisatoriske utfordringer og støtte
             sine ansatte.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
             Omsorgsarbeidere og hjelpepleiere
           </p>
-          <li>
+          <p>
             De som arbeider direkte med daglig omsorg og støtte for pasienter og
             klienter kan bruke veiledning for å diskutere arbeidsmåter,
             klientrelasjoner og egenomsorg.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
             Paramedisinere og ambulansepersonell
           </p>
-          <li>
+          <p>
             Disse kan stå overfor svært stressende og traumatiske situasjoner
             som kan ha psykologisk påvirkning, og veiledning kan bidra med
             strategier for å håndtere disse opplevelsene.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Studenter og nyutdannede</p>
-          <li>
+          <p>
             Nyutdannede og studenter som er i praksis eller i starten av sin
             karriere kan dra stor nytte av veiledning som hjelp til å utvikle
             god praksis og profesjonell identitet.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
             Freelance, selvstendige behandlere og terapeuter{" "}
           </p>
-          <li>
+          <p>
             Disse fagpersonene kan ofte føle seg isolerte i sitt arbeid og kan
             dra nytte av veiledning for å reflektere over klinisk praksis og
             profesjonell utvikling.
-          </li>
+          </p>
         </p>
 
         <div className="bg-white py-2 sm:py-2">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl sm:text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-4">
-                Pris på fagelig veiledning
-              </h2>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Prisen på faglig veiledning varierer avhengig av antall
-                deltakere og varighet av veiledningen. Vi tilbyr en rekke
-                veiledningspakker som kan tilpasses dine behov og budsjett.
-              </p>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-4"></h2>
             </div>
             <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
               <div className="p-8 sm:p-10 lg:flex-auto">
                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">
-                  Prisoversikt: Fagelig veiledning
+                  Prisoversikt: Faglig veiledning
                 </h3>
 
                 <div className="mt-1 flex items-center gap-x-4">
@@ -187,7 +185,7 @@ export default function VeiledningInf() {
                   {includedFeatures.map((feature) => (
                     <li key={feature} className="flex gap-x-3">
                       <CheckIcon
-                        className="h-6 w-5 flex-none text-indigo-600"
+                        className="h-6 w-5 flex-none text-green-600"
                         aria-hidden="true"
                       />
                       {feature}
@@ -214,9 +212,9 @@ export default function VeiledningInf() {
                     </p>
                     <a
                       href="#"
-                      className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
-                      Book fagelig veiledning
+                      Bestill faglig veiledning
                     </a>
                   </div>
                   <p className="mt-6 text-xs leading-5 text-gray-600"></p>

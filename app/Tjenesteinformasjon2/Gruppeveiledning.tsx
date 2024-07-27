@@ -19,7 +19,7 @@ export default function Gruppeveiledning() {
         <div className="flex flex-col lg:flex-row">
           <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
             <h1 className="uppercase text-xl text-center font-semibold">
-              Gruppeveiledning
+              Veiledning 3
             </h1>
             <Image
               src="/Gruppeveiledning.jpg"
@@ -29,8 +29,11 @@ export default function Gruppeveiledning() {
               className="rounded-xl"
             />
           </div>
-          <div className="lg:w-2/3">
-            <p className="mb-4 text-xl text-gray-700 lg:mt-16">
+          <div className="lg:w-2/3 mt-10">
+            <h1 className="text-xl text-gray-700 font-semibold">
+              Gruppeveiledning
+            </h1>
+            <p className="mb-4 text-xl text-gray-700">
               Gruppeveiledning i helse- og omsorgsyrkene kan være til nytte for
               en rekke profesjonelle på ulike nivåer innenfor helse- og
               omsorgsfeltet. Felles for deltakerne er ønsket om å reflektere
@@ -152,7 +155,7 @@ export default function Gruppeveiledning() {
                   {includedFeatures.map((feature) => (
                     <li key={feature} className="flex gap-x-3">
                       <CheckIcon
-                        className="h-6 w-5 flex-none text-indigo-600"
+                        className="h-6 w-5 flex-none text-green-600"
                         aria-hidden="true"
                       />
                       {feature}
@@ -179,7 +182,7 @@ export default function Gruppeveiledning() {
                     </p>
                     <a
                       href="#"
-                      className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Bestill time her
                     </a>

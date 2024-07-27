@@ -52,7 +52,7 @@ export function Navbar() {
                         href="/Tjenester#Veiledning"
                         className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
                       >
-                        Fagelig Veiledning
+                        Faglig Veiledning
                       </Link>
                       <Link
                         href="/Tjenester#Samtaler"
@@ -82,6 +82,7 @@ export function Navbar() {
               >
                 Konsulenter
               </a>
+
               <a
                 href="#kontaktoss"
                 className="text-gray-900 hover:text-gray-500 rounded-lg p-2"

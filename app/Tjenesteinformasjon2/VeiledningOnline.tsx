@@ -19,7 +19,7 @@ export default function VeiledningOnline() {
         <div className="flex flex-col lg:flex-row">
           <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
             <h1 className="uppercase text-xl text-center font-semibold">
-              Veiledning Online
+              Veiledning 5
             </h1>
             <Image
               src="/VeiledningOnline.png"
@@ -29,8 +29,11 @@ export default function VeiledningOnline() {
               className="rounded-xl"
             />
           </div>
-          <div className="lg:w-2/3">
-            <p className="mb-4 text-xl text-gray-700 lg:mt-16">
+          <div className="lg:w-2/3 mt-10">
+            <h2 className="text-xl text-gray-700 font-semibold">
+              Veiledning online
+            </h2>
+            <p className="mb-4 text-xl text-gray-700 ">
               Våre veiledningstjenester kan også tilbys online. I en travel
               hverdag kan veiledning via internett være fordelaktig for flere av
               de menneskene vi møter. Vi møtes på den digitale plattformen som
@@ -43,51 +46,51 @@ export default function VeiledningOnline() {
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Tilgjengelighet</p>
-          <li>
+          <p>
             Online veiledning gir større tilgjengelighet for både veisøkeren og
             veilederen. Det er ikke nødvendig å møtes fysisk på et bestemt sted,
             og veisøkeren kan motta veiledning uavhengig av geografisk
             beliggenhet. Dette gjør at flere personer kan nyttiggjøre seg av
             veiledningstjenester uten å være begrenset av avstand eller
             reisetid.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Fleksibilitet: </p>
-          <li>
+          <p>
             Online veiledning gir større fleksibilitet i forhold til tidspunkt
             for veiledningssesjoner. Veisøkeren kan lettere tilpasse
             veiledningstidspunktene etter sine behov og daglige rutiner. Det er
             også enklere å avtale endringer og justeringer i timeplanen.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Komfort</p>
-          <li>
+          <p>
             Mottak av veiledning online foregår i en komfortabel og kjent
             setting for veisøkeren, for eksempel hjemme eller på kontoret. Dette
             kan bidra til en avslappet atmosfære og økt åpenhet under
             veiledningssesjonene.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Anonymitet</p>
-          <li>
+          <p>
             Online veiledning gir muligheten til å opprettholde en viss grad av
             anonymitet. Noen personer kan være mer komfortable med å dele
             personlige erfaringer og utfordringer når de ikke er fysisk til
             stede. Dette kan bidra til økt åpenhet og et trygt rom for
             selvutforskning.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Teknologiske ressurser</p>
-          <li>
+          <p>
             Bruk av digitale plattformer og teknologiske verktøy gir muligheten
             til å dele dokumenter, bilder, videoer og annet materiale under
             veiledningssesjonene. Dette kan styrke prosessen med å reflektere
             over og utforske spesifikke temaer.
-          </li>
+          </p>
         </p>
 
         <div className="bg-white py-2 sm:py-2">
@@ -121,7 +124,7 @@ export default function VeiledningOnline() {
                   {includedFeatures.map((feature) => (
                     <li key={feature} className="flex gap-x-3">
                       <CheckIcon
-                        className="h-6 w-5 flex-none text-indigo-600"
+                        className="h-6 w-5 flex-none text-green-600"
                         aria-hidden="true"
                       />
                       {feature}
@@ -148,7 +151,7 @@ export default function VeiledningOnline() {
                     </p>
                     <a
                       href="#"
-                      className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Bestill time her
                     </a>

@@ -63,8 +63,11 @@ export default function KursInfo() {
               className="rounded-xl"
             />
           </div>
-          <div className="lg:w-2/3">
-            <p className="mb-4 text-xl text-gray-700 lg:mt-20">
+          <div className="lg:w-2/3 mt-10">
+            <h1 className="text-xl  text-gray-700 font-semibold">
+              Traumebevist omsorg
+            </h1>
+            <p className="mb-4 text-xl text-gray-700">
               Et kurs i traumebevisst omsorg (TBO) er designet for å gi
               deltakere kunnskap og ferdigheter for å forstå og støtte personer
               som har opplevd traumer. Traumebevisst omsorg er basert på
@@ -105,14 +108,14 @@ export default function KursInfo() {
           <li>Metoder og teknikker for å skape et trygt og støttende miljø.</li>
           <li>Betydningen av stabilitet, rutiner og forutsigbarhet.</li>
         </p>
-        <p className="text-base text-gray-700">
+        <div className="text-base text-gray-700">
           <p className="font-semibold mt-6">Reguleringsstrategier </p>
           <li>
             Praktiske verktøy og teknikker for å hjelpe barn med å regulere
             følelser og atferd.
           </li>
           <li>Mindfulness, pusteteknikker og andre beroligende strategier.</li>
-        </p>
+        </div>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Samarbeid og systemer</p>
           <li>
@@ -249,8 +252,11 @@ export default function KursInfo() {
               className="rounded-xl"
             />
           </div>
-          <div className="lg:w-2/3">
-            <p className="mb-4 text-xl text-gray-700 lg:mt-24">
+          <div className="lg:w-2/3 mt-10">
+            <h1 className="text-xl  text-gray-700 font-semibold">
+              Ivaretakelse av hjelperen
+            </h1>
+            <p className="mb-4 text-xl text-gray-700">
               Et kurs i ivaretakelse av hjelperen i helse- og omsorgsyrker vil
               typisk fokusere på ulike aspekter av helsepersonells velvære og
               bærekraft i deres rolle som omsorgsgivere.

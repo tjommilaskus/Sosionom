@@ -19,7 +19,7 @@ export default function Leirbalveiledning() {
         <div className="flex flex-col lg:flex-row">
           <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
             <h1 className="uppercase text-xl text-center font-semibold">
-              Leirbålveiledning
+              Veiledning 4
             </h1>
             <Image
               src="/Leirbål-veiledning.jpg"
@@ -29,8 +29,11 @@ export default function Leirbalveiledning() {
               className="rounded-xl"
             />
           </div>
-          <div className="lg:w-2/3">
-            <p className="mb-4 text-xl text-gray-700 lg:mt-16">
+          <div className="lg:w-2/3 mt-10">
+            <h2 className="text-xl text-gray-700 font-semibold">
+              Leirbålveiledning
+            </h2>
+            <p className="mb-4 text-xl text-gray-700">
               Denne formen for veiledning er en humanistisk tilnærming som tar
               hensyn til den emosjonelle og sosiale dimensjonen av veiledning.
               Ved å bruke symbolikken rundt leirbålet, sikter vi på å skape et
@@ -40,76 +43,73 @@ export default function Leirbalveiledning() {
             </p>
           </div>
         </div>
-        <p className="font-semibold mt-8 text-gray-700">
-          Fordeler med &ldquo;leirbål&rdquo; veiledning:
+        <p className=" mt-8 text-gray-700 font-semibold">
+          Fordeler med leirbål veiledning:
         </p>
-        <ul className="text-base text-gray-700 list-disc ml-5">
-          <li className="font-semibold mt-6">
-            Økt følelse av samhold
-            <ul>
-              <li>Skaper en sterk følelse av fellesskap og støtte.</li>
-            </ul>
-          </li>
-          <li className="font-semibold mt-6">
-            Styrket profesjonell kompetanse
-            <ul>
-              <li>
-                Bidrar til profesjonell utvikling gjennom deling av erfaringer
-                og kollektiv refleksjon.
-              </li>
-            </ul>
-          </li>
-          <li className="font-semibold mt-6">
-            Bedret kvalitet i arbeidet
-            <ul>
-              <li>
-                Øker bevisstheten om egen praksis og fører til forbedringer i
-                arbeidsmetoder og pasientomsorg.
-              </li>
-            </ul>
-          </li>
-          <li className="font-semibold mt-6">
+        <div className="text-base text-gray-700 list-disc ml-5">
+          <p className="font-semibold mt-6">Økt følelse av samhold</p>
+          <p>Skaper en sterk følelse av fellesskap og støtte.</p>
+        </div>
+        <div className="text-base text-gray-700 list-disc ml-5">
+          <p className="font-semibold mt-6">Forbedret psykisk helse</p>
+          <p>
+            Gir emosjonell varme og omsorg, som kan bidra til å redusere stress
+            og utbrenthet
+          </p>
+        </div>
+        <div className="text-base text-gray-700 list-disc ml-5">
+          <p className="font-semibold mt-6">Styrket profesjonell kompetanse</p>
+          <p>
+            Bidrar til profesjonell utvikling gjennom deling av erfaringer og
+            kollektiv refleksjon.
+          </p>
+        </div>
+        <div className="text-base text-gray-700 list-disc ml-5">
+          <p className="font-semibold mt-6">Bedret kvalitet i arbeidet</p>
+          <p>
+            Øker bevisstheten om egen praksis og fører til forbedringer i
+            arbeidsmetoder og pasientomsorg.
+          </p>
+        </div>
+        <p className="mt-6 text-lg leading-8 text-gray-600">
+          &ldquo;Leirbål&rdquo;-metoden legger vekt på det kollektive og
+          inkluderende aspektet ved veiledning, og oppfordrer deltakerne til å
+          dele og lytte på en åpen og støttende måte. Inspirert av ideen om et
+          leirbål, kan det være mindre struktur og mer vekt på spontan og ærlig
+          dialog og historiefortelling. Akkurat som et leirbål skapes det en
+          følelse av varme, slik at deltakerne kan være trygge for å uttrykke
+          seg og utforske sensitive emner. Deltakerne kan bli oppmuntret til å
+          bruke fortellinger og personlige historier for å illustrere
+          utfordringer og suksesser, hvilket kan hjelpe andre i gruppen å lære
+          og vokse profesjonelt. En &ldquo;Leirbål&rdquo;-veiledningsgruppe kan
+          fungere som en støttegruppe der alle medlemmene bidrar til hverandres
+          velvære gjennom empati og forståelse.
+        </p>
+        <div className="text-base text-gray-700 list-disc ml-5">
+          <p className="font-semibold mt-6 text-center text-xl">
             &ldquo;Leirbål&rdquo;-metodens tre hovedprinsipper:
-            <ul>
-              <li>
-                Trygghet: Leirbålet skal være et trygt sted hvor veisøker kan
-                føle seg fri til å dele tanker og følelser uten frykt for
-                fordømmelse eller kritikk.
-              </li>
-              <li>
-                Varme: Gi emosjonell støtte og omsorg, som &ldquo;varmen&rdquo;
-                fra leirbålet, for å hjelpe veisøker med å håndtere
-                arbeidsrelatert stress og belastninger.
-              </li>
-              <li>
-                Fellesskap: Fremme en følelse av fellesskap og kameratskap, hvor
-                veisøker føler seg som en del av et støttende nettverk.
-              </li>
-            </ul>
+          </p>
+          <li>
+            Trygghet: Leirbålet skal være et trygt sted hvor veisøker kan føle
+            seg fri til å dele tanker og følelser uten frykt for fordømmelse
+            eller kritikk.
           </li>
-        </ul>
+          <li>
+            Varme: Gi emosjonell støtte og omsorg, som &ldquo;varmen&rdquo; fra
+            leirbålet, for å hjelpe veisøker med å håndtere arbeidsrelatert
+            stress og belastninger.
+          </li>
+          <li>
+            {" "}
+            Fellesskap: Fremme en følelse av fellesskap og kameratskap, hvor
+            veisøker føler seg som en del av et støttende nettverk.
+          </li>
+        </div>
 
         <div className="bg-white py-2 sm:py-2">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl sm:text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-4">
-                Tilleggsinformasjon
-              </h2>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                &ldquo;Leirbål&rdquo;-metoden legger vekt på det kollektive og
-                inkluderende aspektet ved veiledning, og oppfordrer deltakerne
-                til å dele og lytte på en åpen og støttende måte. Inspirert av
-                ideen om et leirbål, kan det være mindre struktur og mer vekt på
-                spontan og ærlig dialog og historiefortelling. Akkurat som et
-                leirbål skapes det en følelse av varme, slik at deltakerne kan
-                være trygge for å uttrykke seg og utforske sensitive emner.
-                Deltakerne kan bli oppmuntret til å bruke fortellinger og
-                personlige historier for å illustrere utfordringer og suksesser,
-                hvilket kan hjelpe andre i gruppen å lære og vokse profesjonelt.
-                En &ldquo;Leirbål&rdquo;-veiledningsgruppe kan fungere som en
-                støttegruppe der alle medlemmene bidrar til hverandres velvære
-                gjennom empati og forståelse.
-              </p>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-4"></h2>
             </div>
             <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
               <div className="p-8 sm:p-10 lg:flex-auto">
@@ -127,7 +127,7 @@ export default function Leirbalveiledning() {
                   {includedFeatures.map((feature) => (
                     <li key={feature} className="flex gap-x-3">
                       <CheckIcon
-                        className="h-6 w-5 flex-none text-indigo-600"
+                        className="h-6 w-5 flex-none text-green-600"
                         aria-hidden="true"
                       />
                       {feature}
@@ -154,7 +154,7 @@ export default function Leirbalveiledning() {
                     </p>
                     <a
                       href="#"
-                      className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Bestill time her
                     </a>

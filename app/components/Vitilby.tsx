@@ -9,7 +9,7 @@ export function Vitilby() {
   return (
     <>
       <div className="grid lg:grid-cols-2 gap-20 p-4 grid-cols-1 shadow-lg mt-3 rounded-xl">
-        <Link href={"/Tjenester"}>
+        <Link href={"/Tjenester#KursogFag"}>
           <Image
             src={KursFagU}
             alt="Kurs og Fagdager"
@@ -17,10 +17,10 @@ export function Vitilby() {
             height={250}
           />
         </Link>
-        <Link href={"/Tjenester"}>
+        <Link href={"/Tjenester#Veiledning"}>
           <Image src={Vei} alt="Fagelig veiledning" width={250} height={250} />
         </Link>
-        <Link href={"/Tjenester"}>
+        <Link href={"/Tjenester#Samtaler"}>
           <Image
             src={TPS}
             alt="Terapautiske samtaler"
@@ -28,7 +28,7 @@ export function Vitilby() {
             height={250}
           />
         </Link>
-        <Link href={"/Tjenester"}>
+        <Link href={"/Tjenester#Oppfolging"}>
           <Image
             src={OA}
             alt="Oppfølging og avlastning"
