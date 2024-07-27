@@ -4,7 +4,10 @@ import edvardbilde from "../../public/EdvardBilde.jpg";
 
 export function Edvard() {
   return (
-    <div className="relative flex flex-col items-center pb-16 pt-[128px] mb-5 bg-gray-50">
+    <div
+      id="Edvard"
+      className="relative flex flex-col items-center pb-16 pt-[128px] mb-5 bg-gray-50"
+    >
       <Image
         className=" h-auto max-w-lg rounded-lg shadow-lg"
         src={edvardbilde}

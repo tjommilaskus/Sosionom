@@ -6,14 +6,20 @@ import Link from "next/link";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Add state for dropdown menu
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  const [isConsultantsDropdownOpen, setIsConsultantsDropdownOpen] =
+    useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+  const toggleServicesDropdown = () => {
+    setIsServicesDropdownOpen(!isServicesDropdownOpen);
+  };
+
+  const toggleConsultantsDropdown = () => {
+    setIsConsultantsDropdownOpen(!isConsultantsDropdownOpen);
   };
 
   return (
@@ -22,24 +28,24 @@ export function Navbar() {
         <div className="flex justify-between items-center h-12">
           <div className="flex items-center">
             <div className="flex-shrink-0 p-0">
-              <a href="/" className="text-gray-900 hidden md:block">
+              <Link href="/" className="text-gray-900 hidden md:block">
                 <Image src={Logo} alt="logo" width={350} height={350} />
-              </a>
-              <a href="/" className="text-gray-900 md:hidden">
+              </Link>
+              <Link href="/" className="text-gray-900 md:hidden">
                 <Image src={Logo} alt="logo" width={200} height={200} />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="hidden md:block font-semibold">
             <div className="ml-10 flex items-baseline space-x-6">
               <div className="relative">
                 <button
-                  onClick={toggleDropdown}
+                  onClick={toggleServicesDropdown}
                   className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
                 >
                   Tjenester
                 </button>
-                {isDropdownOpen && (
+                {isServicesDropdownOpen && (
                   <div className="absolute top-10 right-0 bg-[#ffd15a] shadow-lg">
                     <div className="px-4 py-2">
                       <Link
@@ -70,25 +76,62 @@ export function Navbar() {
                   </div>
                 )}
               </div>
-              <a
+              <Link
                 href="/Priser"
                 className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
               >
                 Priser
-              </a>
-              <a
-                href="/Konsulenter"
-                className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
-              >
-                Konsulenter
-              </a>
-
-              <a
+              </Link>
+              <div className="relative">
+                <button
+                  onClick={toggleConsultantsDropdown}
+                  className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Konsulenter
+                </button>
+                {isConsultantsDropdownOpen && (
+                  <div className="absolute top-10 right-0 bg-[#ffd15a] shadow-lg">
+                    <div className="px-4 py-2">
+                      <Link
+                        href="/Konsulenter#HansPetter"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Hans-Petter Algerøy
+                      </Link>
+                      <Link
+                        href="/Konsulenter#MaryChristine"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Mary-Christine Matovu
+                      </Link>
+                      <Link
+                        href="/Konsulenter#EirikChristian"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Eirik Christian Person
+                      </Link>
+                      <Link
+                        href="/Konsulenter#Edvard"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Edvard Eide Dyrlie
+                      </Link>
+                      <Link
+                        href="/Konsulenter#Timothy"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Timothy Sean Flack
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </div>
+              <Link
                 href="#kontaktoss"
                 className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
               >
                 Kontakt oss
-              </a>
+              </Link>
             </div>
           </div>
           <div className="md:hidden flex items-center">
@@ -118,36 +161,92 @@ export function Navbar() {
       {isOpen && (
         <div className="md:hidden absolute top-16 right-0 bg-[#ffd15a] shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-right">
-            <a
-              href="/Tjenester"
-              className="block text-gray-900
-              hover:text-gray-500 rounded-lg p-2"
+            <button
+              onClick={toggleServicesDropdown}
+              className="block w-full text-right text-gray-900 hover:text-gray-500 rounded-lg p-2"
             >
-              <button
-                onClick={toggleDropdown}
-                className="text-gray-900 hover:text-gray-500 rounded-lg p-0"
-              >
-                Tjenester
-              </button>
-            </a>
-            <a
+              Tjenester
+            </button>
+            {isServicesDropdownOpen && (
+              <div className="pl-4">
+                <Link
+                  href="/Tjenester#KursogFag"
+                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Kurs & Fagdag
+                </Link>
+                <Link
+                  href="/Tjenester#Veiledning"
+                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Faglig Veiledning
+                </Link>
+                <Link
+                  href="/Tjenester#Samtaler"
+                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Terapautiske Samtaler
+                </Link>
+                <Link
+                  href="/Tjenester#Oppfolging"
+                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Oppfølging & Avlastning
+                </Link>
+              </div>
+            )}
+            <Link
               href="/Priser"
               className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
             >
               Priser
-            </a>
-            <a
-              href="/Konsulenter"
-              className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+            </Link>
+            <button
+              onClick={toggleConsultantsDropdown}
+              className="block w-full text-right text-gray-900 hover:text-gray-500 rounded-lg p-2"
             >
               Konsulenter
-            </a>
-            <a
+            </button>
+            {isConsultantsDropdownOpen && (
+              <div className="pl-4">
+                <Link
+                  href="/Konsulenter#HansPetter"
+                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Hans-Petter Algerøy
+                </Link>
+                <Link
+                  href="/Konsulenter#MaryChristine"
+                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Mary-Christine Matovu
+                </Link>
+                <Link
+                  href="/Konsulenter#EirikChristian"
+                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Eirik Christian Person
+                </Link>
+                <Link
+                  href="/Konsulenter#Edvard"
+                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Edvard Eide Dyrlie
+                </Link>
+                <Link
+                  href="/Konsulenter#Timothy"
+                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Timothy Sean Falck
+                </Link>
+              </div>
+            )}
+            <Link
               href="#kontaktoss"
               className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
             >
               Kontakt oss
-            </a>
+            </Link>
           </div>
         </div>
       )}

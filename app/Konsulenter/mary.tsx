@@ -4,7 +4,10 @@ import mary from "../../public/Mary.jpg";
 
 export function Mary() {
   return (
-    <div className="relative flex flex-col items-center pb-16 pt-[128px] mb-5 bg-gray-50">
+    <div
+      id="MaryChristine"
+      className="relative flex flex-col items-center pb-16 pt-[128px] mb-5 bg-gray-50"
+    >
       <Image
         className=" h-auto max-w-lg rounded-lg shadow-lg"
         src={mary}
