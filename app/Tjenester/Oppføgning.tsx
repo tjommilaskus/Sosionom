@@ -10,27 +10,26 @@ export default function Oppfølging() {
           alt=""
           className="rounded-xl pt-8"
         />
-        <div className="container mx-auto text-center">
-          <h2 className="block antialiased tracking-normal font-sans text-xl leading-[1.3] text-gray-700 mb-4 opacity-80">
-            <h3 className="mt-2 font-semibold">Oppfølgningen baserer seg på</h3>
-            <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
-              Aktivisering
-            </li>
-            <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
-              Inkludering
-            </li>
-            <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
-              Kartlegging
-            </li>
-          </h2>
-          <p className="lock antialiased font-sans text-base font-normal leading-relaxed text-gray-700 mb-14 opacity-70">
-            Oppfølging eller avlastning av barn kan være til stor nytte for
-            ulike foreldre og foresatte under forskjellige forhold. Tjenestene
-            kan komme i mange former, hjelpe foreldre til å opprettholde sin
-            fysiske og mentale helse, samt styrke deres evne til å være gode
-            omsorgspersoner, og bidra til et mer stabilt og sunt familiemiljø.
-          </p>
+
+        <div className="block antialiased tracking-normal font-sans text-xl leading-[1.3] text-gray-700 mb-4 opacity-80 text-center">
+          <h3 className="mt-2 font-semibold">Oppfølgningen baserer seg på</h3>
+          <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
+            Aktivisering
+          </li>
+          <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
+            Inkludering
+          </li>
+          <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
+            Kartlegging
+          </li>
         </div>
+        <p className="lock antialiased font-sans text-base font-normal leading-relaxed text-gray-700 mb-14 opacity-70 w-96">
+          Oppfølging eller avlastning av barn kan være til stor nytte for ulike
+          foreldre og foresatte under forskjellige forhold. Tjenestene kan komme
+          i mange former, hjelpe foreldre til å opprettholde sin fysiske og
+          mentale helse, samt styrke deres evne til å være gode omsorgspersoner,
+          og bidra til et mer stabilt og sunt familiemiljø.
+        </p>
       </div>
       <div className="px-10 pt-8 pb-16 mt-0 lg:px-30 xl:px-40">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

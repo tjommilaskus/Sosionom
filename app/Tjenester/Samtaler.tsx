@@ -6,30 +6,32 @@ export default function Samtaler() {
       <a href="https://www.material-tailwind.com/magic-ai" target="_blank"></a>
       <div className="relative bg-clip-border  text-gray-700 flex h-full min-h-[314px] w-full flex-col items-center justify-center rounded-xl !bg-gray-50 px-8">
         <img src="/TerapeutiskeS.jpg" alt="" className="rounded-xl pt-8" />
-        <div className="container mx-auto text-center">
-          <h2 className="block antialiased tracking-normal font-sans text-xl leading-[1.3] text-gray-700 mb-4 opacity-80">
-            <h3 className="mt-2 font-semibold">Terapiens fokusområder</h3>
-            <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
-              Personlige utfordringer, livsproblemer eller psykiske
-              helseproblemer
-            </li>
-            <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
-              Handtere dysfunksjon, styrke familiebånd og løse konflikter
-            </li>
-            <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
-              Hjelpe par med å forbedre eller gjennoppbygge deres forhold
-            </li>
-          </h2>
-          <p className="lock antialiased font-sans text-base font-normal leading-relaxed text-gray-700 mb-14 opacity-70">
-            Livet kaster noen ganger utfordringer vår vei som testet vevet av
-            våre nærmeste relasjoner. Familieterapi tilbyr en vei til
-            forståelse, heling og forsterkning av de båndene som holder
-            familieenheten sammen. Det er en spesialisert praksis utformet for å
-            adressere og løse de komplekse emosjonelle dynamikkene som familier
-            ofte står overfor. Å ta skrittet mot familieterapi kan være
-            begynnelsen på en forvandlingsreise for hele familien.
-          </p>
+
+        <div className="block antialiased tracking-normal font-sans text-xl leading-[1.3] text-gray-700 mb-4 opacity-80">
+          <h3 className="mt-2 font-semibold text-center">
+            Terapiens fokusområder
+          </h3>
+          <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
+            Personlige utfordringer, livsproblemer eller psykiske helseproblemer
+          </li>
+          <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
+            Handtere dysfunksjon, styrke familiebånd og løse konflikter
+          </li>
+          <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
+            Hjelpe par med å forbedre eller gjennoppbygge deres forhold
+          </li>
         </div>
+        <p className="lock antialiased font-sans text-base font-normal leading-relaxed text-gray-700 mb-14 opacity-70 w-96 text-center">
+          Føler du deg overveldet av stress, angst, eller midt i en livskrise?
+          Kanskje du strever med relasjonsproblemer eller ønsker å oppnå
+          personlig vekst? Uansett hva du står overfor, kan terapi være nøkkelen
+          til å finne klarhet, ro, og balanse i livet ditt. Hos oss møter du
+          erfarne og empatiske terapeuter som skreddersyr behandlingen til din
+          unike situasjon. Gjennom trygge og fortrolige samtaler vil du få
+          verktøyene du trenger for å forstå og mestre dine utfordringer. Vi
+          hjelper deg med å bygge bedre relasjoner, øke selvfølelsen, og skape
+          bærekraftige endringer for en lysere fremtid.
+        </p>
       </div>
       <div className="px-10 pt-8 pb-16 mt-0 lg:px-30 xl:px-40">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

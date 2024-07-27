@@ -6,30 +6,30 @@ export default function Veiledning() {
       <a href="https://www.material-tailwind.com/magic-ai" target="_blank"></a>
       <div className="relative bg-clip-border  text-gray-700 flex h-full min-h-[314px] w-full flex-col items-center justify-center rounded-xl !bg-gray-50 px-8">
         <img src="/VeiledningFag2.jpg" alt="" className="rounded-xl pt-8" />
-        <div className="container mx-auto text-center">
-          <h2 className="block antialiased tracking-normal font-sans text-xl leading-[1.3] text-gray-700 mb-4 opacity-80">
-            <h3 className="mt-2 font-semibold">Veiledningen baserer seg på</h3>
-            <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
-              Empirisk fundament
-            </li>
-            <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
-              Aktiv deltagelse
-            </li>
-            <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
-              Kontinuerlig vekst
-            </li>
-          </h2>
-          <p className="lock antialiased font-sans text-base font-normal leading-relaxed text-gray-700 mb-14 opacity-70">
-            Vår veiledningstjeneste er dedikert til de som opererer i hjertet av
-            samfunnet, helse- og omsorgsyrkene. Målet vårt er ikke bare å styrke
-            dine faglige kunnskaper, men også å koble dem med den medfølelsen og
-            empatien som er essensiell i ditt arbeid. Enten du er en student i
-            startgropen, en erfaren yrkesutøver, eller en organisasjon som
-            ønsker å utvikle dine ansatte, har vi skreddersydde løsninger som
-            kan ta deg til neste nivå.
-          </p>
+
+        <div className="block antialiased tracking-normal font-sans text-xl leading-[1.3] text-gray-700 mb-4 opacity-8 text-center">
+          <h3 className="mt-2 font-semibold">Veiledningen baserer seg på</h3>
+          <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
+            Empirisk fundament
+          </li>
+          <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
+            Aktiv deltagelse
+          </li>
+          <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
+            Kontinuerlig vekst
+          </li>
         </div>
+        <p className="lock antialiased font-sans text-base font-normal leading-relaxed text-gray-700 mb-14 opacity-70 w-96 text-center mt-5">
+          Vår veiledningstjeneste er dedikert til de som opererer i hjertet av
+          samfunnet, helse- og omsorgsyrkene. Målet vårt er ikke bare å styrke
+          dine faglige kunnskaper, men også å koble dem med den medfølelsen og
+          empatien som er essensiell i ditt arbeid. Enten du er en student i
+          startgropen, en erfaren yrkesutøver, eller en organisasjon som ønsker
+          å utvikle dine ansatte, har vi skreddersydde løsninger som kan ta deg
+          til neste nivå.
+        </p>
       </div>
+
       <div className="px-10 pt-8 pb-16 mt-0 lg:px-30 xl:px-40">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md lg:h-max lg:scale-105 z-10 translate-y-0">
