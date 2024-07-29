@@ -1,10 +1,8 @@
-import bakgrunn from "../../public/Bakgrunn.png";
-import Image from "next/image";
+import BackgroundVideo from "next-video/background-video";
+import getStarted from "/videos/Infovideo.mp4";
 
 export function Bakgrunnsbilde() {
   return (
-    <div className="relative flex flex-col items-center lg:mt-12 mt-12">
-      <Image src={bakgrunn} alt="bakgrunn" />
-    </div>
+    <BackgroundVideo placeholder="blur" src={getStarted} loop muted autoPlay />
   );
 }
