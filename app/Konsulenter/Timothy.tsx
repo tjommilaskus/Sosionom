@@ -14,7 +14,7 @@ export function Timothy() {
         alt="Hansi"
         width={250}
         height={250}
-      ></Image>
+      />
 
       <h1 className="mb-1 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl pt-4">
         Timothy Sean <span className="text-[#ffd15a]">Falch</span>
