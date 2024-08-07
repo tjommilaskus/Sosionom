@@ -6,6 +6,7 @@ import { Mary } from "./mary";
 import { Edvard } from "./edvard";
 import { Eirik } from "./eirik";
 import { Mona } from "./Mona";
+import { Timo } from "./timo";
 
 export default function Konsulenter() {
   return (
@@ -14,7 +15,7 @@ export default function Konsulenter() {
       <Hansi />
       <Mary />
       <Mona />
-
+      <Timo />
       <Eirik />
       <Edvard />
       <Kontaktinfo />
