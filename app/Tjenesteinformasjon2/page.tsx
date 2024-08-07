@@ -7,6 +7,7 @@ import Metaveiledning from "./Metaveiledning";
 import Gruppeveiledning from "./Gruppeveiledning";
 import Leirbalveiledning from "./Leirbalveiledning";
 import VeiledningOnline from "./VeiledningOnline";
+import Taushetsplikt from "../components/taushetsplikt";
 
 export default function VeiledningsInfo() {
   return (
@@ -18,6 +19,7 @@ export default function VeiledningsInfo() {
       <Leirbalveiledning />
       <VeiledningOnline />
       <Kontaktinfo />
+      <Taushetsplikt />
     </>
   );
 }

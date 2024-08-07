@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import edvardbilde from "../../public/EdvardBilde.jpg";
+import BildeMann from "../../public/BildeMann.png";
 
 export function Edvard() {
   return (
@@ -10,7 +10,7 @@ export function Edvard() {
     >
       <Image
         className=" h-auto max-w-lg rounded-lg shadow-lg"
-        src={edvardbilde}
+        src={BildeMann}
         alt="Hansi"
         width={250}
         height={250}

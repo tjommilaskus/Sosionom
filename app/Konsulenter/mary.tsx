@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import mary from "../../public/Mary.jpg";
+import BildeKvinne from "../../public/BildeKvinne.png";
 
 export function Mary() {
   return (
@@ -10,7 +10,7 @@ export function Mary() {
     >
       <Image
         className=" h-auto max-w-lg rounded-lg shadow-lg"
-        src={mary}
+        src={BildeKvinne}
         alt="Hansi"
         width={250}
         height={250}

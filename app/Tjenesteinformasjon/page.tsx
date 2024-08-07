@@ -2,6 +2,7 @@ import React from "react";
 import KursInfo from "./KursInfo";
 import { Navbar } from "../components/Navbar";
 import { Kontaktinfo } from "../components/Kontaktinfo";
+import Taushetsplikt from "../components/taushetsplikt";
 
 export default function Informasjonside() {
   return (
@@ -9,6 +10,7 @@ export default function Informasjonside() {
       <Navbar />
       <KursInfo />
       <Kontaktinfo />
+      <Taushetsplikt />
     </>
   );
 }

@@ -14,7 +14,7 @@ export default function Parterapi() {
         <div className="flex flex-col lg:flex-row">
           <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
             <h1 className="uppercase text-xl text-center font-semibold">
-              Terapi 1
+              Terapi 3
             </h1>
             <Image
               src="/Parterapi.jpg"
@@ -25,87 +25,82 @@ export default function Parterapi() {
             />
           </div>
           <div className="lg:w-2/3 mt-10">
-            <h1 className="text-xl text-gray-700 font-semibold">
-              Individuell terapi
-            </h1>
+            <h1 className="text-xl text-gray-700 font-semibold">Parterapi</h1>
             <p className="mb-4 text-xl text-gray-700">
-              Individuelle terapeutiske samtaler kan være nyttige for alle,
-              uavhengig av om de opplever spesifikke problemer eller
-              utfordringer. Terapi kan være et verdifullt redskap for å fremme
-              velvære, selvinnsikt og økte muligheter for personlig utvikling.
-              <br />
-              <br />
-              Noen ganger kaster livet utfordringer vår vei, som gjør at det kan
-              være betydningsfullt å ha noen å snakke med.
+              Parterapi er en form for terapi der et par som er gift, samboere
+              eller dater, søker profesjonell hjelp for å forbedre deres
+              forhold. Parterapeuten jobber med paret for å håndtere og løse
+              konflikter, forbedre kommunikasjonen, og styrke forholdet
+              generelt. Parterapi kan hjelpe med en rekke forskjellige
+              utfordringer og kan være verdifullt for alle som ønsker å forbedre
+              kvaliteten på sitt forhold. Ingen problemstilling er for stor
+              eller for liten, og tidlig intervensjon kan ofte forhindre at
+              mindre problemer vokser seg store og vanskeligere å løse.
             </p>
           </div>
         </div>
         <p className="font-semibold mt-8 text-gray-700">
-          Vi kan hjelpe deg med med følgende problemstillinger.
+          Det er forskjellige problemstillinger som kan gjøre det nyttig å gå i
+          parterapi, blant annet:
         </p>
         <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Mentale helseutfordringer</p>
+          <p className="font-semibold mt-6">Kommunikasjonsproblemer</p>
           <p>
-            Terapeutiske samtaler kan være svært nyttige for personer som sliter
-            med angst, depresjon, stress, traumer, eller andre psykiske
-            helseutfordringer. Samtalene gir en trygg og konfidensiell arena
-            hvor personen kan utforske og bearbeide sine følelser, tanker og
-            opplevelser.
+            Vanskeligheter med å uttrykke følelser og tanker tydelig, eller
+            misforståelser som skaper konflikter.
           </p>
         </div>
         <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Utfordringer knyttet til rusbruk</p>
+          <p className="font-semibold mt-6">Konflikthåndtering</p>
           <p>
-            Terapeutiske samtaler gir en viktig støttespill for personen som
-            sliter med rusproblemer. Terapeuten kan fungere som en støttende og
-            ikke-dømmende samtalepartner, som hjelper personen gjennom
-            vanskelige øyeblikk og gir motivasjon til å fortsette på veien mot
-            bedring.
+            Hyppige krangler, eller uenigheter om viktige aspekter av livet som
+            økonomi, barneoppdragelse, eller husarbeid.
           </p>
         </div>
         <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Livsoverganger</p>
+          <p className="font-semibold mt-6">Tillit og utroskap</p>
+          <p>Manglende tillit eller problemer som følge av utroskap.</p>
+        </div>
+        <div className="text-base text-gray-700">
+          <p className="font-semibold mt-6">Intimitet og seksualitet</p>
           <p>
-            Store livsforandringer, som tap av en kjær, skilsmisse, pensjonering
-            eller flytting, kan føre til følelsesmessig turbulens og usikkerhet.
-            Terapeutiske samtaler kan bidra til å takle disse livsovergangene
-            ved å gi støtte, veiledning og hjelpe personen med å finne nye
-            strategier og tilpasninger.
+            Problemer med fysisk eller emosjonell intimitet, tap av sexlyst,
+            eller seksuelle dysfunksjoner. <br />
+            Større livsendringer: Overgangsperioder som for eksempel flytting,
+            jobbytter, fødsel av barn, eller tap av nære.
           </p>
         </div>
         <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">
-            Forhold og mellommenneskelige problemer
-          </p>
+          <p className="font-semibold mt-6">Uavklarte tidligere hendelser</p>
           <p>
-            Terapeutiske samtaler kan hjelpe individer å håndtere konflikter og
-            kommunikasjonsproblemer i sine personlige eller profesjonelle
-            relasjoner. Samtalene gir mulighet til å oppdage mønstre, lære nye
-            kommunikasjonsferdigheter og reparere eller avslutte skadelige
-            relasjoner.
+            Sliter med uoppgjorte tidligere konflikter eller traumer som
+            påvirker nåværende forhold.
           </p>
         </div>
         <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">
-            Livsmestring og personlig utvikling
-          </p>
+          <p className="font-semibold mt-6">Uenigheter</p>
+          <p>Ulikheter i verdier, mål, eller forventninger til forholdet.</p>
+        </div>
+        <div className="text-base text-gray-700">
+          <p className="font-semibold mt-6">Familie og venner</p>
           <p>
-            Terapeutiske samtaler kan være en viktig ressurs for personer som
-            ønsker å jobbe med selvrefleksjon, personlig vekst og utvikling. Ved
-            å reflektere over egne verdier, mål og behov, kan personen få hjelp
-            til å ta beslutninger, øke selvfølelsen og utvikle sunne
-            mestringsstrategier.
+            Problemer forårsaket av innblanding fra slektninger eller venner.
           </p>
         </div>
         <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Identitetsutforsking</p>
+          <p className="font-semibold mt-6">Forventninger og roller</p>
+          <p>Misforståelser om forventingene og rollene i forholdet.</p>
+        </div>
+        <div className="text-base text-gray-700 mt-10">
           <p>
-            Terapeutiske samtaler kan være spesielt nyttige for personer som er
-            usikre på sin egen identitet, seksualitet eller kulturell
-            tilhørighet. Ved å utforske og reflektere over disse temaene kan
-            personen bedre forstå seg selv og oppnå større autentisitet i sitt
-            liv. Hvilke utfordringer kan vi hjelpe deg med gjennom våre
-            terapeutiske samtaler?
+            Parterapi kan også være forebyggende, hjelpe par til å styrke
+            forholdet før alvorlige problemer oppstår. Det er viktig å huske på
+            at både par som opplever spesifikke vanskeligheter og de som bare
+            vil forbedre sitt forhold kan ha nytte av parterapi. I tillegg
+            trenger ikke parterapi å være begrenset til tradisjonelle
+            ekteskapelige forhold; det kan være nyttig for alle typer romantiske
+            partnerskap, inkludert ekteskap, samboerskap, langdistanseforhold og
+            ikke-tradisjonelle relasjoner.
           </p>
         </div>
         <div className="bg-white py-2 sm:py-2">
@@ -113,7 +108,7 @@ export default function Parterapi() {
             <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
               <div className="p-8 sm:p-10 lg:flex-auto">
                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">
-                  Prisoversikt: Individuellterapi
+                  Prisoversikt: Parterapi
                 </h3>
 
                 <div className="mt-1 flex items-center gap-x-4">
@@ -152,7 +147,7 @@ export default function Parterapi() {
                       </span>
                     </p>
                     <a
-                      href="#"
+                      href="#kontaktoss"
                       className="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Bestill time her

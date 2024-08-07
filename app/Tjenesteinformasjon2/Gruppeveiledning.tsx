@@ -49,78 +49,78 @@ export default function Gruppeveiledning() {
           <p className="font-semibold mt-6">
             Sykepleiere og spesialsykepleiere
           </p>
-          <li>
+          <p>
             Disse fagpersonene kan bruke gruppeveiledning for å diskutere
             kliniske erfaringer, etiske dilemmaer, og pasientrelaterte saker.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Leger og medisinske spesialister</p>
-          <li>
+          <p>
             Gruppeveiledning kan være en plattform for fagfolkene til å
             reflektere over behandlingsbeslutninger og interkollegial
             samhandling.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Sosionomer og psykologer</p>
-          <li>
+          <p>
             Disse profesjonene håndterer ofte komplekse klientkasus, og
             gruppeveiledning kan gi en mulighet for å behandle saker på en
             dypere og mer kollektiv måte.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
             Omsorgsarbeidere og hjelpepleiere
           </p>
-          <li>
+          <p>
             De kan utveksle erfaringer fra direkte pasientarbeid og diskutere
             grensesetting, kommunikasjon og emosjonell støtte.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Fysio- og ergoterapeuter</p>
-          <li>
+          <p>
             Refleksjon over behandlingsmetoder, tverrfaglig samarbeid og
             klientoppfølging er typiske temaer som kan utforskes i
             gruppeveiledning.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
             Paramedisinere og ambulansepersonell
           </p>
-          <li>
+          <p>
             De kan bruke gruppeveiledning til å bearbeide kritiske hendelser,
             stressehåndtering og teamarbeid.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Mental Helse- og rusarbeidere</p>
-          <li>
+          <p>
             Dette inkluderer terapeuter som arbeider innenfor rusomsorg og
             psykisk helsevern, der gruppeveiledning kan bidra til å takle
             utfordringer og dilemmaer i arbeidet.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Studenter og turnuskandidater</p>
-          <li>
+          <p>
             For de som er i starten av sin karriere eller fortsatt i sine
             utdanningsløp, kan gruppeveiledning tilby en lærerik situasjon for å
             utvikle profesjonelle ferdigheter og identiteter.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
             Ledere i helse- og omsorgssektoren
           </p>
-          <li>
+          <p>
             Ledere kan anvende gruppeveiledning til å utvikle lederskap,
             håndtere personellutfordringer og fremme en kultur av refleksjon og
             kontinuerlig læringsprosess.
-          </li>
+          </p>
         </p>
 
         <div className="bg-white py-2 sm:py-2">
@@ -181,7 +181,7 @@ export default function Gruppeveiledning() {
                       </span>
                     </p>
                     <a
-                      href="#"
+                      href="#kontaktoss"
                       className="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Bestill time her
