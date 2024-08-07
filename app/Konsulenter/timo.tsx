@@ -47,7 +47,7 @@ export function Timo() {
 
       <p className="mt-10 tracking-widest text-gray-600 md:text-lg">Erfaring</p>
       <div className="lg:flex p-2">
-        <p className="text-sm p-3 text-gray-600">
+        <p className="text-sm p-3 text-gray-600 max-w-96">
           Timothy besitter omfattende erfaring innen trygghet og sikkerhet, med
           spesielt fokus på arbeid med barn og ungdom som har opplevd
           utfordringer knyttet til vold og utagerende atferd. Han har hatt
@@ -60,15 +60,15 @@ export function Timo() {
           gir ham en enestående innsikt i sikkerhets- og trygghetsutfordringer i
           urbane miljøer.
         </p>
-        <p className="text-sm p-3 text-gray-600">
+        <p className="text-sm p-3 text-gray-600 max-w-96">
           Timothy har militær bakgrunn, hvor han har mottatt omfattende
           opplæring i kritiske teknikker for situasjonsforståelse og respons,
-          inkludert 'fight, flight, freeze'-reaksjoner og arrestasjonsteknikk.
-          Videre har han nesten et tiårs erfaring innen kampsport, noe som
-          ytterligere styrker hans praktiske ferdigheter og forståelse av
-          selvforsvar og sikkerhetsteknikker.
+          inkludert <p className="font-style: italic">fight, flight, freeze</p>
+          -reaksjoner og arrestasjonsteknikk. Videre har han nesten et tiårs
+          erfaring innen kampsport, noe som ytterligere styrker hans praktiske
+          ferdigheter og forståelse av selvforsvar og sikkerhetsteknikker.
         </p>
-        <p className="text-sm p-3 text-gray-600">
+        <p className="text-sm p-3 text-gray-600 max-w-96">
           Timothy har også erfaring som verneombud i Haradlsplass Serio Ung.
           Hvor han har bidratt til et trygt arbeidsmiljø hvor de ansatte har
           følt seg ivaretatt i aller største grad. Denne omfattende og varierte
