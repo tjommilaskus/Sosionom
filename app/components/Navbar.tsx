@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import Logo from "../../public/HansogHennes.png";
+import Logo from "../../public/TOOLBARLOGO2.png";
 import Link from "next/link";
 
 export function Navbar() {
@@ -24,12 +24,12 @@ export function Navbar() {
 
   return (
     <nav className="bg-[#ffd15a] p-0 fixed w-full top-0 z-30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-1 sm:px-1 lg:px-1">
         <div className="flex justify-between items-center h-12">
           <div className="flex items-center">
             <div className="flex-shrink-0 p-0">
               <Link href="/" className="text-gray-900 hidden md:block">
-                <Image src={Logo} alt="logo" width={350} height={350} />
+                <Image src={Logo} alt="logo" width={290} height={290} />
               </Link>
               <Link href="/" className="text-gray-900 md:hidden">
                 <Image src={Logo} alt="logo" width={200} height={200} />
@@ -105,6 +105,18 @@ export function Navbar() {
                         Mary-Christine Matovu
                       </Link>
                       <Link
+                        href="/Konsulenter#Timothy"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Mona Ynnesdal
+                      </Link>
+                      <Link
+                        href="/Konsulenter#Timothy"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Timothy Sean Flach
+                      </Link>
+                      <Link
                         href="/Konsulenter#EirikChristian"
                         className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
                       >
@@ -115,12 +127,6 @@ export function Navbar() {
                         className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
                       >
                         Edvard Eide Dyrlie
-                      </Link>
-                      <Link
-                        href="/Konsulenter#Timothy"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Timothy Sean Flack
                       </Link>
                     </div>
                   </div>
@@ -222,6 +228,18 @@ export function Navbar() {
                   Mary-Christine Matovu
                 </Link>
                 <Link
+                  href="/Konsulenter#Timothy"
+                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Mona Ynnesdal
+                </Link>
+                <Link
+                  href="/Konsulenter#Timothy"
+                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Timothy Sean Falch
+                </Link>
+                <Link
                   href="/Konsulenter#EirikChristian"
                   className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
                 >
@@ -232,12 +250,6 @@ export function Navbar() {
                   className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
                 >
                   Edvard Eide Dyrlie
-                </Link>
-                <Link
-                  href="/Konsulenter#Timothy"
-                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Timothy Sean Falck
                 </Link>
               </div>
             )}

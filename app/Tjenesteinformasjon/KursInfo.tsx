@@ -193,7 +193,7 @@ export default function KursInfo() {
                     <li key={feature} className="flex gap-x-3">
                       <CheckIcon
                         aria-hidden="true"
-                        className="h-6 w-5 flex-none text-indigo-600"
+                        className="h-6 w-5 flex-none text-green-600"
                       />
                       {feature}
                     </li>
@@ -222,7 +222,7 @@ export default function KursInfo() {
                     </p>
                     <a
                       href="#kontaktoss"
-                      className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Book kurset
                     </a>
@@ -404,7 +404,7 @@ export default function KursInfo() {
                     <li key={feature} className="flex gap-x-3">
                       <CheckIcon
                         aria-hidden="true"
-                        className="h-6 w-5 flex-none text-indigo-600"
+                        className="h-6 w-5 flex-none text-green-600"
                       />
                       {feature}
                     </li>
@@ -433,7 +433,7 @@ export default function KursInfo() {
                     </p>
                     <a
                       href="#kontaktoss"
-                      className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Book kurset
                     </a>
@@ -610,7 +610,7 @@ export default function KursInfo() {
                     <li key={feature} className="flex gap-x-3">
                       <CheckIcon
                         aria-hidden="true"
-                        className="h-6 w-5 flex-none text-indigo-600"
+                        className="h-6 w-5 flex-none text-green-600"
                       />
                       {feature}
                     </li>
@@ -639,7 +639,7 @@ export default function KursInfo() {
                     </p>
                     <a
                       href="#kontaktoss"
-                      className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Book kurset
                     </a>
