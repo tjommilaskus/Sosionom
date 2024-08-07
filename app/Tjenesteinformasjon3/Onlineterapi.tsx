@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import { CheckIcon } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
-const includedFeatures = ["Student (150,-)", "Privatperson (200,-)"];
+const includedFeatures = ["Student (1050,-)", "Privatperson (1500,-)"];
 
 export default function Onlineterapi() {
   return (
@@ -14,10 +15,10 @@ export default function Onlineterapi() {
         <div className="flex flex-col lg:flex-row">
           <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
             <h1 className="uppercase text-xl text-center font-semibold">
-              Terapi 3
+              Terapi 4
             </h1>
             <Image
-              src="/VeiledningOnline.png"
+              src="/TerapiOnline.png"
               alt="KursInfo"
               width={250}
               height={250}
@@ -52,37 +53,14 @@ export default function Onlineterapi() {
             <br />
             <br />
             Du vil motta instruksjoner via e-post, og hvis du trenger mer
-            informasjon.
+            informasjon, er du velkommen til å{" "}
+            <a
+              className="font-semibold hover:text-gray-500 text-decoration-line: underline"
+              href="#kontaktoss"
+            >
+              kontakte oss her.
+            </a>
           </p>
-        </div>
-        <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Videomodul:</p>
-          <p>
-            Vi har utviklet en videomodul som kan benyttes for å oppnå en dypere
-            forståelse av ulike problemstillinger knyttet til egen psykisk
-            helse. Dersom du ønsker å beskytte dine personlige opplysninger og
-            unngå å dele informasjon med en av våre terapeuter, kan videomodulen
-            tjene som et verktøy for deg.
-          </p>
-        </div>
-        <div className="text-base text-gray-700">
-          <p className=" mt-3">
-            Denne tjenesten tilby informasjon om ulike psykiske lidelser, og gir
-            veiledende informasjon til hvordan det kan bli lettere å forholde
-            seg til problemstillinger som:{" "}
-          </p>
-          <li>Angst</li>
-          <li>Depresjon</li>
-          <li>Hyppig rusbruk</li>
-          <li>Sosial angst</li>
-          <li>Sjalusi</li>
-          <li>Tankekjør</li>
-          <li>Panikkangst</li>
-          <li>Stress</li>
-          <li>Seksuell helse</li>
-          <li>Mellommenneskelige problemer</li>
-          <li>Konflikthåndtering</li>
-          <li>Tillitsproblemer</li>
         </div>
 
         <div className="bg-white py-2 sm:py-2">
@@ -90,7 +68,7 @@ export default function Onlineterapi() {
             <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
               <div className="p-8 sm:p-10 lg:flex-auto">
                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">
-                  Kjøp tilgang til vår videomodul
+                  Prisoversikt: Terepautiske samtaler online
                 </h3>
 
                 <div className="mt-1 flex items-center gap-x-4">
@@ -118,26 +96,78 @@ export default function Onlineterapi() {
                 <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
                   <div className="mx-auto max-w-xs px-8">
                     <p className="text-base font-semibold text-gray-600">
-                      Ikke tilgjengelig enda
+                      Besill i dag
                     </p>
                     <p className="mt-6 flex items-baseline justify-center gap-x-2">
                       <span className="text-5xl font-bold tracking-tight text-gray-900">
-                        fra 150
+                        fra 1050
                       </span>
                       <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">
                         kr
                       </span>
                     </p>
                     <a
-                      href="#"
+                      href="#kontaktoss"
                       className="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
-                      Kommer snart
+                      Besill time her
                     </a>
                   </div>
                   <p className="mt-6 text-xs leading-5 text-gray-600"></p>
                 </div>
               </div>
+            </div>
+            <div className="p-8 rounded shadow-sm sm:p-16 ">
+              <div className="flex flex-col lg:flex-row">
+                <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
+                  <h1 className="uppercase text-xl text-center font-semibold"></h1>
+                  <Image
+                    src="/TerapiOnline.png"
+                    alt="KursInfo"
+                    width={250}
+                    height={250}
+                    className="rounded-xl"
+                  />
+                </div>
+                <div className="lg:w-2/3 mt-10">
+                  <h1 className="text-xl text-gray-700 font-semibold">
+                    Video-modul
+                  </h1>
+                  <p className="mb-4 text-xl text-gray-700">
+                    Vi har utviklet en videomodul som kan benyttes for å oppnå
+                    en dypere forståelse av ulike problemstillinger knyttet til
+                    egen psykisk helse. Dersom du ønsker å beskytte dine
+                    personlige opplysninger og unngå å dele informasjon med en
+                    av våre terapeuter, kan videomodulen tjene som et verktøy
+                    for deg.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-base text-gray-700">
+              <p className="font-semibold"></p>
+              <p></p>
+            </div>
+            <div className="text-base text-gray-700">
+              <p className="font-semibold mb-4">
+                Denne tjenesten tilby informasjon om ulike psykiske lidelser, og
+                gir veiledende informasjon til hvordan det kan bli lettere å
+                forholde seg til problemstillinger som:{" "}
+              </p>
+
+              <li>Angst</li>
+              <li>Depresjon</li>
+              <li>Hyppig rusbruk</li>
+              <li>Sosial angst</li>
+              <li>Sjalusi</li>
+              <li>Tankekjør</li>
+              <li>Panikkangst</li>
+              <li>Stress</li>
+              <li>Seksuell helse</li>
+              <li>Mellommenneskelige problemer</li>
+              <li>Konflikthåndtering</li>
+              <li>Tillitsproblemer</li>
             </div>
           </div>
         </div>
