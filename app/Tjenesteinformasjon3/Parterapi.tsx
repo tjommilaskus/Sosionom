@@ -4,10 +4,10 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 
 const includedFeatures = ["Student (1050,-)", "Privatperson (1500,-)"];
 
-export default function Individuellterapi() {
+export default function Parterapi() {
   return (
     <div
-      id="Individuellterapi"
+      id="Parterapi"
       className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
     >
       <div className="p-8 rounded shadow-sm sm:p-16 ">
@@ -17,7 +17,7 @@ export default function Individuellterapi() {
               Terapi 1
             </h1>
             <Image
-              src="/Individuellterapi.jpg"
+              src="/Parterapi.jpg"
               alt="KursInfo"
               width={250}
               height={250}
