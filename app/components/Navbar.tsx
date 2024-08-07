@@ -105,13 +105,13 @@ export function Navbar() {
                         Mary-Christine Matovu
                       </Link>
                       <Link
-                        href="/Konsulenter#Timothy"
+                        href="/Konsulenter#MonaYnnesdal"
                         className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
                       >
                         Mona Ynnesdal
                       </Link>
                       <Link
-                        href="/Konsulenter#Timothy"
+                        href="/Konsulenter#Timo"
                         className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
                       >
                         Timothy Sean Flach
@@ -228,13 +228,13 @@ export function Navbar() {
                   Mary-Christine Matovu
                 </Link>
                 <Link
-                  href="/Konsulenter#Timothy"
+                  href="/Konsulenter#MonaYnnesdal"
                   className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
                 >
                   Mona Ynnesdal
                 </Link>
                 <Link
-                  href="/Konsulenter#Timothy"
+                  href="/Konsulenter#Timo"
                   className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
                 >
                   Timothy Sean Falch
