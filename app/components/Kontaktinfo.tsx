@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Logo from "../../public/HOVEDLOGO.jpg";
+import Facebook from "../../public/facebook.svg";
+import Instagram from "../../public/instagram.svg";
+import Snapchat from "../../public/snapchat.svg";
+import TikTok from "../../public/tiktok.svg";
 
 export function Kontaktinfo() {
   return (
-    <section id="kontaktoss">
-      <div className=" inset-0 flex flex-col justify-center items-center w-full bg-[#ffd15a] text-center relative mt-14">
+    <section className="bg-[#ffd15a]" id="kontaktoss">
+      <div className=" inset-0 flex flex-col justify-center items-center w-full  text-center relative mt-14">
         <h2 className="text-xl pt-5  text-gray-800 mt-24">Kontakt oss</h2>
         <div className="pt-2">
           <a href="/" className="text-gray-900">
@@ -17,6 +21,12 @@ export function Kontaktinfo() {
           <p className="text-gray-900">📞 957 61 095</p>
           <p className="text-gray-900">Orgnr: 930 653 098</p>
         </div>
+      </div>
+      <div className="flex justify-center space-x-8 mt-6">
+        <Image src={Facebook} alt="facebook" width={50} height={50} />
+        <Image src={Instagram} alt="facebook" width={50} height={50} />
+        <Image src={Snapchat} alt="facebook" width={50} height={50} />
+        <Image src={TikTok} alt="facebook" width={50} height={50} />
       </div>
     </section>
   );

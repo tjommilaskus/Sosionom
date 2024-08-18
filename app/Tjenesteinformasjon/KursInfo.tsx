@@ -464,7 +464,7 @@ export default function KursInfo() {
             />
           </div>
           <div className="lg:w-2/3">
-            <p className="mb-4 text-xl text-gray-700 lg:mt-12">
+            <div className="mb-4 text-xl text-gray-700 lg:mt-12">
               <p className="font-semibold">Trygghet og sikkerhet</p>
               Hovedmålet med et kurs i trygghet og sikkerhet i helse- og
               omsorgsyrkene er å sikre en trygg og sikker arbeidsplass for både
@@ -472,7 +472,7 @@ export default function KursInfo() {
               nødvendig kunnskap, ferdigheter og verktøy for å forebygge,
               håndtere og respondere på potensielle farer og kritiske
               situasjoner som kan oppstå i helse- og omsorgssettinger.
-            </p>
+            </div>
           </div>
         </div>
         <p className="font-semibold mt-8 text-gray-700">
@@ -480,102 +480,102 @@ export default function KursInfo() {
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Selvinnsikt og selvbevissthet</p>
-          <li>
+          <p>
             Deltakerne lærer om viktigheten av å gjenkjenne egne
             stressreaksjoner, følelsesmessige behov og grenser for å forhindre
             utbrenthet.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Stress og belastningsreaksjoner</p>
-          <li>
+          <p>
             Kurset vil typisk dekke hvordan langvarig stress og ulike
             belastningsreaksjoner, inkludert sekundærtraumatisering, påvirker
             helsepersonell og hjelpere.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Forebyggende strategier</p>
-          <li>
+          <p>
             Deltakerne får kunnskap om forebygging og håndtering av stress,
             inkludert strategier for å opprettholde en balanse mellom arbeid og
             fritid og betydningen av regelmessig fysisk aktivitet.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Mestringsteknikker</p>
-          <li>
+          <p>
             En sentral del av kurset vil være konkrete teknikker for
             stressmestring, som for eksempel avspenning, mindfulness,
             pusteteknikker og kognitive omstruktureringsstrategier.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
             Kommunikasjon og interpersonelle ferdigheter
           </p>
-          <li>
+          <p>
             Kommunikasjonsverktøy og ferdigheter vil bli fremhevet som middel
             for å støtte et sunt arbeidsmiljø og redusere jobbrelaterte
             konflikter.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Etablering av støttesystemer</p>
-          <li>
+          <p>
             Viktigheten av og hvordan man skaper og opprettholder støttende
             relasjoner på jobben og i privatlivet, inkludert mentorer,
             veiledere, og profesjonelle nettverk.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
             Grensene Mellom Arbeidsliv og Privatliv
           </p>
-          <li>
+          <p>
             Kurset vil fremheve nødvendigheten av å sette klare grenser for å
             beskytte personlig tid og energi.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Organisasjonskultur</p>
-          <li>
+          <p>
             Diskusjon rundt hvordan en støttende og helsefremmende
             organisasjonskultur kan utvikles og ivaretas, inkludert strategier
             organisasjoner kan implementere for å støtte ansatte.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">
             Berøringspunkt mot helse- og yrkesrett
           </p>
-          <li>
+          <p>
             En introduksjon til juridiske og etiske aspekter av jobben i helse-
             og hjelpeyrker, inkludert hvordan håndtere egne rettigheter og
             forpliktelser i stressende situasjoner.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Case-studier og rollespill</p>
-          <li>
+          <p>
             Praktiske øvelser for å anvende teori i virkelige scenarioer,
             inkludert simulering av vanskelige samtaler og situasjoner.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Resiliensbygging</p>
-          <li>
+          <p>
             Tilnærminger for å bygge personlig og kollektiv resiliens, slik at
             ansatte kan håndtere og komme seg raskt etter vanskelige
             jobbrelaterte situasjoner.
-          </li>
+          </p>
         </p>
         <p className="text-base text-gray-700">
           <p className="font-semibold mt-6">Personlig og Profesjonell Vekst</p>
-          <li>
+          <p>
             Oppmuntring og veiledning for kontinuerlig personlig og profesjonell
             utvikling, for å opprettholde engasjement og tilfredshet i arbeidet.
-          </li>
+          </p>
         </p>
 
         <div className="bg-white py-2 sm:py-2">

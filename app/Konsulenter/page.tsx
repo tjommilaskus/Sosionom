@@ -7,6 +7,7 @@ import { Edvard } from "./edvard";
 import { Eirik } from "./eirik";
 import { Mona } from "./Mona";
 import { Timo } from "./timo";
+import Taushetsplikt from "../components/taushetsplikt";
 
 export default function Konsulenter() {
   return (
@@ -19,6 +20,7 @@ export default function Konsulenter() {
       <Eirik />
       <Edvard />
       <Kontaktinfo />
+      <Taushetsplikt />
     </div>
   );
 }

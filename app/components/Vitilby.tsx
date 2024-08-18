@@ -8,17 +8,24 @@ import Link from "next/link";
 export function Vitilby() {
   return (
     <>
-      <div className="grid lg:grid-cols-2 gap-20 p-4 grid-cols-1 shadow-lg mt-3 rounded-xl">
+      <div className="grid lg:grid-cols-4 gap-20 p-4 grid-cols-1 mt-3 rounded-xl">
         <Link href={"/Tjenester#KursogFag"}>
           <Image
             src={KursFagU}
             alt="Kurs og Fagdager"
             width={250}
             height={250}
+            className="rounded-xl"
           />
         </Link>
         <Link href={"/Tjenester#Veiledning"}>
-          <Image src={Vei} alt="Fagelig veiledning" width={250} height={250} />
+          <Image
+            src={Vei}
+            alt="Fagelig veiledning"
+            width={250}
+            height={250}
+            className="rounded-xl"
+          />
         </Link>
         <Link href={"/Tjenester#Samtaler"}>
           <Image
@@ -26,6 +33,7 @@ export function Vitilby() {
             alt="Terapautiske samtaler"
             width={250}
             height={250}
+            className="rounded-xl"
           />
         </Link>
         <Link href={"/Tjenester#Oppfolging"}>
@@ -34,6 +42,7 @@ export function Vitilby() {
             alt="Oppfølging og avlastning"
             width={250}
             height={250}
+            className="rounded-xl"
           />
         </Link>
       </div>

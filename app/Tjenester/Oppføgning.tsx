@@ -12,7 +12,7 @@ export default function Oppfølging() {
         />
 
         <div className="block antialiased tracking-normal font-sans text-xl leading-[1.3] text-gray-700 mb-4 opacity-80 text-center">
-          <h3 className="mt-2 font-semibold">Oppfølgningen baserer seg på</h3>
+          <h3 className="mt-2 font-semibold">Oppfølgingen baserer seg på</h3>
           <li className="italic font-sans text-base leading-relaxed font-normal text-inherit">
             Aktivisering
           </li>
@@ -37,7 +37,7 @@ export default function Oppfølging() {
             <div className="p-6 text-center">
               <a href="/Tjenesteinformasjon4#Oppfølging">
                 <h5 className="antialiased  uppercase tracking-normal font-sans text-2xl font font-semibold leading-snug text-gray-700 flex justify-center mt-2 mb-2">
-                  Oppfølgning
+                  Oppfølging
                 </h5>
                 <img src="/Oppfølging.jpg" alt="" className="rounded-xl pt-8" />
 
