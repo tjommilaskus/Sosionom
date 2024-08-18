@@ -23,7 +23,9 @@ export function Kontaktinfo() {
         </div>
       </div>
       <div className="flex justify-center space-x-8 mt-6">
-        <Image src={Facebook} alt="facebook" width={50} height={50} />
+        <a href="https://www.facebook.com/profile.php?id=61564195356187">
+          <Image src={Facebook} alt="facebook" width={50} height={50} />
+        </a>
         <Image src={Instagram} alt="facebook" width={50} height={50} />
         <Image src={Snapchat} alt="facebook" width={50} height={50} />
         <Image src={TikTok} alt="facebook" width={50} height={50} />
