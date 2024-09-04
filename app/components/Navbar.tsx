@@ -9,6 +9,7 @@ export function Navbar() {
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const [isConsultantsDropdownOpen, setIsConsultantsDropdownOpen] =
     useState(false);
+  const [isPricesDropdownOpen, setIsPricesDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -16,6 +17,9 @@ export function Navbar() {
 
   const toggleServicesDropdown = () => {
     setIsServicesDropdownOpen(!isServicesDropdownOpen);
+  };
+  const togglePricesDropdown = () => {
+    setIsPricesDropdownOpen(!isPricesDropdownOpen);
   };
 
   const toggleConsultantsDropdown = () => {
@@ -76,12 +80,51 @@ export function Navbar() {
                   </div>
                 )}
               </div>
-              <Link
-                href="/Priser"
-                className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
-              >
-                Priser
-              </Link>
+
+              <div className="relative">
+                <button
+                  onClick={togglePricesDropdown}
+                  className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                >
+                  Priser
+                </button>
+                {isPricesDropdownOpen && (
+                  <div className="absolute top-10 right-0 bg-[#ffd15a] shadow-lg">
+                    <div className="px-4 py-2">
+                      <Link
+                        href="/kursogfagpris"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Kurs & Fagdag
+                      </Link>
+                      <Link
+                        href="/fagligveiledningpris"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Faglig Veiledning
+                      </Link>
+                      <Link
+                        href="/terapeutiskesamtalerpris"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Terapeutiske Samtaler
+                      </Link>
+                      <Link
+                        href="/video"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Gratis Video-moduler
+                      </Link>
+                      <Link
+                        href="/oppfolging"
+                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+                      >
+                        Oppfølging & Avlastning
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </div>
               <div className="relative">
                 <button
                   onClick={toggleConsultantsDropdown}

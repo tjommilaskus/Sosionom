@@ -29,7 +29,7 @@ export function Hero() {
             </svg>
             <p className="ml-2 text-base lg:text-lg text-gray-700">
               Opplever utfordringer med å håndtere stress og emosjonelle
-              reaksjoner opplevelser i arbeidsmiljøet ditt.
+              reaksjoner i arbeidsmiljøet ditt.
             </p>
           </div>
           <div className="p-4 flex flex-row items-center object-contain">
