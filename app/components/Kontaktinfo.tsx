@@ -25,7 +25,10 @@ export function Kontaktinfo() {
         </div>
       </div>
       <div className="flex justify-center space-x-8 mt-6">
-        <a href="https://www.facebook.com/profile.php?id=61564195356187">
+        <a
+          href="https://www.facebook.com/profile.php?id=61564195356187"
+          target="_blank"
+        >
           <Image src={Facebook} alt="facebook" width={50} height={50} />
           <p className=" text-[10px] mt-1">Facebook</p>
         </a>
