@@ -9,7 +9,9 @@ export function Kontaktinfo() {
   return (
     <section className="bg-[#ffd15a]" id="kontaktoss">
       <div className=" inset-0 flex flex-col justify-center items-center w-full  text-center relative mt-14">
-        <h2 className="text-xl pt-5  text-gray-800 mt-24">Kontakt oss</h2>
+        <h2 className="text-xl pt-5  text-gray-800 mt-24 font-bold">
+          Kontakt oss
+        </h2>
         <div className="pt-2">
           <a href="/" className="text-gray-900">
             <Image src={Logo} alt="logo" width={200} height={200} />
@@ -25,10 +27,20 @@ export function Kontaktinfo() {
       <div className="flex justify-center space-x-8 mt-6">
         <a href="https://www.facebook.com/profile.php?id=61564195356187">
           <Image src={Facebook} alt="facebook" width={50} height={50} />
+          <p className=" text-[10px] mt-1">Facebook</p>
         </a>
-        <Image src={Instagram} alt="facebook" width={50} height={50} />
-        <Image src={Snapchat} alt="facebook" width={50} height={50} />
-        <Image src={TikTok} alt="facebook" width={50} height={50} />
+        <a>
+          <Image src={Instagram} alt="facebook" width={50} height={50} />
+          <p className=" text-[10px] mt-1">Instagram</p>
+        </a>
+        <a>
+          <Image src={Snapchat} alt="facebook" width={50} height={50} />
+          <p className=" text-[10px] mt-1">Snapchat</p>
+        </a>
+        <a>
+          <Image src={TikTok} alt="facebook" width={50} height={50} />
+          <p className=" text-[10px] mt-1 ml-1.5">TikTok</p>
+        </a>
       </div>
     </section>
   );

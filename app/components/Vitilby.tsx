@@ -8,7 +8,7 @@ import Link from "next/link";
 export function Vitilby() {
   return (
     <>
-      <div className="grid lg:grid-cols-4 gap-20 p-4 grid-cols-1 mt-3 rounded-xl">
+      <div className=" shadow-xl bg-gray-200 grid lg:grid-cols-4 gap-20 p-4 grid-cols-1 mt-3 rounded-xl">
         <Link href={"/Tjenester#KursogFag"}>
           <Image
             src={KursFagU}

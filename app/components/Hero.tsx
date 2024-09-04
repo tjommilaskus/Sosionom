@@ -1,15 +1,19 @@
 import Image from "next/image";
 import { Vitilby } from "./Vitilby";
+import FamTera from "../../public/Familieterapi3.png";
+import GruVei from "../../public/Gruppeveiledning 2.png";
+import IndTera from "../../public/IndividuellTerapi  2.png";
+import ParTera from "../../public/ParTerapi 2.png";
 
 export function Hero() {
   return (
     <section className=" p-0 m-0">
-      <h1 className="pt-8 pl-4 lg:text-[35px] text-[25px] text-[#426B1F] p-2 text-center font-semibold">
-        Vi tilbyr assistanse dersom du kjenner deg igjen i noen av disse
-        problemstillingene:
-      </h1>
       <div className="p-0 m-0 grid lg:grid-cols-2">
         <div className="flex flex-col justify-center items-start p-0 m-0">
+          <h1 className=" ml-6 mt-8 lg:text-[25px] text-[25px] text-[#426B1F] p-2 text-left font-semibold">
+            Vi tilbyr assistanse dersom du kjenner deg igjen i noen av de
+            følgende problemstillingene:
+          </h1>
           <div className="p-4 flex flex-row items-center object-contain">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -121,33 +125,39 @@ export function Hero() {
           </div>
         </div>
         <div className=" p-4 text-base lg:text-lg text-gray-700">
-          <li className="mb-6">
+          <div className=" mb-4 ml-8 col-span-4 p-4 flex space-x-1 shadow-xl rounded-lg w-[620px] bg-gray-200">
+            <Image src={IndTera} alt="hero" width={130} height={93} />
+            <Image src={FamTera} alt="hero" width={160} height={93} />
+            <Image src={GruVei} alt="hero" width={160} height={93} />
+            <Image src={ParTera} alt="hero" width={130} height={93} />
+          </div>
+          <p className="mb-6 font-semibold">
             Vårt kurs i traumebevisst omsorg kan hjelpe deg med å forstå og
             støtte både deg selv og andre som har opplevd traumer.
-          </li>
-          <li className="mt-6">
+          </p>
+          <p className="mt-6 font-semibold">
             Kurset i ivaretakelse av hjelperen er designet for å fokusere på og
             forbedre helsepersonellets helse og balanse.
-          </li>
-          <li className="mt-6">
+          </p>
+          <p className="mt-6 font-semibold">
             Våre kurs i trygghet og sikkerhet gir deg verktøyene du trenger for
             å håndtere stress og utfordrende situasjoner på en trygg måte.
-          </li>
-          <li className="mt-6">
+          </p>
+          <p className="mt-6 font-semibold">
             Vårt faglige veiledningsprogram gir støtte og utvikling både på
             individuelt og gruppebasis, og kan tilbys online for økt
             tilgjengelighet.
-          </li>
-          <li className="mt-6">
+          </p>
+          <p className="mt-6 font-semibold">
             Terapeutiske samtaler, inklusiv individuell terapi, familieterapi og
             parterapi, kan hjelpe deg med å bearbeide følelser, styrke
             kommunikasjon og overvinne utfordringer.
-          </li>
-          <li className="mt-6">
+          </p>
+          <p className="mt-6 font-semibold">
             Vi tilbyr oppfølging og avlastningstjenester som er skreddersydd for
             ungdom, med fokus på helhetlig utvikling og støtte i samarbeid med
             familien.
-          </li>
+          </p>
         </div>
       </div>
       <div className="p-0 m-0 flex justify-center items-center">
