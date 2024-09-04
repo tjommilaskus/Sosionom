@@ -34,11 +34,11 @@ export function Kontaktinfo() {
         </a>
         <a>
           <Image src={Instagram} alt="facebook" width={50} height={50} />
-          <p className=" text-[10px] mt-1">Instagram</p>
+          <p className=" text-[10px] mt-1 ml-0.5">Instagram</p>
         </a>
         <a>
           <Image src={Snapchat} alt="facebook" width={50} height={50} />
-          <p className=" text-[10px] mt-1">Snapchat</p>
+          <p className=" text-[10px] mt-1 ml-0.5">Snapchat</p>
         </a>
         <a>
           <Image src={TikTok} alt="facebook" width={50} height={50} />
