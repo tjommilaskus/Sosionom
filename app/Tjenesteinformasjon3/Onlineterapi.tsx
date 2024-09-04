@@ -68,7 +68,7 @@ export default function Onlineterapi() {
             <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
               <div className="p-8 sm:p-10 lg:flex-auto">
                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">
-                  Prisoversikt: Terapautiske samtaler online
+                  Prisoversikt: Terapeutiske samtaler online
                 </h3>
 
                 <div className="mt-1 flex items-center gap-x-4">
@@ -122,7 +122,7 @@ export default function Onlineterapi() {
                 <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
                   <h1 className="uppercase text-xl text-center font-semibold"></h1>
                   <Image
-                    src="/TerapiOnline.png"
+                    src="/VideoModul 2.jpg"
                     alt="KursInfo"
                     width={250}
                     height={250}

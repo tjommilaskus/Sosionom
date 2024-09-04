@@ -41,7 +41,7 @@ export default function Individuellterapi() {
           </div>
         </div>
         <p className="font-semibold mt-8 text-gray-700">
-          Vi kan hjelpe deg med med følgende problemstillinger.
+          Vi kan hjelpe deg med med følgende problemstillinger:
         </p>
         <div className="text-base text-gray-700">
           <p className="font-semibold mt-6">Mentale helseutfordringer</p>

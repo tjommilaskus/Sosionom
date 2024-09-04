@@ -19,7 +19,7 @@ export default function Oppfølg() {
         <div className="flex flex-col lg:flex-row">
           <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
             <h1 className="uppercase text-xl text-center font-semibold">
-              Oppfølgning og Avlastning
+              Oppfølging og Avlastning
             </h1>
             <div className="grid grid-cols-2 gap-4">
               <Image
@@ -49,7 +49,10 @@ export default function Oppfølg() {
             </p>
           </div>
         </div>
-        <p className="font-semibold mt-8 text-gray-700"></p>
+        <p className="font-semibold mt-8 text-gray-700">
+          Oppfølging eller avlastning kan passe bra for mennesker i følgende
+          livssitusjoner:
+        </p>
         <div className="text-base text-gray-700">
           <p className="font-semibold mt-6">
             Foreldre til barn med særskilte behov
