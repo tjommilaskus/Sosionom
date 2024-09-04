@@ -124,12 +124,13 @@ export function Hero() {
             </p>
           </div>
         </div>
-        <div className=" p-4 text-base lg:text-lg text-gray-700">
-          <div className=" mb-4 ml-8 col-span-4 p-4 flex space-x-1 shadow-xl rounded-lg w-[620px] bg-gray-200">
-            <Image src={IndTera} alt="hero" width={130} height={93} />
+        
+        <div className=" p-4 text-base lg:text-lg text-gray-700 block">
+        <div className="hidden md:flex fit-content p-4 space-x-1 justify-center shadow-xl rounded-xl ">
+            <Image src={IndTera} alt="hero" width={160} height={93} className="flex"/>
             <Image src={FamTera} alt="hero" width={160} height={93} />
             <Image src={GruVei} alt="hero" width={160} height={93} />
-            <Image src={ParTera} alt="hero" width={130} height={93} />
+            <Image src={ParTera} alt="hero" width={160} height={93} />
           </div>
           <p className="mb-6 font-semibold">
             Vårt kurs i traumebevisst omsorg kan hjelpe deg med å forstå og
