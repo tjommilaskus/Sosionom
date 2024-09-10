@@ -1,206 +1,141 @@
-"use client";
-import { useState } from "react";
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../../public/TOOLBARLOGO2.png";
 import Link from "next/link";
+import Logo from "../../public/TOOLBARLOGO2.png";
+
+const DropdownMenu = ({ isOpen, toggleDropdown, items }) => (
+  <div className="relative group">
+    <button
+      onClick={toggleDropdown}
+      className="text-gray-900 hover:text-gray-500 rounded-lg p-2 flex items-center"
+    >
+      {items.title}
+      <svg
+        className={`w-4 h-4 ml-1 transition-transform ${isOpen ? "rotate-180" : ""}`}
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+    <div className={`absolute left-0 mt-2 w-48 bg-[#ffe68a] shadow-lg rounded-lg ${isOpen ? 'block' : 'hidden'} group-hover:block`}>
+      <div className="py-1">
+        {items.links.map((link, index) => (
+          <Link
+            key={index}
+            href={link.href}
+            className="block text-gray-900 hover:bg-[#ffd15a] hover:text-gray-700 px-4 py-2"
+          >
+            {link.text}
+          </Link>
+        ))}
+      </div>
+    </div>
+  </div>
+);
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
-  const [isConsultantsDropdownOpen, setIsConsultantsDropdownOpen] =
-    useState(false);
-  const [isPricesDropdownOpen, setIsPricesDropdownOpen] = useState(false);
+  const [dropdowns, setDropdowns] = useState({
+    services: false,
+    prices: false,
+    consultants: false,
+  });
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
 
-  const toggleServicesDropdown = () => {
-    setIsServicesDropdownOpen(!isServicesDropdownOpen);
-  };
-  const togglePricesDropdown = () => {
-    setIsPricesDropdownOpen(!isPricesDropdownOpen);
+  const toggleDropdown = (key) => {
+    setDropdowns((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
-  const toggleConsultantsDropdown = () => {
-    setIsConsultantsDropdownOpen(!isConsultantsDropdownOpen);
-  };
+  const menuItems = [
+    {
+      title: "Tjenester",
+      key: "services",
+      links: [
+        { href: "/Tjenester#KursogFag", text: "Kurs & Fagdag" },
+        { href: "/Tjenester#Veiledning", text: "Faglig Veiledning" },
+        { href: "/Tjenester#Samtaler", text: "Terapeutiske Samtaler" },
+        { href: "/Tjenester#Oppfolging", text: "Oppfølging & Avlastning" },
+      ],
+    },
+    {
+      title: "Priser",
+      key: "prices",
+      links: [
+        { href: "/kursogfagpris", text: "Kurs & Fagdag" },
+        { href: "/fagligveiledningpris", text: "Faglig Veiledning" },
+        { href: "/terapeutiskesamtalerpris", text: "Terapeutiske Samtaler" },
+        { href: "/video", text: "Gratis Video-moduler" },
+        { href: "/oppfolging", text: "Oppfølging & Avlastning" },
+      ],
+    },
+    {
+      title: "Konsulenter",
+      key: "consultants",
+      links: [
+        { href: "/Konsulenter#HansPetter", text: "Hans-Petter Algerøy" },
+        { href: "/Konsulenter#MaryChristine", text: "Mary-Christine Matovu" },
+        { href: "/Konsulenter#MonaYnnesdal", text: "Mona Ynnesdal" },
+        { href: "/Konsulenter#Timo", text: "Timothy Sean Flach" },
+        { href: "/Konsulenter#EirikChristian", text: "Eirik Christian Person" },
+        { href: "/Konsulenter#Edvard", text: "Edvard Eide Dyrlie" },
+      ],
+    },
+  ];
 
   return (
     <nav className="bg-[#ffd15a] p-0 fixed w-full top-0 z-30">
-      <div className=" mx-auto px-1 sm:px-1 lg:px-1">
-        <div className="flex justify-between items-center h-12">
-          <div className="flex items-center">
-            <div className="flex-shrink-0 p-0">
-              <Link href="/" className="text-gray-900 hidden md:block">
-                <Image src={Logo} alt="logo" width={290} height={290} />
-              </Link>
-              <Link href="/" className="text-gray-900 md:hidden">
-                <Image src={Logo} alt="logo" width={200} height={200} />
-              </Link>
-            </div>
+      <div className="mx-auto px-4">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex-shrink-0">
+            <Link href="/" className="text-gray-900">
+              <Image
+                src={Logo}
+                alt="logo"
+                width={150}
+                height={150}
+                className="h-14 w-auto"
+              />
+            </Link>
           </div>
-          <div className="hidden md:block font-semibold">
-            <div className="ml-10 flex items-baseline space-x-6">
-              <div className="relative">
-                <button
-                  onClick={toggleServicesDropdown}
-                  className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Tjenester
-                </button>
-                {isServicesDropdownOpen && (
-                  <div className="absolute top-10 right-0 bg-[#ffd15a] shadow-lg">
-                    <div className="px-4 py-2">
-                      <Link
-                        href="/Tjenester#KursogFag"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Kurs & Fagdag
-                      </Link>
-                      <Link
-                        href="/Tjenester#Veiledning"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Faglig Veiledning
-                      </Link>
-                      <Link
-                        href="/Tjenester#Samtaler"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Terapautiske Samtaler
-                      </Link>
-                      <Link
-                        href="/Tjenester#Oppfolging"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Oppfølging & Avlastning
-                      </Link>
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              <div className="relative">
-                <button
-                  onClick={togglePricesDropdown}
-                  className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Priser
-                </button>
-                {isPricesDropdownOpen && (
-                  <div className="absolute top-10 right-0 bg-[#ffd15a] shadow-lg">
-                    <div className="px-4 py-2">
-                      <Link
-                        href="/kursogfagpris"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Kurs & Fagdag
-                      </Link>
-                      <Link
-                        href="/fagligveiledningpris"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Faglig Veiledning
-                      </Link>
-                      <Link
-                        href="/terapeutiskesamtalerpris"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Terapeutiske Samtaler
-                      </Link>
-                      <Link
-                        href="/video"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Gratis Video-moduler
-                      </Link>
-                      <Link
-                        href="/oppfolging"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Oppfølging & Avlastning
-                      </Link>
-                    </div>
-                  </div>
-                )}
-              </div>
-              <div className="relative">
-                <button
-                  onClick={toggleConsultantsDropdown}
-                  className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Konsulenter
-                </button>
-                {isConsultantsDropdownOpen && (
-                  <div className="absolute top-10 right-0 bg-[#ffd15a] shadow-lg">
-                    <div className="px-4 py-2">
-                      <Link
-                        href="/Konsulenter#HansPetter"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Hans-Petter Algerøy
-                      </Link>
-                      <Link
-                        href="/Konsulenter#MaryChristine"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Mary-Christine Matovu
-                      </Link>
-                      <Link
-                        href="/Konsulenter#MonaYnnesdal"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Mona Ynnesdal
-                      </Link>
-                      <Link
-                        href="/Konsulenter#Timo"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Timothy Sean Flach
-                      </Link>
-                      <Link
-                        href="/Konsulenter#EirikChristian"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Eirik Christian Person
-                      </Link>
-                      <Link
-                        href="/Konsulenter#Edvard"
-                        className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                      >
-                        Edvard Eide Dyrlie
-                      </Link>
-                    </div>
-                  </div>
-                )}
-              </div>
-              <Link
-                href="#kontaktoss"
-                className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
-              >
-                Kontakt oss
-              </Link>
-            </div>
+          <div className="hidden md:flex items-center space-x-4">
+            {menuItems.map((item) => (
+              <DropdownMenu
+                key={item.key}
+                isOpen={dropdowns[item.key]}
+                toggleDropdown={() => toggleDropdown(item.key)}
+                items={item}
+              />
+            ))}
+            <Link
+              href="#kontaktoss"
+              className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
+            >
+              Kontakt oss
+            </Link>
           </div>
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden">
             <button
               type="button"
               className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
               onClick={toggleMenu}
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
                 className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
             </button>
@@ -208,97 +143,19 @@ export function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden absolute top-16 right-0 bg-[#ffd15a] shadow-lg">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-right">
-            <button
-              onClick={toggleServicesDropdown}
-              className="block w-full text-right text-gray-900 hover:text-gray-500 rounded-lg p-2"
-            >
-              Tjenester
-            </button>
-            {isServicesDropdownOpen && (
-              <div className="pl-4">
-                <Link
-                  href="/Tjenester#KursogFag"
-                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Kurs & Fagdag
-                </Link>
-                <Link
-                  href="/Tjenester#Veiledning"
-                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Faglig Veiledning
-                </Link>
-                <Link
-                  href="/Tjenester#Samtaler"
-                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Terapautiske Samtaler
-                </Link>
-                <Link
-                  href="/Tjenester#Oppfolging"
-                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Oppfølging & Avlastning
-                </Link>
-              </div>
-            )}
-            <Link
-              href="/Priser"
-              className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-            >
-              Priser
-            </Link>
-            <button
-              onClick={toggleConsultantsDropdown}
-              className="block w-full text-right text-gray-900 hover:text-gray-500 rounded-lg p-2"
-            >
-              Konsulenter
-            </button>
-            {isConsultantsDropdownOpen && (
-              <div className="pl-4">
-                <Link
-                  href="/Konsulenter#HansPetter"
-                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Hans-Petter Algerøy
-                </Link>
-                <Link
-                  href="/Konsulenter#MaryChristine"
-                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Mary-Christine Matovu
-                </Link>
-                <Link
-                  href="/Konsulenter#MonaYnnesdal"
-                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Mona Ynnesdal
-                </Link>
-                <Link
-                  href="/Konsulenter#Timo"
-                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Timothy Sean Falch
-                </Link>
-                <Link
-                  href="/Konsulenter#EirikChristian"
-                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Eirik Christian Person
-                </Link>
-                <Link
-                  href="/Konsulenter#Edvard"
-                  className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
-                >
-                  Edvard Eide Dyrlie
-                </Link>
-              </div>
-            )}
+        <div className="md:hidden bg-[#ffe68a] shadow-lg rounded-b-lg">
+          <div className="px-2 pt-2 pb-3 space-y-1">
+            {menuItems.map((item) => (
+              <DropdownMenu
+                key={item.key}
+                isOpen={dropdowns[item.key]}
+                toggleDropdown={() => toggleDropdown(item.key)}
+                items={item}
+              />
+            ))}
             <Link
               href="#kontaktoss"
-              className="block text-gray-900 hover:text-gray-500 rounded-lg p-2"
+              className="block text-gray-900 hover:bg-[#ffd15a] hover:text-gray-700 rounded-lg p-2"
             >
               Kontakt oss
             </Link>
