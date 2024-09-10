@@ -4,9 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/TOOLBARLOGO2.png";
 
+type DropdownKey = "services" | "prices" | "consultants";
+
 interface MenuItem {
   title: string;
-  key: string;
+  key: DropdownKey;
   links: Array<{ href: string; text: string }>;
 }
 
@@ -51,7 +53,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ isOpen, toggleDropdown, ite
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [dropdowns, setDropdowns] = useState({
+  const [dropdowns, setDropdowns] = useState<Record<DropdownKey, boolean>>({
     services: false,
     prices: false,
     consultants: false,
@@ -59,7 +61,7 @@ export function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const toggleDropdown = (key: string) => {
+  const toggleDropdown = (key: DropdownKey) => {
     setDropdowns((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
@@ -118,7 +120,7 @@ export function Navbar() {
             {menuItems.map((item) => (
               <DropdownMenu
                 key={item.key}
-                isOpen={dropdowns[item.key as keyof typeof dropdowns]}
+                isOpen={dropdowns[item.key]}
                 toggleDropdown={() => toggleDropdown(item.key)}
                 items={item}
               />
@@ -160,7 +162,7 @@ export function Navbar() {
             {menuItems.map((item) => (
               <DropdownMenu
                 key={item.key}
-                isOpen={dropdowns[item.key as keyof typeof dropdowns]}
+                isOpen={dropdowns[item.key]}
                 toggleDropdown={() => toggleDropdown(item.key)}
                 items={item}
               />
