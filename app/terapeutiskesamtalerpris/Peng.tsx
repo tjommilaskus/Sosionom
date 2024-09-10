@@ -33,20 +33,35 @@ export function Peng() {
       ]
     },
     {
-      title: "Annet Kurs",
-      image: "/AnnetKurs.jpg",
-      price: "3900,-",
-      additionalCost: "150kr pr/deltaker",
-      features: [
-        "Feature 1",
-        "Feature 2",
-        "Feature 3",
-        "Feature 4",
-        "Feature 5",
-        "Feature 6",
-        "Feature 7"
-      ]
-    },
+        title: "Annet Kurs",
+        image: "/AnnetKurs.jpg",
+        price: "3900,-",
+        additionalCost: "150kr pr/deltaker",
+        features: [
+          "Feature 1",
+          "Feature 2",
+          "Feature 3",
+          "Feature 4",
+          "Feature 5",
+          "Feature 6",
+          "Feature 7"
+        ]
+      },
+      {
+        title: "Annet Kurs",
+        image: "/AnnetKurs.jpg",
+        price: "3900,-",
+        additionalCost: "150kr pr/deltaker",
+        features: [
+          "Feature 1",
+          "Feature 2",
+          "Feature 3",
+          "Feature 4",
+          "Feature 5",
+          "Feature 6",
+          "Feature 7"
+        ]
+      },
     // Add more courses as needed
   ];
 
