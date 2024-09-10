@@ -4,7 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/TOOLBARLOGO2.png";
 
-const DropdownMenu = ({ isOpen, toggleDropdown, items }) => (
+interface MenuItem {
+  title: string;
+  key: string;
+  links: Array<{ href: string; text: string }>;
+}
+
+interface DropdownMenuProps {
+  isOpen: boolean;
+  toggleDropdown: () => void;
+  items: MenuItem;
+}
+
+const DropdownMenu: React.FC<DropdownMenuProps> = ({ isOpen, toggleDropdown, items }) => (
   <div className="relative group">
     <button
       onClick={toggleDropdown}
@@ -47,11 +59,11 @@ export function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const toggleDropdown = (key) => {
+  const toggleDropdown = (key: string) => {
     setDropdowns((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
-  const menuItems = [
+  const menuItems: MenuItem[] = [
     {
       title: "Tjenester",
       key: "services",
@@ -106,7 +118,7 @@ export function Navbar() {
             {menuItems.map((item) => (
               <DropdownMenu
                 key={item.key}
-                isOpen={dropdowns[item.key]}
+                isOpen={dropdowns[item.key as keyof typeof dropdowns]}
                 toggleDropdown={() => toggleDropdown(item.key)}
                 items={item}
               />
@@ -148,7 +160,7 @@ export function Navbar() {
             {menuItems.map((item) => (
               <DropdownMenu
                 key={item.key}
-                isOpen={dropdowns[item.key]}
+                isOpen={dropdowns[item.key as keyof typeof dropdowns]}
                 toggleDropdown={() => toggleDropdown(item.key)}
                 items={item}
               />
