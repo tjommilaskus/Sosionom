@@ -22,7 +22,7 @@ export function Hero() {
             "Opplever utfordringer i personlige eller familiære relasjoner som du ønsker å jobbe med.",
             "Har et barn eller en ungdom som trenger ekstra oppfølging og støtte for å kunne mestre livet bedre."
           ].map((text, index) => (
-            <div key={index} className="flex items-start mb-4">
+            <div key={index} className="flex items-start mb-4 mt-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
