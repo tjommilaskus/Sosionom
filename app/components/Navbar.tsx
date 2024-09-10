@@ -16,13 +16,14 @@ interface DropdownMenuProps {
   isOpen: boolean;
   toggleDropdown: () => void;
   items: MenuItem;
+  isMobile: boolean;
 }
 
-const DropdownMenu: React.FC<DropdownMenuProps> = ({ isOpen, toggleDropdown, items }) => (
-  <div className="relative group">
+const DropdownMenu: React.FC<DropdownMenuProps> = ({ isOpen, toggleDropdown, items, isMobile }) => (
+  <div className={`${isMobile ? 'w-full' : 'relative group'}`}>
     <button
       onClick={toggleDropdown}
-      className="text-gray-900 hover:text-gray-500 rounded-lg p-2 flex items-center"
+      className="w-full text-left text-gray-900 hover:text-gray-500 rounded-lg p-2 flex items-center justify-between"
     >
       {items.title}
       <svg
@@ -35,7 +36,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ isOpen, toggleDropdown, ite
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
       </svg>
     </button>
-    <div className={`absolute left-0 mt-2 w-48 bg-[#ffe68a] shadow-lg rounded-lg ${isOpen ? 'block' : 'hidden'} group-hover:block`}>
+    <div className={`${isMobile ? 'mt-1' : 'absolute left-0 mt-2'} w-full md:w-48 bg-[#ffe68a] shadow-lg rounded-lg ${isOpen ? 'block' : 'hidden'} ${!isMobile && 'group-hover:block'}`}>
       <div className="py-1">
         {items.links.map((link, index) => (
           <Link
@@ -123,6 +124,7 @@ export function Navbar() {
                 isOpen={dropdowns[item.key]}
                 toggleDropdown={() => toggleDropdown(item.key)}
                 items={item}
+                isMobile={false}
               />
             ))}
             <Link
@@ -165,6 +167,7 @@ export function Navbar() {
                 isOpen={dropdowns[item.key]}
                 toggleDropdown={() => toggleDropdown(item.key)}
                 items={item}
+                isMobile={true}
               />
             ))}
             <Link
