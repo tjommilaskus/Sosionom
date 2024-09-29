@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { CheckIcon } from "@heroicons/react/20/solid";
-import Link from "next/link";
 
 const includedFeatures = ["Student (1050,-)", "Privatperson (1500,-)"];
 
@@ -9,27 +8,29 @@ export default function Onlineterapi() {
   return (
     <div
       id="Onlineterapi"
-      className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-0"
+      className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
     >
-      <div className="p-8 rounded shadow-sm sm:p-16 ">
+      <div className="p-8 rounded shadow-sm sm:p-16">
         <div className="flex flex-col lg:flex-row">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
-            <h1 className="uppercase text-xl text-center font-semibold">
+          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
+            <h1 className="uppercase text-xl font-semibold mb-4">
               Terapi 4
             </h1>
-            <Image
-              src="/TerapiOnline.png"
-              alt="KursInfo"
-              width={250}
-              height={250}
-              className="rounded-xl"
-            />
+            <div className="relative w-full aspect-square max-w-[250px]">
+              <Image
+                src="/TerapiOnline.png"
+                alt="KursInfo"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
+              />
+            </div>
           </div>
-          <div className="lg:w-2/3 mt-10">
-            <h1 className="text-xl text-gray-700 font-semibold">
+          <div className="lg:w-2/3">
+            <h1 className="text-2xl text-gray-700 font-semibold mb-4">
               Online terapi
             </h1>
-            <p className="mb-4 text-xl text-gray-700">
+            <p className="text-lg text-gray-700">
               Alle våre terapeutiske tjenester kan også tilbys online. I en
               travel hverdag kan terapi via internett være fordelaktig for flere
               av de menneskene vi møter. Vi møtes på den digitale plattformen
@@ -37,10 +38,10 @@ export default function Onlineterapi() {
             </p>
           </div>
         </div>
-        <p className="font-semibold mt-8 text-gray-700"></p>
-        <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Hvorfor velge online terapi?</p>
-          <p>
+        
+        <div className="text-base text-gray-700 mt-8">
+          <p className="font-semibold mb-4">Hvorfor velge online terapi?</p>
+          <p className="mb-4">
             Online terapi kan i flere tilfeller være like effektiv som
             tradisjonelle terapitimer på et kontor. Vår erfaring indikerer at
             nettbasert terapi egner seg spesielt godt for behandling, da det
@@ -50,12 +51,12 @@ export default function Onlineterapi() {
             på kontoret eller hvor som helst du befinner deg. Det er også mulig
             å starte behandlingen online og senere gå over til timer i et av
             våre fysiske rom.
-            <br />
-            <br />
+          </p>
+          <p>
             Du vil motta instruksjoner via e-post, og hvis du trenger mer
             informasjon, er du velkommen til å{" "}
             <a
-              className="font-semibold hover:text-gray-500 text-decoration-line: underline"
+              className="font-semibold hover:text-gray-500 underline"
               href="#kontaktoss"
             >
               kontakte oss her.
@@ -63,36 +64,28 @@ export default function Onlineterapi() {
           </p>
         </div>
 
-        <div className="bg-white py-2 sm:py-2">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-              <div className="p-8 sm:p-10 lg:flex-auto">
-                <h3 className="text-2xl font-bold tracking-tight text-gray-900">
+        <div className="bg-white py-8 mt-8">
+          <div className="mx-auto max-w-7xl">
+            <div className="mx-auto mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 lg:mx-0 lg:flex lg:max-w-none">
+              <div className="p-8 lg:flex-auto">
+                <h3 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
                   Prisoversikt: Terapeutiske samtaler online
                 </h3>
-
-                <div className="mt-1 flex items-center gap-x-4">
-                  <div className="h-px flex-auto bg-gray-100" />
-                </div>
-                <ul
-                  role="list"
-                  className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
-                >
+                <div className="h-px bg-gray-100 mb-6" />
+                <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
                   {includedFeatures.map((feature) => (
-                    <li key={feature} className="flex gap-x-3">
+                    <li key={feature} className="flex items-center gap-x-3">
                       <CheckIcon
-                        className="h-6 w-5 flex-none text-green-600"
+                        className="h-5 w-5 flex-none text-green-600"
                         aria-hidden="true"
                       />
-                      {feature}
+                      <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
-
-                <p className="mt-20 text-base leading-7 text-gray-600"></p>
               </div>
 
-              <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+              <div className="p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
                 <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
                   <div className="mx-auto max-w-xs px-8">
                     <p className="text-base font-semibold text-gray-600">
@@ -113,63 +106,61 @@ export default function Onlineterapi() {
                       Besill time her
                     </a>
                   </div>
-                  <p className="mt-6 text-xs leading-5 text-gray-600"></p>
                 </div>
               </div>
-            </div>
-            <div className="p-8 rounded shadow-sm sm:p-16 ">
-              <div className="flex flex-col lg:flex-row">
-                <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
-                  <h1 className="uppercase text-xl text-center font-semibold"></h1>
-                  <Image
-                    src="/VideoModul 2.jpg"
-                    alt="KursInfo"
-                    width={250}
-                    height={250}
-                    className="rounded-xl"
-                  />
-                </div>
-                <div className="lg:w-2/3 mt-10">
-                  <h1 className="text-xl text-gray-700 font-semibold">
-                    Video-modul
-                  </h1>
-                  <p className="mb-4 text-xl text-gray-700">
-                    Vi har utviklet en videomodul som kan benyttes for å oppnå
-                    en dypere forståelse av ulike problemstillinger knyttet til
-                    egen psykisk helse. Dersom du ønsker å beskytte dine
-                    personlige opplysninger og unngå å dele informasjon med en
-                    av våre terapeuter, kan videomodulen tjene som et verktøy
-                    for deg.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-base text-gray-700">
-              <p className="font-semibold"></p>
-              <p></p>
-            </div>
-            <div className="text-base text-gray-700">
-              <p className="font-semibold mb-4">
-                Denne tjenesten tilby informasjon om ulike psykiske lidelser, og
-                gir veiledende informasjon til hvordan det kan bli lettere å
-                forholde seg til problemstillinger som:{" "}
-              </p>
-
-              <li>Angst</li>
-              <li>Depresjon</li>
-              <li>Hyppig rusbruk</li>
-              <li>Sosial angst</li>
-              <li>Sjalusi</li>
-              <li>Tankekjør</li>
-              <li>Panikkangst</li>
-              <li>Stress</li>
-              <li>Seksuell helse</li>
-              <li>Mellommenneskelige problemer</li>
-              <li>Konflikthåndtering</li>
-              <li>Tillitsproblemer</li>
             </div>
           </div>
+        </div>
+
+        <div className="mt-16">
+          <div className="flex flex-col lg:flex-row items-center">
+            <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex justify-center">
+              <div className="relative w-full aspect-square max-w-[250px]">
+                <Image
+                  src="/VideoModul 2.jpg"
+                  alt="KursInfo"
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-xl"
+                />
+              </div>
+            </div>
+            <div className="lg:w-2/3">
+              <h1 className="text-2xl text-gray-700 font-semibold mb-4">
+                Video-modul
+              </h1>
+              <p className="text-lg text-gray-700">
+                Vi har utviklet en videomodul som kan benyttes for å oppnå
+                en dypere forståelse av ulike problemstillinger knyttet til
+                egen psykisk helse. Dersom du ønsker å beskytte dine
+                personlige opplysninger og unngå å dele informasjon med en
+                av våre terapeuter, kan videomodulen tjene som et verktøy
+                for deg.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-base text-gray-700 mt-8">
+          <p className="font-semibold mb-4">
+            Denne tjenesten tilbyr informasjon om ulike psykiske lidelser, og
+            gir veiledende informasjon til hvordan det kan bli lettere å
+            forholde seg til problemstillinger som:
+          </p>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>Angst</li>
+            <li>Depresjon</li>
+            <li>Hyppig rusbruk</li>
+            <li>Sosial angst</li>
+            <li>Sjalusi</li>
+            <li>Tankekjør</li>
+            <li>Panikkangst</li>
+            <li>Stress</li>
+            <li>Seksuell helse</li>
+            <li>Mellommenneskelige problemer</li>
+            <li>Konflikthåndtering</li>
+            <li>Tillitsproblemer</li>
+          </ul>
         </div>
       </div>
     </div>

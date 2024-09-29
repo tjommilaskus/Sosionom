@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { CheckIcon } from "@heroicons/react/20/solid";
+import { CheckIcon } from "lucide-react";
 
 const includedFeatures = ["Student (1050,-)", "Privatperson (1500,-)"];
 
@@ -10,19 +10,21 @@ export default function Parterapi() {
       id="Parterapi"
       className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
     >
-      <div className="p-8 rounded shadow-sm sm:p-16 ">
+      <div className="p-8 rounded shadow-sm sm:p-16">
         <div className="flex flex-col lg:flex-row">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
-            <h1 className="uppercase text-xl text-center font-semibold">
+          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
+            <h1 className="uppercase text-xl text-center font-semibold mb-4">
               Terapi 3
             </h1>
-            <Image
-              src="/Parterapi.jpg"
-              alt="KursInfo"
-              width={250}
-              height={250}
-              className="rounded-xl"
-            />
+            <div className="relative w-full aspect-square max-w-[250px]">
+              <Image
+                src="/Parterapi.jpg"
+                alt="KursInfo"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
+              />
+            </div>
           </div>
           <div className="lg:w-2/3 mt-10">
             <h1 className="text-xl text-gray-700 font-semibold">Parterapi</h1>
@@ -43,54 +45,49 @@ export default function Parterapi() {
           Det er forskjellige problemstillinger som kan gjøre det nyttig å gå i
           parterapi, blant annet:
         </p>
-        <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Kommunikasjonsproblemer</p>
-          <p>
-            Vanskeligheter med å uttrykke følelser og tanker tydelig, eller
-            misforståelser som skaper konflikter.
-          </p>
-        </div>
-        <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Konflikthåndtering</p>
-          <p>
-            Hyppige krangler, eller uenigheter om viktige aspekter av livet som
-            økonomi, barneoppdragelse, eller husarbeid.
-          </p>
-        </div>
-        <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Tillit og utroskap</p>
-          <p>Manglende tillit eller problemer som følge av utroskap.</p>
-        </div>
-        <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Intimitet og seksualitet</p>
-          <p>
-            Problemer med fysisk eller emosjonell intimitet, tap av sexlyst,
-            eller seksuelle dysfunksjoner. <br />
-            Større livsendringer: Overgangsperioder som for eksempel flytting,
-            jobbytter, fødsel av barn, eller tap av nære.
-          </p>
-        </div>
-        <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Uavklarte tidligere hendelser</p>
-          <p>
-            Sliter med uoppgjorte tidligere konflikter eller traumer som
-            påvirker nåværende forhold.
-          </p>
-        </div>
-        <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Uenigheter</p>
-          <p>Ulikheter i verdier, mål, eller forventninger til forholdet.</p>
-        </div>
-        <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Familie og venner</p>
-          <p>
-            Problemer forårsaket av innblanding fra slektninger eller venner.
-          </p>
-        </div>
-        <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Forventninger og roller</p>
-          <p>Misforståelser om forventingene og rollene i forholdet.</p>
-        </div>
+        {[
+          {
+            title: "Kommunikasjonsproblemer",
+            content: "Vanskeligheter med å uttrykke følelser og tanker tydelig, eller misforståelser som skaper konflikter."
+          },
+          {
+            title: "Konflikthåndtering",
+            content: "Hyppige krangler, eller uenigheter om viktige aspekter av livet som økonomi, barneoppdragelse, eller husarbeid."
+          },
+          {
+            title: "Tillit og utroskap",
+            content: "Manglende tillit eller problemer som følge av utroskap."
+          },
+          {
+            title: "Intimitet og seksualitet",
+            content: "Problemer med fysisk eller emosjonell intimitet, tap av sexlyst, eller seksuelle dysfunksjoner."
+          },
+          {
+            title: "Større livsendringer",
+            content: "Overgangsperioder som for eksempel flytting, jobbytter, fødsel av barn, eller tap av nære."
+          },
+          {
+            title: "Uavklarte tidligere hendelser",
+            content: "Sliter med uoppgjorte tidligere konflikter eller traumer som påvirker nåværende forhold."
+          },
+          {
+            title: "Uenigheter",
+            content: "Ulikheter i verdier, mål, eller forventninger til forholdet."
+          },
+          {
+            title: "Familie og venner",
+            content: "Problemer forårsaket av innblanding fra slektninger eller venner."
+          },
+          {
+            title: "Forventninger og roller",
+            content: "Misforståelser om forventingene og rollene i forholdet."
+          }
+        ].map((item, index) => (
+          <div key={index} className="text-base text-gray-700 mt-6">
+            <p className="font-semibold">{item.title}</p>
+            <p>{item.content}</p>
+          </div>
+        ))}
         <div className="text-base text-gray-700 mt-10">
           <p>
             Parterapi kan også være forebyggende, hjelpe par til å styrke
@@ -128,8 +125,6 @@ export default function Parterapi() {
                     </li>
                   ))}
                 </ul>
-
-                <p className="mt-20 text-base leading-7 text-gray-600"></p>
               </div>
 
               <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
@@ -153,7 +148,6 @@ export default function Parterapi() {
                       Bestill time her
                     </a>
                   </div>
-                  <p className="mt-6 text-xs leading-5 text-gray-600"></p>
                 </div>
               </div>
             </div>

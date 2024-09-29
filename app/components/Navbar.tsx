@@ -71,10 +71,10 @@ export function Navbar() {
       title: "Tjenester",
       key: "services",
       links: [
-        { href: "/Tjenester#KursogFag", text: "Kurs & Fagdag" },
-        { href: "/Tjenester#Veiledning", text: "Faglig Veiledning" },
-        { href: "/Tjenester#Samtaler", text: "Terapeutiske Samtaler" },
-        { href: "/Tjenester#Oppfolging", text: "Oppfølging & Avlastning" },
+        { href: "/Tjenesteinformasjon", text: "Kurs & Fagdag" },
+        { href: "/Tjenesteinformasjon2", text: "Faglig Veiledning" },
+        { href: "/Tjenesteinformasjon3", text: "Terapeutiske Samtaler" },
+        { href: "/Tjenesteinformasjon4", text: "Oppfølging & Avlastning" },
       ],
     },
     {

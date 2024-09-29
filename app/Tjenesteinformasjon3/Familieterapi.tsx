@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { CheckIcon } from "@heroicons/react/20/solid";
+import { CheckIcon } from "lucide-react";
 
 const includedFeatures = ["Student (1050,-)", "Privatperson (1500,-)"];
 
@@ -8,21 +8,23 @@ export default function Familieterapi() {
   return (
     <div
       id="Familieterapi"
-      className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+      className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
     >
-      <div className="p-8 rounded shadow-sm sm:p-16 ">
+      <div className="p-8 rounded shadow-sm sm:p-16">
         <div className="flex flex-col lg:flex-row">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
-            <h1 className="uppercase text-xl text-center font-semibold">
+          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
+            <h1 className="uppercase text-xl text-center font-semibold mb-4">
               Terapi 2
             </h1>
-            <Image
-              src="/Familieterapi.jpg"
-              alt="KursInfo"
-              width={250}
-              height={250}
-              className="rounded-xl"
-            />
+            <div className="relative w-full aspect-square max-w-[250px]">
+              <Image
+                src="/Familieterapi.jpg"
+                alt="KursInfo"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
+              />
+            </div>
           </div>
           <div className="lg:w-2/3 mt-6">
             <h1 className="text-xl text-gray-700 font-semibold">
@@ -46,34 +48,38 @@ export default function Familieterapi() {
           Enhver familie som møter utfordringer kan dra nytte av familieterapi,
           inkludert de som opplever:
         </p>
-        <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">Mentale helseutfordringer</p>
-          <li>Konflikter mellom foreldre og barn</li>
-          <li>
-            Problemer knyttet til livsforandringer som skilsmisse eller dødsfall
-          </li>
-          <li>Substansmisbruk eller psykiske helseproblemer</li>
-          <li>Kommunikasjonsbrudd og emosjonell distansering</li>
-          <li>Atferdsvansker hos barn og ungdom</li>
-          <li>
-            Par som ønsker råd, støtte eller veiledning i krevende situasjoner i
-            parforholdet
-          </li>
+        <div className="text-base text-gray-700 mt-4">
+          <p className="font-semibold">Mentale helseutfordringer</p>
+          <ul className="list-disc pl-5 mt-2 space-y-2">
+            <li>Konflikter mellom foreldre og barn</li>
+            <li>
+              Problemer knyttet til livsforandringer som skilsmisse eller dødsfall
+            </li>
+            <li>Substansmisbruk eller psykiske helseproblemer</li>
+            <li>Kommunikasjonsbrudd og emosjonell distansering</li>
+            <li>Atferdsvansker hos barn og ungdom</li>
+            <li>
+              Par som ønsker råd, støtte eller veiledning i krevende situasjoner i
+              parforholdet
+            </li>
+          </ul>
         </div>
-        <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">
+        <div className="text-base text-gray-700 mt-6">
+          <p className="font-semibold">
             Ved å delta i familieterapi, kan familien din forvente å oppnå:
           </p>
-          <li>Forbedret kommunikasjon og samhandling</li>
-          <li>Økt forståelse og empati blant familiemedlemmer</li>
-          <li>Større evne til å løse konflikter på en sunn og effektiv måte</li>
-          <li>En fornyet følelse av tilhørighet og fellesskap</li>
+          <ul className="list-disc pl-5 mt-2 space-y-2">
+            <li>Forbedret kommunikasjon og samhandling</li>
+            <li>Økt forståelse og empati blant familiemedlemmer</li>
+            <li>Større evne til å løse konflikter på en sunn og effektiv måte</li>
+            <li>En fornyet følelse av tilhørighet og fellesskap</li>
+          </ul>
         </div>
-        <div className="text-base text-gray-700">
-          <p className="font-semibold mt-6">
+        <div className="text-base text-gray-700 mt-6">
+          <p className="font-semibold">
             Ta det første steget mot et sterkere familieliv
           </p>
-          <p>
+          <p className="mt-2">
             Hvis din familie går gjennom en vanskelig periode eller simpelthen
             ønsker å forbedre de eksisterende relasjonene, kan familieterapi
             være veien frem. Å investere i familiens følelsesmessige velvære er
@@ -112,8 +118,6 @@ export default function Familieterapi() {
                     </li>
                   ))}
                 </ul>
-
-                <p className="mt-20 text-base leading-7 text-gray-600"></p>
               </div>
 
               <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
@@ -137,7 +141,6 @@ export default function Familieterapi() {
                       Bestill time her
                     </a>
                   </div>
-                  <p className="mt-6 text-xs leading-5 text-gray-600"></p>
                 </div>
               </div>
             </div>
