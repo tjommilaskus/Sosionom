@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/TOOLBARLOGO2.png";
@@ -13,58 +13,102 @@ interface MenuItem {
 }
 
 interface DropdownMenuProps {
-  isOpen: boolean;
-  toggleDropdown: () => void;
   items: MenuItem;
   isMobile: boolean;
 }
 
-const DropdownMenu: React.FC<DropdownMenuProps> = ({ isOpen, toggleDropdown, items, isMobile }) => (
-  <div className={`${isMobile ? 'w-full' : 'relative group'}`}>
-    <button
-      onClick={toggleDropdown}
-      className="w-full text-left text-gray-900 hover:text-gray-500 rounded-lg p-2 flex items-center justify-between"
+const DropdownMenu: React.FC<DropdownMenuProps> = ({ items, isMobile }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const handleMouseEnter = () => {
+    if (!isMobile) {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+      setIsOpen(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (!isMobile) {
+      timeoutRef.current = setTimeout(() => {
+        setIsOpen(false);
+      }, 300); // 300ms delay before closing
+    }
+  };
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div 
+      ref={dropdownRef}
+      className={`${isMobile ? 'w-full' : 'relative'}`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
-      {items.title}
-      <svg
-        className={`w-4 h-4 ml-1 transition-transform ${isOpen ? "rotate-180" : ""}`}
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <button
+        onClick={toggleDropdown}
+        className="w-full text-left text-gray-900 hover:text-gray-500 rounded-lg p-2 flex items-center justify-between"
       >
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-      </svg>
-    </button>
-    <div className={`${isMobile ? 'mt-1' : 'absolute left-0 mt-2'} w-full md:w-48 bg-[#ffe68a] shadow-lg rounded-lg ${isOpen ? 'block' : 'hidden'} ${!isMobile && 'group-hover:block'}`}>
-      <div className="py-1">
-        {items.links.map((link, index) => (
-          <Link
-            key={index}
-            href={link.href}
-            className="block text-gray-900 hover:bg-[#ffd15a] hover:text-gray-700 px-4 py-2"
-          >
-            {link.text}
-          </Link>
-        ))}
-      </div>
+        {items.title}
+        <svg
+          className={`w-4 h-4 ml-1 transition-transform ${isOpen ? "rotate-180" : ""}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      {isOpen && (
+        <div 
+          className={`${isMobile ? 'mt-1' : 'absolute left-0 mt-2'} w-full md:w-48 bg-[#ffe68a] shadow-lg rounded-lg`}
+          onMouseEnter={() => {
+            if (timeoutRef.current) {
+              clearTimeout(timeoutRef.current);
+            }
+          }}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div className="py-1">
+            {items.links.map((link, index) => (
+              <Link
+                key={index}
+                href={link.href}
+                className="block text-gray-900 hover:bg-[#ffd15a] hover:text-gray-700 px-4 py-2"
+              >
+                {link.text}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
-  </div>
-);
+  );
+};
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [dropdowns, setDropdowns] = useState<Record<DropdownKey, boolean>>({
-    services: false,
-    prices: false,
-    consultants: false,
-  });
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
-
-  const toggleDropdown = (key: DropdownKey) => {
-    setDropdowns((prev) => ({ ...prev, [key]: !prev[key] }));
-  };
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   const menuItems: MenuItem[] = [
     {
@@ -121,8 +165,6 @@ export function Navbar() {
             {menuItems.map((item) => (
               <DropdownMenu
                 key={item.key}
-                isOpen={dropdowns[item.key]}
-                toggleDropdown={() => toggleDropdown(item.key)}
                 items={item}
                 isMobile={false}
               />
@@ -138,7 +180,7 @@ export function Navbar() {
             <button
               type="button"
               className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
-              onClick={toggleMenu}
+              onClick={toggleMobileMenu}
             >
               <svg
                 className="w-6 h-6"
@@ -158,14 +200,12 @@ export function Navbar() {
           </div>
         </div>
       </div>
-      {isOpen && (
+      {isMobileMenuOpen && (
         <div className="md:hidden bg-[#ffe68a] shadow-lg rounded-b-lg">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {menuItems.map((item) => (
               <DropdownMenu
                 key={item.key}
-                isOpen={dropdowns[item.key]}
-                toggleDropdown={() => toggleDropdown(item.key)}
                 items={item}
                 isMobile={true}
               />
