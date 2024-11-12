@@ -6,7 +6,7 @@ export function Peng() {
       title: "Traumebevisst omsorg",
       image: "/Oppfølging.jpg",
       price: "590 kr/t",
-      additionalCost: ["Kjøring, rapportskriving og", <br/>, "deltakelse i møter er", <br/>, "inkludert i prosen"],
+      additionalCost: ["Kjøring, rapportskriving og", <br key="br1" />, "deltakelse i møter er", <br/>, "inkludert i prosen"],
       features: [
         "Målrettet mijøterapi",
         "Aktivisering",
@@ -20,7 +20,7 @@ export function Peng() {
       title: "Avlastning",
       image: "/Avlastning.jpg",
       price: "590 kr/t",
-      additionalCost: ["Kjøring, rapportskriving og", <br/>, "deltakelse i møter er", <br/>, "inkludert i prosen"],
+      additionalCost: ["Kjøring, rapportskriving og", <br key="br1" />, "deltakelse i møter er", <br/>, "inkludert i prosen"],
       features: [
         "Målrettet mijøterapi",
         "Aktivisering",
