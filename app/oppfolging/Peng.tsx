@@ -5,28 +5,28 @@ export function Peng() {
     {
       title: "Traumebevisst omsorg",
       image: "/Oppfølging.jpg",
-      price: "590,-/t",
-      additionalCost: "Kjøring, rapportskriving og deltakelse i møter er inkludert i prosen",
+      price: "590 kr/t",
+      additionalCost: ["Kjøring, rapportskriving og", <br/>, "deltakelse i møter er", <br/>, "inkludert i prosen"],
       features: [
         "Målrettet mijøterapi",
         "Aktivisering",
         "Kartlegging",
         "Inkudering",
-        "Praktisk Fornyer følelse av tilhørighet",
+        "Fornyer følelse av tilhørighet",
        
       ]
     },
     {
       title: "Avlastning",
       image: "/Avlastning.jpg",
-      price: ",590-/t",
-      additionalCost: "Kjøring, rapportskriving og deltakelse i møter er inkludert i prosen",
+      price: "590 kr/t",
+      additionalCost: ["Kjøring, rapportskriving og", <br/>, "deltakelse i møter er", <br/>, "inkludert i prosen"],
       features: [
         "Målrettet mijøterapi",
         "Aktivisering",
         "Kartlegging",
         "Inkudering",
-        "Praktisk Fornyer følelse av tilhørighet",
+        "Fornyer følelse av tilhørighet",
       ]
     },
    
@@ -42,15 +42,20 @@ export function Peng() {
           <div key={index} className="flex flex-col bg-gray-50 rounded-xl border-2 shadow-md overflow-hidden">
             <div className="px-6 py-8 text-center flex flex-col h-full">
               <a href="/Tjenesteinformasjon#Traume" className="flex flex-col h-full">
+              <div className='flex justify-center items-center mb-4'>
+                <div className='relative w-48 h-48'>
+
                 <img
                   src={course.image}
                   alt={course.title}
                   className="rounded-xl mb-4 w-full h-full object-cover"
                 />
+                </div>
+                </div>
                 <h5 className="text-xl font-semibold text-gray-700 mb-2">{course.title}</h5>
                 <p className="text-[#426b1f] font-bold mb-1">Pris: {course.price}</p>
                 <p className="text-sm mb-4">
-                  Tilleggskostnad på <br />
+                 
                   {course.additionalCost}
                 </p>
 

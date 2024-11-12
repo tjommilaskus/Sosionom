@@ -9,12 +9,12 @@ export function Edvard() {
       className="relative flex flex-col items-center pb-16 pt-[128px] mb-5 bg-gray-50"
     >
       <Image
-        className=" h-auto max-w-lg rounded-lg shadow-lg"
+        className="h-auto max-w-lg rounded-lg shadow-lg"
         src={BildeMann}
         alt="Hansi"
         width={250}
         height={250}
-      ></Image>
+      />
 
       <h1 className="mb-1 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl pt-4">
         Edvard Eide <span className="text-[#ffd15a]">Dyrlie</span>
@@ -22,7 +22,7 @@ export function Edvard() {
       <p className="tracking-widest text-gray-600 md:text-lg">
         Sosionom og Miljøterapeut
       </p>
-      <ul className="pt-5 max-w-md space-y-1 text-gray-600 list-disc list-insid">
+      <ul className="pt-5 max-w-md space-y-1 text-gray-600 list-disc list-inside">
         <li>Bachelorgrad i sosialt arbeid</li>
       </ul>
 
@@ -42,25 +42,15 @@ export function Edvard() {
       </div>
 
       <p className="mt-10 tracking-widest text-gray-600 md:text-lg">Erfaring</p>
-      <div className="lg:flex p-2">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-2 max-w-7xl">
         <p className="text-sm p-3 text-gray-600">
-          Hans Petter Algerøy har erfaring innenfor faglig veiledning og
-          undervisning. Han har tidligere arbeidet i stillinger som
-          miljøterapeut og faglig veileder hos organisasjoner som Abri Dialogue
-          og Haraldsplass Serio Ung.
+          Edvard Eide Dyrlie er en engasjert og erfaren miljøterapeut med en Bachelorgrad i Sosialt arbeid fra Høgskulen på Vestlandet. Edvard har vist seg som en nøyaktig og skriftlig dyktig terapeut, glad i aktiviteter og friluftsliv, noe som var avgjørende i det utviklingsarbeidet kollektivet driver med. Hans evne til å samarbeide tett med kolleger og ungdommer gjorde ham til en verdifull ressurs.
         </p>
         <p className="text-sm p-3 text-gray-600">
-          Han har hatt ansvar for veiledning til foreldre, fosterforeldre og
-          kollegaer, individuelt og i gruppe. Han har også vært involvert i
-          undervisning og har god erfaring med å samarbeide med barnehager og
-          skoler for å sikre at alle involverte parter er godt rustet rundt
-          barnets behov.
+          Ved Klokkergården Måløykollektivet bidro Edvard til det viktige arbeidet med unge mennesker med psykiske helseutfordringer. Her utviklet han sine ferdigheter innen relasjonsarbeid, hvor han bodde på kollektivet sammen med ungdommene i 14-dagers turnus. I 2019 jobbet Edvard som miljøterapeut for Borger AS, hvor fokus var på voksenpsykiatri i en medleverturnus, både med og uten tilleggsvansker som rusavhengighet eller utviklingshemming. Edvard har bidratt til å bryte isolasjon og skape trygghet og tilhørighet gjennom tilknytningsfokusert arbeid. 
         </p>
         <p className="text-sm p-3 text-gray-600">
-          I tillegg til tidligere stillinger, har han praktisk erfaring fra
-          Bergen Kommune sin avdeling for Fosterhjemsveiledning og tilsyn, hvor
-          han har bistått i å veilede fosterforeldre og gjennomføre undervisning
-          innenfor traumebevisst omsorg
+          Hans nytenkende og ambisiøse tilnærming, sammen med sterk faglig kompetanse, styrket hans evne til å bidra til funksjonsbedring for brukerne. En av Edvard sine styrker er at han kontinuerlig har vist sin fleksibilitet og ansvarsfølelse, samt evne til å skape meningsfulle relasjoner med pasienter og kolleger. Hans arbeid i Bærum kommune har gitt ham dypere innsikt og erfaring i å håndtere komplekse problemer og utfordringer i voksenpsykiatrien. Edvard er kjent for sitt engasjement, lærevillighet og evne til å takle ansvar. Han er også svært fleksibel og nytenkende, alltid på jakt etter nye metoder og teknikker for å forbedre omsorgen og behandlingen han gir.
         </p>
       </div>
     </div>

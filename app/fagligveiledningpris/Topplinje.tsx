@@ -9,7 +9,7 @@ export default function Topplinje() {
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#426b1f] leading-tight">
-              Fagligveiledning
+              Faglig<br></br>veiledning
             </h1>
           </div>
           <div className="w-full lg:w-1/2 flex justify-center">

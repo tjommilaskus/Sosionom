@@ -17,7 +17,6 @@ export function Peng() {
         "Sikrer kvalitetsstander",
         "Personlig vekst",
         "Faglig rekleksjon",
-        "Avslutningsprøve",
         "ATTEST"
       ]
     },
@@ -35,7 +34,6 @@ export function Peng() {
         "Sikrer kvalitetsstander",
         "Personlig vekst",
         "Faglig rekleksjon",
-        "Avslutningsprøve",
         "ATTEST"
       ]
     },
@@ -53,7 +51,6 @@ export function Peng() {
         "Sikrer kvalitetsstander",
         "Personlig vekst",
         "Faglig rekleksjon",
-        "Avslutningsprøve",
         "ATTEST"
       ]
     },
@@ -69,11 +66,16 @@ export function Peng() {
           <div key={index} className="flex flex-col bg-gray-50 rounded-xl border-2 shadow-md overflow-hidden">
             <div className="px-6 py-8 text-center flex flex-col h-full">
               <a href="/Tjenesteinformasjon#Traume" className="flex flex-col h-full">
+              <div className='flex justify-center items-center mb-4'>
+                <div className='relative w-48 h-48'>
+
                 <img
                   src={course.image}
                   alt={course.title}
                   className="rounded-xl mb-4 w-full h-full object-cover"
                 />
+                </div>
+                </div>
                 <h5 className="text-xl font-semibold text-gray-700 mb-2">{course.title}</h5>
                 <p className="text-[#426b1f] font-bold mb-1">Pris: {course.price}</p>
                 <p className="text-sm mb-4">

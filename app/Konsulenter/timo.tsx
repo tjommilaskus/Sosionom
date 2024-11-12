@@ -9,20 +9,19 @@ export function Timo() {
       className="relative flex flex-col items-center pb-16 pt-[128px] mb-5 bg-gray-50"
     >
       <Image
-        className=" h-auto max-w-lg rounded-lg shadow-lg"
+        className="h-auto max-w-lg rounded-lg shadow-lg"
         src={BildeMann}
         alt="Hansi"
         width={250}
         height={250}
-      ></Image>
-
+      />
       <h1 className="mb-1 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl pt-4">
         Timothy Sean <span className="text-[#ffd15a]">Falch</span>
       </h1>
       <p className="tracking-widest text-gray-600 md:text-lg">
         Kursholder og TS-trener
       </p>
-      <ul className="pt-5 max-w-md space-y-1 text-gray-600 list-disc list-insid">
+      <ul className="pt-5 max-w-md space-y-1 text-gray-600 list-disc list-inside">
         <li>Bachelorgrad i Barnevernspedagogikk</li>
         <li>Kurs arrestasjonsteknikker</li>
         <li>Kurs i HMS</li>
@@ -46,8 +45,8 @@ export function Timo() {
       </div>
 
       <p className="mt-10 tracking-widest text-gray-600 md:text-lg">Erfaring</p>
-      <div className="lg:flex p-2">
-        <p className="text-sm p-3 text-gray-600 max-w-96">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-2 max-w-7xl">
+        <p className="text-sm p-3 text-gray-600">
           Timothy besitter omfattende erfaring innen trygghet og sikkerhet, med
           spesielt fokus på arbeid med barn og ungdom som har opplevd
           utfordringer knyttet til vold og utagerende atferd. Han har hatt
@@ -60,15 +59,15 @@ export function Timo() {
           gir ham en enestående innsikt i sikkerhets- og trygghetsutfordringer i
           urbane miljøer.
         </p>
-        <p className="text-sm p-3 text-gray-600 max-w-96">
+        <p className="text-sm p-3 text-gray-600">
           Timothy har militær bakgrunn, hvor han har mottatt omfattende
           opplæring i kritiske teknikker for situasjonsforståelse og respons,
-          inkludert <p className="font-style: italic">fight, flight, freeze</p>
+          inkludert <span className="italic">fight, flight, freeze</span>
           -reaksjoner og arrestasjonsteknikk. Videre har han nesten et tiårs
           erfaring innen kampsport, noe som ytterligere styrker hans praktiske
           ferdigheter og forståelse av selvforsvar og sikkerhetsteknikker.
         </p>
-        <p className="text-sm p-3 text-gray-600 max-w-96">
+        <p className="text-sm p-3 text-gray-600">
           Timothy har også erfaring som verneombud i Haradlsplass Serio Ung.
           Hvor han har bidratt til et trygt arbeidsmiljø hvor de ansatte har
           følt seg ivaretatt i aller største grad. Denne omfattende og varierte

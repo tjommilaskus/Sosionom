@@ -26,7 +26,7 @@ export function Mona() {
         <li>Bachelorgrad i sosialt arbeid</li>
         <li>Videreutdanning i barnevern og fosterhjemsarbeid</li>
         <li>Videreutdanning i systemisk familieterapi</li>
-        <li>Viderutdanning i kognetiv terapi</li>
+        <li>Viderutdanning i kognitiv terapi</li>
         <li>COS terapaut</li>
         <li>Godkjent faglig veileder gjennom FO</li>
         <li>Sosionom med spesialkompetanse i barnevern gjennom FO</li>
@@ -49,7 +49,7 @@ export function Mona() {
       </div>
 
       <p className="mt-10 tracking-widest text-gray-600 md:text-lg">Erfaring</p>
-      <div className="lg:flex p-2">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-2 max-w-7xl">
         <p className="text-sm p-3 text-gray-600">
           Mona Ynnesdal er en høyt kvalifisert fagperson med kompetanse og lang
           erfaring innen barnevern, familieterapi og ledelse. I tillegg til sin

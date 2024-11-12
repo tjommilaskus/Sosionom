@@ -43,7 +43,7 @@ export function Eirik() {
       </div>
 
       <p className="mt-10 tracking-widest text-gray-600 md:text-lg">Erfaring</p>
-      <div className="lg:flex p-2">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-2 max-w-7xl">
         <p className="text-sm p-3 text-gray-600">
           Eirik Christian Person er en erfaren og dedikert sosialarbeider med
           bred kompetanse innen miljøterapi og veiledning for ulike
