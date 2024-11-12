@@ -129,7 +129,7 @@ export default function Onlineterapi() {
               <h1 className="text-2xl text-gray-700 font-semibold mb-4">
                 Video-modul
               </h1>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-gray-700 mb-3">
                 Vi har utviklet en videomodul som kan benyttes for å oppnå
                 en dypere forståelse av ulike problemstillinger knyttet til
                 egen psykisk helse. Dersom du ønsker å beskytte dine
@@ -137,6 +137,7 @@ export default function Onlineterapi() {
                 av våre terapeuter, kan videomodulen tjene som et verktøy
                 for deg.
               </p>
+              <p><a className="underline text-gray-900"href="/video">Klikk her</a> for å prøve våre gratis video-moduler</p>
             </div>
           </div>
         </div>

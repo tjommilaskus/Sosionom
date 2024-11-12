@@ -8,11 +8,11 @@ export default function Individuellterapi() {
   return (
     <div
       id="Individuellterapi"
-      className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+      className="px-4 py-1 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-1"
     >
-      <div className="p-8 rounded shadow-sm sm:p-16">
+      <div className="p-1 rounded shadow-sm sm:p-1">
         <div className="flex flex-col lg:flex-row">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
+          <div className="mb-1 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
             <h1 className="uppercase text-xl text-center font-semibold mb-4">
               Terapi 1
             </h1>

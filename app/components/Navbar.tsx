@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/TOOLBARLOGO2.png";
 
-type DropdownKey = "services" | "prices" | "consultants";
+type DropdownKey = "video" | "services" | "prices" | "consultants";
 
 interface MenuItem {
   title: string;
@@ -111,6 +111,11 @@ export function Navbar() {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   const menuItems: MenuItem[] = [
+    {
+      title: "Gratis Videoer",
+      key: "video",
+      links: [{href: "/video", text: "Gratis video-moduler"}],
+    },
     {
       title: "Tjenester",
       key: "services",

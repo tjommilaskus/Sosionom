@@ -8,7 +8,7 @@ export function Video() {
       image: "/VideoModul.jpg",
       price: "Gratis",
       knapp1: "Se video her",
-      lenke: "/link",
+      lenke: "",
       features: [
         "Oppnå en dypere forståelse av problemstillinger knyttet til egen psykisk helse",
       ]

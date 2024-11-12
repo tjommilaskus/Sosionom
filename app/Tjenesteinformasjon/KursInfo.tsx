@@ -49,19 +49,19 @@ export default function KursInfo() {
           </div>
         </div>
       </div>
-      <div className="p-8 rounded shadow-sm sm:p-16" id="Traume">
-      <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5">
-            <h1 className="uppercase text-xl text-center font-semibold mb-3">
-              Kurs 1
-            </h1>
+      <div className="p-8 rounded shadow-sm sm:p-16 " id="Traume">
+      <div className="flex flex-col lg:flex-row">
+          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
+          <h1 className="uppercase text-xl font-semibold mb-6">Kurs 1</h1>
+          <div className="w-full max-w-xs">
             <Image
               src="/TraumeOms.jpg"
-              alt="KursInfo"
+              alt="Traumebevist omsorg"
               width={250}
               height={250}
-              className="rounded-xl"
+              className="rounded-xl mx-auto"
             />
+          </div>
           </div>
           <div className="lg:w-2/3 mt-10">
             <h1 className="text-xl  text-gray-700 font-semibold">
@@ -238,19 +238,19 @@ export default function KursInfo() {
           </div>
         </div>
       </div>
-      <div className="p-8 rounded shadow-sm sm:p-16" id="Ivaretakelse">
-      <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5">
-            <h1 className="uppercase text-xl text-center font-semibold mb-3">
-              Kurs 2
-            </h1>
+      <div className="p-8 rounded shadow-sm sm:p-16 " id="Ivaretakelse">
+      <div className="flex flex-col lg:flex-row">
+          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
+          <h1 className="uppercase text-xl font-semibold mb-6">Kurs 2</h1>
+          <div className="w-full max-w-xs">
             <Image
               src="/Ivaretakelse.jpg"
-              alt="KursInfo"
+              alt="Ivaretakelse av hjelperen"
               width={250}
               height={250}
-              className="rounded-xl"
+              className="rounded-xl mx-auto"
             />
+          </div>
           </div>
           <div className="lg:w-2/3 mt-10">
             <h1 className="text-xl  text-gray-700 font-semibold">
@@ -449,19 +449,19 @@ export default function KursInfo() {
           </div>
         </div>
       </div>
-      <div className="p-8 rounded shadow-sm sm:p-16" id="Trygghet">
-      <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5">
-            <h1 className="uppercase text-xl text-center font-semibold mb-3">
-              Kurs 3
-            </h1>
+      <div className="p-8 rounded shadow-sm sm:p-16 " id="Trygghet">
+      <div className="flex flex-col lg:flex-row">
+          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
+          <h1 className="uppercase text-xl font-semibold mb-6">Kurs 3</h1>
+          <div className="w-full max-w-xs">
             <Image
               src="/Trygghet.jpg"
-              alt="KursInfo"
+              alt="Trygghet og sikkerhet"
               width={250}
               height={250}
-              className="rounded-xl"
+              className="rounded-xl mx-auto"
             />
+          </div>
           </div>
           <div className="lg:w-2/3">
             <div className="mb-4 text-xl text-gray-700 lg:mt-12">
