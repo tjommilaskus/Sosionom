@@ -44,6 +44,22 @@ export function Peng() {
         "Fornyer følelser av tilhørlighet",
       ]
     },
+    {
+      title: "Online terapi",
+      image: "/TerapiOnline.png",
+      price: "Fra 1150,-",
+      additionalCost: "Vi tilpasser prisen ved kjøp av 2 timerspakker, 10 timerspakker og 20 timerspakker",
+      knapp1: "1150,- (Student)",
+      knapp2: "1500,- (Ordinær)",
+      features: [
+        "Styrker forhold",
+        "Løser konflikt",
+        "Forbedrer kommunikasjon",
+        "Fremmer velvære",
+        "Løser konflikter på en sunn måte",
+        "Forbedrer kommunikasjon"
+      ]
+    },
     // Add more courses as needed
   ];
 

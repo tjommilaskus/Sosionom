@@ -65,7 +65,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ items, isMobile }) => {
     >
       <button
         onClick={toggleDropdown}
-        className="w-full text-left text-gray-900 hover:text-gray-500 rounded-lg p-2 flex items-center justify-between"
+        className="w-full text-left text-gray-900 hover:text-gray-500 rounded-lg p-2 flex items-center justify-between font-bold"
       >
         {items.title}
         <svg
@@ -171,7 +171,7 @@ export function Navbar() {
             ))}
             <Link
               href="#kontaktoss"
-              className="text-gray-900 hover:text-gray-500 rounded-lg p-2"
+              className="text-gray-900 hover:text-gray-500 rounded-lg p-2 font-bold"
             >
               Kontakt oss
             </Link>
@@ -212,7 +212,7 @@ export function Navbar() {
             ))}
             <Link
               href="#kontaktoss"
-              className="block text-gray-900 hover:bg-[#ffd15a] hover:text-gray-700 rounded-lg p-2"
+              className="block text-gray-900 hover:bg-[#ffd15a] hover:text-gray-700 rounded-lg p-2 font-bold"
             >
               Kontakt oss
             </Link>

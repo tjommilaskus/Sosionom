@@ -6,6 +6,33 @@ import IndTera from "../../public/IndividuellTerapi  2.png";
 import ParTera from "../../public/ParTerapi 2.png";
 
 export function Hero() {
+  const contentPairs = [
+    {
+      problem: "Opplever utfordringer med å håndtere stress og emosjonelle reaksjoner i arbeidsmiljøet ditt.",
+      solution: "Vårt kurs i traumebevisst omsorg kan hjelpe deg med å forstå og støtte både deg selv og andre som har opplevd traumer."
+    },
+    {
+      problem: "Sliter som hjelpearbeider med å opprettholde din egen velvære og bærekraft i jobben.",
+      solution: "Kurset i ivaretakelse av hjelperen er designet for å fokusere på og forbedre helsepersonellets helse og balanse."
+    },
+    {
+      problem: "Føler du deg utrygg eller usikker i vanskelige situasjoner på jobben.",
+      solution: "Våre kurs i trygghet og sikkerhet gir deg verktøyene du trenger for å håndtere stress og utfordrende situasjoner på en trygg måte."
+    },
+    {
+      problem: "Har behov for veiledning for å kunne reflektere over praksis og håndtere arbeidsrelaterte utfordringer.",
+      solution: "Vårt faglige veiledningsprogram gir støtte og utvikling både på individuelt og gruppebasis, og kan tilbys online for økt tilgjengelighet."
+    },
+    {
+      problem: "Opplever utfordringer i personlige eller familiære relasjoner som du ønsker å jobbe med.",
+      solution: "Terapeutiske samtaler, inklusiv individuell terapi, familieterapi og parterapi, kan hjelpe deg med å bearbeide følelser, styrke kommunikasjon og overvinne utfordringer."
+    },
+    {
+      problem: "Har et barn eller en ungdom som trenger ekstra oppfølging og støtte for å kunne mestre livet bedre.",
+      solution: "Vi tilbyr oppfølging og avlastningstjenester som er skreddersydd for ungdom, med fokus på helhetlig utvikling og støtte i samarbeid med familien."
+    }
+  ];
+
   return (
     <section className="p-0 m-0">
       <div className="p-0 m-0 grid lg:grid-cols-2 gap-4">
@@ -14,15 +41,8 @@ export function Hero() {
             Vi tilbyr assistanse dersom du kjenner deg igjen i noen av de
             følgende problemstillingene:
           </h1>
-          {[
-            "Opplever utfordringer med å håndtere stress og emosjonelle reaksjoner i arbeidsmiljøet ditt.",
-            "Sliter som hjelpearbeider med å opprettholde din egen velvære og bærekraft i jobben.",
-            "Føler du deg utrygg eller usikker i vanskelige situasjoner på jobben.",
-            "Har behov for veiledning for å kunne reflektere over praksis og håndtere arbeidsrelaterte utfordringer.",
-            "Opplever utfordringer i personlige eller familiære relasjoner som du ønsker å jobbe med.",
-            "Har et barn eller en ungdom som trenger ekstra oppfølging og støtte for å kunne mestre livet bedre."
-          ].map((text, index) => (
-            <div key={index} className="flex items-start mb-4 mt-6">
+          {contentPairs.map(({ problem }, index) => (
+            <div key={`problem-${index}`} className="flex items-start mb-4 mt-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -35,7 +55,7 @@ export function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              <p className="ml-2 text-base lg:text-lg text-gray-700">{text}</p>
+              <p className="ml-2 text-base lg:text-lg text-gray-700">{problem}</p>
             </div>
           ))}
         </div>
@@ -47,15 +67,10 @@ export function Hero() {
             <Image src={GruVei} alt="Gruppeveiledning" width={160} height={93} className="w-full h-auto"/>
             <Image src={ParTera} alt="Parterapi" width={160} height={93} className="w-full h-auto"/>
           </div>
-          {[
-            "Vårt kurs i traumebevisst omsorg kan hjelpe deg med å forstå og støtte både deg selv og andre som har opplevd traumer.",
-            "Kurset i ivaretakelse av hjelperen er designet for å fokusere på og forbedre helsepersonellets helse og balanse.",
-            "Våre kurs i trygghet og sikkerhet gir deg verktøyene du trenger for å håndtere stress og utfordrende situasjoner på en trygg måte.",
-            "Vårt faglige veiledningsprogram gir støtte og utvikling både på individuelt og gruppebasis, og kan tilbys online for økt tilgjengelighet.",
-            "Terapeutiske samtaler, inklusiv individuell terapi, familieterapi og parterapi, kan hjelpe deg med å bearbeide følelser, styrke kommunikasjon og overvinne utfordringer.",
-            "Vi tilbyr oppfølging og avlastningstjenester som er skreddersydd for ungdom, med fokus på helhetlig utvikling og støtte i samarbeid med familien."
-          ].map((text, index) => (
-            <p key={index} className="mb-4 font-semibold">{text}</p>
+          {contentPairs.map(({ solution }, index) => (
+            <div key={`solution-${index}`} className="mb-4 mt-6">
+              <p className="font-semibold">{solution}</p>
+            </div>
           ))}
         </div>
       </div>

@@ -27,7 +27,7 @@ export function Peng() {
       additionalCost: "Vi tilpasser prisen ved kjøp av 2 timerspakker, 10 timerspakker og 20 timerspakker",
       knapp1: "600,- (Student)",
       knapp2: "700,- (Ordinær)",
-      knapp3: "1150 (Organisasjon)",
+      knapp3: "1150,- (Organisasjon)",
       features: [
         "Systematisk prosess",
         "Profesjonell utvikling",
@@ -38,8 +38,42 @@ export function Peng() {
       ]
     },
     {
-      title: "Gruppeveiledning",
+      title: "Veiledning online",
       image: "/Gruppeveiledning.jpg",
+      price: "Fra 600,-",
+      additionalCost: "Vi tilpasser prisen ved kjøp av 2 timerspakker, 10 timerspakker og 20 timerspakker",
+      knapp1: "600,- (Student)",
+      knapp2: "700,- (Ordinær)",
+      knapp3: "1150,- (Organisasjon)",
+      features: [
+        "Systematisk prosess",
+        "Profesjonell utvikling",
+        "Sikrer kvalitetsstander",
+        "Personlig vekst",
+        "Faglig rekleksjon",
+        "ATTEST"
+      ]
+    },
+    {
+      title: "Leirbål-veiledning",
+      image: "/Leirbål-veiledning.jpg",
+      price: "Fra 900,-",
+      additionalCost: "Vi tilpasser prisen ved kjøp av 2 timerspakker, 10 timerspakker og 20 timerspakker",
+      knapp1: "900,- (Student)",
+      knapp2: "1200,- (Ordinær)",
+      knapp3: "1500,- (Organisasjon)",
+      features: [
+        "Systematisk prosess",
+        "Profesjonell utvikling",
+        "Sikrer kvalitetsstander",
+        "Personlig vekst",
+        "Faglig rekleksjon",
+        "ATTEST"
+      ]
+    },
+    {
+      title: "Veiledning online",
+      image: "/VeiledningOnline.png",
       price: "Fra 600,-",
       additionalCost: "Vi tilpasser prisen ved kjøp av 2 timerspakker, 10 timerspakker og 20 timerspakker",
       knapp1: "600,- (Student)",
@@ -54,6 +88,7 @@ export function Peng() {
         "ATTEST"
       ]
     },
+    
     // Add more courses as needed
   ];
 
