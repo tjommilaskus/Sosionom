@@ -3,10 +3,10 @@ import Image from "next/image";
 import { CheckIcon } from "@heroicons/react/20/solid";
 
 const includedFeatures = [
-  "1t Student (600,-), 1t Privatpersoner (700,-), 1t Organisasjoner (1150,-)",
-  "2t Student (1100,-), 2t Privatpersoner (1250,-), 2t Organisasjoner (1950,-)",
-  "10t Student (5500,-), 10t Privatpersoner (6500,-), 10t Organisasjoner 9950,-)",
-  "20t Student (10 500,-), 20t Privatpersoner (12 000,-), 20t Organisasjoner (18 000,-)",
+  "1t Student (600,-), \n1t Ordinær (700,-), \n1t Organisasjoner (1150,-)",
+  "2t Student (1100,-), \n2t Ordinær (1250,-), \n2t Organisasjoner (1950,-)",
+  "10t Student (5500,-), \n10t Ordinær (6500,-), \n10t Organisasjoner (9950,-)",
+  "20t Student (10 500,-), \n20t Ordinær (12 000,-), \n20t Organisasjoner (18 000,-)",
 ];
 
 export default function VeiledningInf() {
@@ -17,7 +17,7 @@ export default function VeiledningInf() {
     >
       <div className="p-8 rounded shadow-sm sm:p-16">
         <div className="flex flex-col lg:flex-row">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5">
+        <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5">
             <Image
               src="/VeiledningFag2.jpg"
               alt="KursInfo"
@@ -27,7 +27,7 @@ export default function VeiledningInf() {
             />
           </div>
           <div className="lg:w-2/3">
-            <div className="mb-4 text-base text-gray-700 mt-2">
+            <div className="mb-4 text-base text-gray-700 mt-2 px-10">
               <p className="font-semibold">Veiledning/Faglig støtte </p>
               <p>
                 Veiledning i helse- og omsorgssektoren kan være verdifull for en
@@ -41,19 +41,21 @@ export default function VeiledningInf() {
           </div>
         </div>
       </div>
-      <div className="p-8 rounded shadow-sm sm:p-16 ">
+      <div className="p-8 rounded shadow-sm sm:p-16">
         <div className="flex flex-col lg:flex-row">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5">
-            <h1 className="uppercase text-xl text-center font-semibold">
+          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
+            <h1 className="uppercase text-xl font-semibold mb-4">
               Veiledning 1
             </h1>
-            <Image
-              src="/Fagligveiledning.jpg"
-              alt="KursInfo"
-              width={250}
-              height={250}
-              className="rounded-xl"
-            />
+            <div className="relative w-full aspect-square max-w-[250px]">
+              <Image
+                src="/Fagligveiledning.jpg"
+                alt="KursInfo"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
+              />
+            </div>
           </div>
           <div className="lg:w-2/3 mt-10">
             <h1 className="text-xl font-semibold text-gray-700">

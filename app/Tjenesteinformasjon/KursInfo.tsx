@@ -50,9 +50,9 @@ export default function KursInfo() {
         </div>
       </div>
       <div className="p-8 rounded shadow-sm sm:p-16" id="Traume">
-        <div className="flex flex-col lg:flex-row">
+      <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
           <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5">
-            <h1 className="uppercase text-xl text-center font-semibold">
+            <h1 className="uppercase text-xl text-center font-semibold mb-3">
               Kurs 1
             </h1>
             <Image
@@ -239,9 +239,9 @@ export default function KursInfo() {
         </div>
       </div>
       <div className="p-8 rounded shadow-sm sm:p-16" id="Ivaretakelse">
-        <div className="flex flex-col lg:flex-row">
+      <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
           <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5">
-            <h1 className="uppercase text-xl text-center font-semibold">
+            <h1 className="uppercase text-xl text-center font-semibold mb-3">
               Kurs 2
             </h1>
             <Image
@@ -450,9 +450,9 @@ export default function KursInfo() {
         </div>
       </div>
       <div className="p-8 rounded shadow-sm sm:p-16" id="Trygghet">
-        <div className="flex flex-col lg:flex-row">
+      <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
           <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5">
-            <h1 className="uppercase text-xl text-center font-semibold">
+            <h1 className="uppercase text-xl text-center font-semibold mb-3">
               Kurs 3
             </h1>
             <Image

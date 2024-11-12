@@ -35,14 +35,25 @@ export function Hero() {
 
   return (
     <section className="p-0 m-0">
-      <div className="p-0 m-0 grid lg:grid-cols-2 gap-4">
-        <div className="flex flex-col justify-center items-start p-4">
+      <div className="grid lg:grid-cols-2 gap-4 mb-8">
+      <div className="p-4">
           <h1 className="text-2xl lg:text-3xl text-[#426B1F] mb-6 font-semibold">
             Vi tilbyr assistanse dersom du kjenner deg igjen i noen av de
             følgende problemstillingene:
           </h1>
-          {contentPairs.map(({ problem }, index) => (
-            <div key={`problem-${index}`} className="flex items-start mb-4 mt-6">
+        </div>
+        <div className="grid grid-cols-4 gap-2 p-4 ">
+          <Image src={IndTera} alt="Individuell Terapi" width={120} height={170} className="w-full h-auto"/>
+          <Image src={FamTera} alt="Familieterapi" width={120} height={170} className="w-full h-auto"/>
+          <Image src={GruVei} alt="Gruppeveiledning" width={120} height={170} className="w-full h-auto"/>
+          <Image src={ParTera} alt="Parterapi" width={120} height={170} className="w-full h-auto"/>
+        </div>
+      </div>
+
+      <div className="grid lg:grid-cols-2 gap-x-4">
+        {contentPairs.map(({ problem, solution }, index) => (
+          <div key={index} className="contents">
+            <div className="flex items-start mb-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -57,23 +68,13 @@ export function Hero() {
               </svg>
               <p className="ml-2 text-base lg:text-lg text-gray-700">{problem}</p>
             </div>
-          ))}
-        </div>
-        
-        <div className="p-4 text-base lg:text-lg text-gray-700">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-6">
-            <Image src={IndTera} alt="Individuell Terapi" width={160} height={93} className="w-full h-auto"/>
-            <Image src={FamTera} alt="Familieterapi" width={160} height={93} className="w-full h-auto"/>
-            <Image src={GruVei} alt="Gruppeveiledning" width={160} height={93} className="w-full h-auto"/>
-            <Image src={ParTera} alt="Parterapi" width={160} height={93} className="w-full h-auto"/>
-          </div>
-          {contentPairs.map(({ solution }, index) => (
-            <div key={`solution-${index}`} className="mb-4 mt-6">
-              <p className="font-semibold">{solution}</p>
+            <div className="mb-8">
+              <p className="text-base lg:text-lg text-gray-700 font-semibold">{solution}</p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
+      
       <div className="p-0 m-0 flex justify-center items-center">
         <Vitilby />
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { CheckIcon } from "lucide-react";
 
-const includedFeatures = ["Student (1050,-)", "Privatperson (1500,-)"];
+const includedFeatures = ["Student (1050,-)", "Ordinær (1500,-)"];
 
 export default function Familieterapi() {
   return (

@@ -17,8 +17,8 @@ export default function Leirbalveiledning() {
     >
       <div className="p-8 rounded shadow-sm sm:p-16">
         <div className="flex flex-col lg:flex-row">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
-            <h1 className="uppercase text-xl text-center font-semibold">
+        <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
+            <h1 className="uppercase text-xl text-center font-semibold mb-3">
               Veiledning 4
             </h1>
             <Image

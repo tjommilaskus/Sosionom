@@ -3,10 +3,10 @@ import Image from "next/image";
 import { CheckIcon } from "@heroicons/react/20/solid";
 
 const includedFeatures = [
-  "1t Student (600,-), Privatpersoner (700,-), Organisasjoner (1150,-)",
-  "2t Student (1100,-), Privatpersoner (1250,-), Organisasjoner (1950,-)",
-  "10t Student (5500,-), Privatpersoner (6500,-), Organisasjoner 9950,-)",
-  "20t Student (10 500,-), Privatpersoner (12 000,-), Organisasjoner (18 000,-)",
+  "1t Student (600,-), \nOrdinær (700,-), \nOrganisasjoner (1150,-)",
+  "2t Student (1100,-), \nOrdinær (1250,-), \nOrganisasjoner (1950,-)",
+  "10t Student (5500,-), \nOrdinær (6500,-), \nOrganisasjoner (9950,-)",
+  "20t Student (10 500,-), \nOrdinær (12 000,-), \nOrganisasjoner (18 000,-)",
 ];
 
 export default function Gruppeveiledning() {
@@ -17,8 +17,8 @@ export default function Gruppeveiledning() {
     >
       <div className="p-8 rounded shadow-sm sm:p-16 ">
         <div className="flex flex-col lg:flex-row">
-          <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 items-center">
-            <h1 className="uppercase text-xl text-center font-semibold">
+        <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
+            <h1 className="uppercase text-xl text-center font-semibold mb-3">
               Veiledning 3
             </h1>
             <Image

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { CheckIcon } from "@heroicons/react/20/solid";
 
-const includedFeatures = ["Student (1050,-)", "Privatperson (1500,-)"];
+const includedFeatures = ["Student (1050,-)", "Ordinær (1500,-)"];
 
 export default function Onlineterapi() {
   return (
@@ -113,11 +113,11 @@ export default function Onlineterapi() {
         </div>
 
         <div className="mt-16">
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex justify-center">
+          <div className="flex flex-col lg:flex-row">
+            <div className="mb-6 lg:mb-0 lg:w-1/3 lg:pr-5 flex flex-col items-center">
               <div className="relative w-full aspect-square max-w-[250px]">
                 <Image
-                  src="/VideoModul 2.jpg"
+                  src="/VideoModul.jpg"
                   alt="KursInfo"
                   layout="fill"
                   objectFit="cover"
@@ -140,6 +140,7 @@ export default function Onlineterapi() {
             </div>
           </div>
         </div>
+
 
         <div className="text-base text-gray-700 mt-8">
           <p className="font-semibold mb-4">
